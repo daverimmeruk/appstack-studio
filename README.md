@@ -6,11 +6,11 @@ Welcome to the official repository for **AppStack Studio**. This project hosts o
 
 ## Live Website
 Our live deployment can be viewed publicly at: 
-*   **Website Link:** https://github.io
+*   **Website Link:** https://daverimmeruk.github.io/appstack-studio/
 
 ## Repository Structure
 *   `index.html` - The core website layout containing our app showcase grid, customer FAQs, and privacy documentation.
 *   `README.md` - Repository configuration guidelines and overview data.
 
 ## Support Contact
-For user assistance, inquiries, or bug tracking submissions, please contact our support desk at **support@yourdomain.com**.
+For user assistance, inquiries, or bug tracking submissions, please contact our support desk at **daverimmeruk@gmail.com**.
