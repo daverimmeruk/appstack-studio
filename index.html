@@ -1,138 +1,192 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppStack | Developer Portfolio & Support Hub</title>
+    <title>AppStack Studio — Mobile Innovations Hub</title>
     <style>
         :root {
-            --primary: #1a73e8;
-            --primary-dark: #1557b0;
-            --dark: #202124;
-            --light-bg: #f8f9fa;
-            --border: #dadce0;
-            --text: #3c4043;
+            --bg-color: #121212;
+            --card-bg: #1F1F1F;
+            --accent-green: #00FF99;
+            --accent-blue: #00A8FF;
+            --text-color: #FFFFFF;
+            --subtext-color: #CCCCCC;
+            --border-color: #333333;
         }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: var(--text); 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
-        }
-        h1, h2, h3 { color: var(--dark); font-weight: 700; }
-        h2 { margin-top: 40px; border-bottom: 2px solid var(--light-bg); padding-bottom: 8px; }
-        
-        /* Logo Styling */
-        .brand-header { display: flex; align-items: center; gap: 12px; margin-bottom: 30px; }
-        .brand-name { font-size: 1.8rem; font-weight: 800; color: var(--dark); letter-spacing: -0.5px; }
-        .brand-accent { color: var(--primary); }
 
-        /* Grid Layout */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 40px; }
-        .app-card { border: 1px solid var(--border); border-radius: 8px; padding: 24px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: transform 0.2s; }
-        .app-card:hover { transform: translateY(-2px); }
-        .app-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 10px; color: var(--dark); }
-        
-        /* Layout Blocks */
-        .section { background: var(--light-bg); padding: 30px; border-radius: 8px; margin-bottom: 30px; border: 1px solid #eee; }
-        .faq-item { margin-bottom: 20px; }
-        .faq-q { font-weight: bold; color: var(--dark); }
-        
-        /* Buttons */
-        .btn { display: inline-block; background: var(--primary); color: white; padding: 10px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 15px; font-size: 0.95rem; text-align: center; }
-        .btn:hover { background: var(--primary-dark); }
-        .btn-secondary { background: #5f6368; }
-        .btn-secondary:hover { background: #4f5256; }
-        
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        a { color: var(--primary); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #181818;
+            border-bottom: 2px solid var(--accent-green);
+            padding: 40px 16px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--accent-green);
+            margin: 0 0 12px 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            color: var(--subtext-color);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--accent-green);
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 32px 16px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .app-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .app-card:hover {
+            border-color: var(--accent-green);
+            transform: translateY(-4px);
+        }
+
+        .app-card h3 {
+            color: var(--accent-green);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+
+        .app-card p {
+            color: var(--subtext-color);
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .app-card .btn-group {
+            margin-top: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2A2A2A;
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 8px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-green);
+            color: #000000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 16px;
+            border-top: 1px solid var(--border-color);
+            color: var(--subtext-color);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-green);
+        }
     </style>
 </head>
 <body>
 
-    <!-- BRAND LOGO & HEADER -->
-    <div class="brand-header">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#1a73e8"/>
-            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="#1a73e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-name">App<span class="brand-accent">Stack</span> Studio</span>
-    </div>
+<header>
+    <h1>🚀 AppStack Studio</h1>
+    <p>Innovative Android Utilities & Pro Telemetry Apps</p>
+</header>
 
-    <p style="font-size: 1.1rem; color: #5f6368; margin-bottom: 40px;">Innovative, lightweight mobile tools designed to simplify your digital ecosystem.</p>
+<nav>
+    <a href="index.html">🏠 Studio Home</a>
+    <a href="privacy.html">🔒 Master Privacy Policy</a>
+    <a href="support.html">🛡️ Studio Support</a>
+</nav>
 
-    <!-- 1. APP PORTFOLIO SECTION -->
-    <h2>Our Applications</h2>
-    <div class="grid">
-        
-        <!-- APP 1 -->
+<div class="container">
+    <h2 style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px; color: var(--accent-green);">📱 Our Published Apps</h2>
+
+    <div class="apps-grid">
+        <!-- App 1: Cell Tower Finder v4.0 & WaveScan Pro -->
         <div class="app-card">
-            <div class="app-title">📱 App One Name</div>
-            <p>A brief catchphrase or 1-sentence description of what this app does best.</p>
-            <p>Key features include offline support, smart notifications, and beautiful dark mode UI.</p>
-            <a href="#" class="btn" target="_blank">Get it on Google Play</a>
+            <div>
+                <h3>🗼 Cell Tower Finder v4.0 & WaveScan Pro</h3>
+                <p>360° OpenStreetMap cell tower vector locator with live CameraX AR directional overlay, multi-room blueprint modeler, cellular coverage dead-zone scanner, and 32-band acoustic spectrum analyzer.</p>
+            </div>
+            <div class="btn-group">
+                <a href="cell-tower-finder/index.html" class="btn">📖 User Manual & Screenshots</a>
+                <a href="cell-tower-finder/privacy.html" class="btn">🔒 Privacy Policy</a>
+                <a href="cell-tower-finder/support.html" class="btn">🛡️ App Support</a>
+            </div>
         </div>
 
-        <!-- APP 2 -->
-        <div class="app-card">
-            <div class="app-title">🎮 App Two Name</div>
-            <p>A fun description for your second app or mobile game.</p>
-            <p>Challenge your friends, unlock rewards, and climb the global leaderboards.</p>
-            <a href="#" class="btn" target="_blank">Get it on Google Play</a>
-        </div>
-
-    </div>
-
-    <!-- 2. SUPPORT & FAQ SECTION -->
-    <div class="section">
-        <h2>Customer Support & FAQ</h2>
-        
-        <h3>App One Support</h3>
-        <div class="faq-item">
-            <p class="faq-q">Q: How do I backup my data in App One?</p>
-            <p>A: Data backs up automatically to your local device partition every time you close the app.</p>
-        </div>
-
-        <h3>App Two Support</h3>
-        <div class="faq-item">
-            <p class="faq-q">Q: Does App Two require an internet connection?</p>
-            <p>A: The single-player mode works entirely offline, but multiplayer needs an active network connection.</p>
-        </div>
-
-        <p style="margin-top:30px;"><strong>Need custom technical assistance?</strong> Contact us directly:</p>
-        <a href="mailto:daverimmeruk@gmail.com" class="btn btn-secondary">Email Support</a>
-
-
-    </div>
-
-    <!-- 3. PRIVACY POLICIES -->
-    <div class="section">
-        <h2>Privacy Policies</h2>
-        <p>We take your privacy seriously. Select the relevant privacy terms for your application below:</p>
-        <ul>
-            <li><a href="#privacy-app1">Privacy Policy for App One</a></li>
-            <li><a href="#privacy-app2">Privacy Policy for App Two</a></li>
-        </ul>
-
-        <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
-
-        <div id="privacy-app1">
-            <h3>Privacy Policy: App One</h3>
-            <p><strong>Last updated: October 2026</strong></p>
-            <p>This service is provided by AppStack Studio at no cost. This application does not track, collect, or share sensitive real-time coordinate data or personal identity vectors.</p>
-        </div>
-
-        <div id="privacy-app2" style="margin-top: 40px;">
-            <h3>Privacy Policy: App Two</h3>
-            <p><strong>Last updated: October 2026</strong></p>
-            <p>This service is provided by AppStack Studio at no cost. This app utilizes third-party software development kits (SDKs) which may interpret anonymous advertising metrics to maintain system operations.</p>
+        <!-- Placeholder for Future App 2 -->
+        <div class="app-card" style="opacity: 0.6; border-style: dashed;">
+            <div>
+                <h3 style="color: var(--accent-blue);">⚡ Next Innovation (In Development)</h3>
+                <p>Our engineering team is actively building new high-performance Android utilities. Stay tuned for updates!</p>
+            </div>
+            <div class="btn-group">
+                <span class="btn" style="border-color: var(--accent-blue); color: var(--accent-blue);">Coming Soon</span>
+            </div>
         </div>
     </div>
+</div>
+
+<footer>
+    <p>&copy; AppStack Studio. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="support.html">Contact & Support</a></p>
+</footer>
 
 </body>
 </html>
