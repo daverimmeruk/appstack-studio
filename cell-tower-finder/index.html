@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cell Tower Finder v4.0 & WaveScan Pro — Official Field Guide & Visual Showcase</title>
+    <title>Cell Tower Finder v4.0 & WaveScan Pro — Ultimate 5G/LTE Telemetry Suite</title>
     <style>
         :root {
             --bg-color: #121212;
             --card-bg: #1F1F1F;
             --accent-green: #00FF99;
+            --accent-gold: #FFD700;
+            --accent-red: #FF4444;
             --text-color: #FFFFFF;
             --subtext-color: #CCCCCC;
             --border-color: #333333;
@@ -26,20 +28,20 @@
         header {
             background-color: #181818;
             border-bottom: 2px solid var(--accent-green);
-            padding: 24px 16px;
+            padding: 32px 16px;
             text-align: center;
         }
 
         header h1 {
             color: var(--accent-green);
             margin: 0 0 8px 0;
-            font-size: 1.8rem;
+            font-size: 2.1rem;
         }
 
         header p {
             color: var(--subtext-color);
             margin: 0;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         nav {
@@ -65,6 +67,39 @@
             max-width: 950px;
             margin: 0 auto;
             padding: 24px 16px;
+        }
+
+        /* Juiced-Up Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #1F1F1F 0%, #15251D 100%);
+            border: 1px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 8px 24px rgba(0,255,153,0.15);
+        }
+
+        .hero-banner h2 {
+            color: var(--accent-green);
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .badge-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 16px 0;
+        }
+
+        .badge {
+            background-color: #121212;
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
         }
 
         /* Screenshots Gallery Styling */
@@ -125,6 +160,32 @@
             margin: 0;
         }
 
+        /* Competitor Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th, .comparison-table td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        .comparison-table th {
+            background-color: #181818;
+            color: var(--accent-green);
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #1A1A1A;
+        }
+
+        .check { color: var(--accent-green); font-weight: bold; }
+        .cross { color: var(--accent-red); font-weight: bold; }
+
         /* Section Card Styling */
         .section-card {
             background-color: var(--card-bg);
@@ -172,18 +233,33 @@
 <body>
 
 <header>
-    <h1>📖 Cell Tower Finder v4.0 & WaveScan Pro</h1>
-    <p>Official Field Guide, Screenshot Showcase & User Manual</p>
+    <h1>🗼 Cell Tower Finder v4.0 & WaveScan Pro</h1>
+    <p>3D Spatial AR Map, Multi-Room Floorplan Modeler & 32-Band FFT Acoustic Suite</p>
 </header>
 
 <nav>
     <a href="https://daverimmeruk.github.io/appstack-studio/index.html">🏠 Studio Home</a>
-    <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/index.html">📖 User Manual & Visuals</a>
-    <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/privacy.html">🔒 Privacy Policy</a>
-    <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/cell-tower-finder/support.html">🛡️ App Support</a>
+    <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/index.html">📖 Field Guide & Visuals</a>
+    <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/privacy.html">🔒 Privacy Policy</a>
+    <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/support.html">🛡️ App Support</a>
 </nav>
 
 <div class="container">
+
+    <!-- Juiced-Up Marketing Hero -->
+    <div class="hero-banner">
+        <h2>🔥 The Most Advanced 5G/LTE Home Gateway & Cellular Alignment Utility on Android</h2>
+        <p>Tired of slow 5G/LTE home internet, dropped calls, and random cellular dead-zones? <strong>Cell Tower Finder v4.0 & WaveScan Pro</strong> turns your Android device into a professional-grade RF signal telemetry engine. pinpoint exact line-of-sight vectors with 360° precision, project 3D spatial AR anchors through exterior windows, test multi-room wall attenuation, and isolate room echo chambers with a 32-band FFT acoustic analyzer!</p>
+
+        <div class="badge-list">
+            <span class="badge">🎯 100% Line-of-Sight Lock</span>
+            <span class="badge">📷 CameraX 3D Spatial AR</span>
+            <span class="badge">📐 Floorplan Modeler</span>
+            <span class="badge">📶 Dead-Zone Simulator</span>
+            <span class="badge">📡 4-Tower OSM Map</span>
+            <span class="badge">🔒 100% Local On-Device Privacy</span>
+        </div>
+    </div>
 
     <!-- Screenshots Visual Showcase -->
     <div class="gallery-section">
@@ -217,10 +293,70 @@
         </div>
     </div>
 
+    <!-- Why WaveScan Pro Beats Competitors -->
     <div class="section-card">
-        <h2>🌟 PART 1: FREE EDITION WORKFLOW (STEPS 1 & 2)</h2>
+        <h2>🏆 How Cell Tower Finder v4.0 Crushes the Competition</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature / Capability</th>
+                    <th>Cell Tower Finder v4.0</th>
+                    <th>Basic Compass / Cell Apps</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>360° Vector Lock</strong></td>
+                    <td><span class="check">✔ Bright Neon Green 🎯 100% LOS Lock</span></td>
+                    <td><span class="cross">✖ Jumpers & static needle compasses</span></td>
+                </tr>
+                <tr>
+                    <td><strong>CameraX AR Overlays</strong></td>
+                    <td><span class="check">✔ 3D Vector Pointer & 1.2m Elevation Anchor</span></td>
+                    <td><span class="cross">✖ 2D static camera overlays only</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Indoor Multi-Room Suite</strong></td>
+                    <td><span class="check">✔ Drag & drop Blueprint Modeler & Leaderboard</span></td>
+                    <td><span class="cross">✖ Single point speed test only</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Coverage Dead-Zone Scanner</strong></td>
+                    <td><span class="check">✔ Flashing Neon/Amber/Red + Weak Signal Simulation</span></td>
+                    <td><span class="cross">✖ Basic RSSI bar indicator</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Alternative Cell Towers Map</strong></td>
+                    <td><span class="check">✔ 4-Tower OpenStreetMap with Band Switcher</span></td>
+                    <td><span class="cross">✖ Single tower lock only</span></td>
+                </tr>
+                <tr>
+                    <td><strong>RF Barrier Matrix</strong></td>
+                    <td><span class="check">✔ Material Attenuation (Concrete, Glass, Foil, Rebar)</span></td>
+                    <td><span class="cross">✖ Not available</span></td>
+                </tr>
+                <tr>
+                    <td><strong>32-Band FFT Acoustic Spectrum</strong></td>
+                    <td><span class="check">✔ 20 Hz - 20 kHz resonance echo detector</span></td>
+                    <td><span class="cross">✖ Not available</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Data Privacy</strong></td>
+                    <td><span class="check">✔ 100% Local On-Device (Zero Server Tracking)</span></td>
+                    <td><span class="cross">✖ Uploads location & telemetry to cloud</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        <h3>• Step 1 (🗼 Cell Tower Map - Outdoor Alignment)</h3>
+    <!-- 100% Word-for-Word In-App User Manual -->
+    <div class="section-card">
+        <h2>📖 Official Step-by-Step Field Guide & User Manual</h2>
+        <p><em>(100% Word-for-Word identical to the in-app Field Guide in Cell Tower Finder v4.0)</em></p>
+
+        <h3>🌟 PART 1: FREE EDITION WORKFLOW (STEPS 1 & 2)</h3>
+
+        <h4>• Step 1 (🗼 Cell Tower Map - Outdoor Alignment)</h4>
         <ol>
             <li>Open the app and tap the <strong>'🗼 Cell Tower'</strong> tab.</li>
             <li>Hold your phone horizontally at chest height and slowly rotate 360° in a circle.</li>
@@ -233,7 +369,7 @@
             <li>Read the Signal Power (dBm) and Distance (meters). Identify the window in your building facing that exact azimuth angle.</li>
         </ol>
 
-        <h3>• Step 2 (📷 Camera AR Alignment - Outdoor & Indoor Modes)</h3>
+        <h4>• Step 2 (📷 Camera AR Alignment - Outdoor & Indoor Modes)</h4>
         <ol>
             <li>Tap <strong>'📷 AR Camera'</strong> and select <strong>'📡 Cell Tower AR'</strong> at the top.</li>
             <li>Point your camera out exterior windows. The 3D Direction Arrow overlays live in camera view, pointing towards the exact GPS location of the cell tower.</li>
@@ -241,12 +377,10 @@
             <li>Tap <strong>'🏠 Switch AR Mode'</strong> or <strong>'🏠 Indoor Router AR'</strong> at the top to toggle to Indoor Router AR Placement Mode.</li>
             <li>Point your camera at your designated router spot near the window. A floating 3D anchor box overlays in camera view, displaying 1.2m elevation callouts, wall barrier advice, and optimal router positioning.</li>
         </ol>
-    </div>
 
-    <div class="section-card">
-        <h2>💎 PART 2: WAVESCAN PRO INDOOR SUITE (STEPS 3 & 4)</h2>
+        <h3>💎 PART 2: WAVESCAN PRO INDOOR SUITE (STEPS 3 & 4)</h3>
 
-        <h3>• Step 3 (📐 Room Selection & Blueprint Modeler)</h3>
+        <h4>• Step 3 (📐 Room Selection & Blueprint Modeler)</h4>
         <ol>
             <li>Position your 5G/LTE Gateway directly at the window facing the cell tower.</li>
             <li>Tap <strong>'📐 Blueprint'</strong>. Select Room A, Room B, or Room C at the top.</li>
@@ -255,7 +389,7 @@
             <li><em>Physical Motion Warning:</em> If you switch room tabs without walking (> 3m moved), a warning alerts you to walk to that room for an accurate reading.</li>
         </ol>
 
-        <h3>• Step 4 (📶 Cellular Signal Coverage & Extension Map)</h3>
+        <h4>• Step 4 (📶 Cellular Signal Coverage & Extension Map)</h4>
         <ol>
             <li>Tap <strong>'📶 Cellular Coverage'</strong>. Walk to the room or space furthest from your primary router.</li>
             <li>Tap <strong>'📶 Test Room Reception'</strong> to scan live signal quality:
@@ -266,19 +400,17 @@
                 </ul>
             </li>
         </ol>
-    </div>
 
-    <div class="section-card">
-        <h2>🛠 PART 3: EXTRA TOOLS (ADVANCED PRO DIAGNOSTICS)</h2>
+        <h3>🛠 PART 3: EXTRA TOOLS (ADVANCED PRO DIAGNOSTICS)</h3>
         <p>Tap <strong>'🛠 Extra Tools'</strong> on the top menu bar to access advanced diagnostic tools:</p>
 
-        <h3>1. 📡 Nearby Alternative Cell Towers Map</h3>
+        <h4>1. 📡 Nearby Alternative Cell Towers Map</h4>
         <p>Displays an OpenStreetMap showing all 4 nearby cell towers (Primary + 3 Alternatives). Tap any cell tower pin on the map to inspect its frequency band, distance, signal power (dBm), and alignment recommendations.</p>
 
-        <h3>2. 📱 How to Select Bands & Change Towers on Mobile Networks Screen</h3>
+        <h4>2. 📱 How to Select Bands & Change Towers on Mobile Networks Screen</h4>
         <p>Tapping <strong>'⚙️ Switch Band / Network'</strong> opens your phone's Mobile Networks settings screen. Follow these steps to force your phone onto an alternative cell tower:</p>
 
-        <h4>• Method 1: Change 'Network Mode' (Switches Between 5G, 4G LTE, and 3G Towers)</h4>
+        <h5>• Method 1: Change 'Network Mode' (Switches Between 5G, 4G LTE, and 3G Towers)</h5>
         <ol>
             <li>Tap <strong>'Network Mode'</strong> on the Mobile Networks screen.</li>
             <li>You will see options like:
@@ -297,7 +429,7 @@
             </li>
         </ol>
 
-        <h4>• Method 2: Use 'Network Operators' (Manual Cell Tower Search)</h4>
+        <h5>• Method 2: Use 'Network Operators' (Manual Cell Tower Search)</h5>
         <ol>
             <li>Tap <strong>'Network Operators'</strong> at the bottom of the Mobile Networks screen.</li>
             <li>Turn OFF the switch that says <strong>'Select Automatically'</strong>.</li>
@@ -305,25 +437,23 @@
             <li>A list of all nearby cell towers and carriers will appear. Tap any alternative tower/network in the list to force your phone to register onto it!</li>
         </ol>
 
-        <h3>3. 🎯 5G/LTE Router Antenna Alignment Guide</h3>
+        <h4>3. 🎯 5G/LTE Router Antenna Alignment Guide</h4>
         <p>Tapping <strong>'🎯 Router Antenna Guide'</strong> displays the exact azimuth bearing angle (e.g., 318° NW) to rotate outdoor Yagi/MIMO antennas to lock 5G home gateways onto alternative towers.</p>
 
-        <h3>4. 🗺 3D Room Heatmap Matrix (RF Interference Grid)</h3>
+        <h4>4. 🗺 3D Room Heatmap Matrix (RF Interference Grid)</h4>
         <ul>
             <li><strong>How to Use:</strong> Walk across your room while the 3D grid measures RF signal attenuation.</li>
             <li><strong>Grid Color Scale:</strong> Green = Clear path; Yellow = Moderate attenuation; Red = Severe barrier loss.</li>
             <li><strong>Material Loss Values:</strong> Concrete Wall (-18 dB), Metal Foil Insulation (-30 dB), Steel Rebar (-22 dB), Glass (-2 dB).</li>
         </ul>
 
-        <h3>5. 🔊 32-Band FFT Microphone Spectrum Analyzer</h3>
+        <h4>5. 🔊 32-Band FFT Microphone Spectrum Analyzer</h4>
         <ul>
             <li><strong>How to Use:</strong> Samples real-time audio room acoustic resonance across 32 frequency bands (20 Hz - 20 kHz).</li>
             <li><strong>How to Read:</strong> Identifies peak resonance (Hz), sound level (dB), and standing wave echo chambers caused by tile/glass surfaces.</li>
         </ul>
-    </div>
 
-    <div class="section-card">
-        <h2>📄 PART 4: EXPORTING REPORTS & PRO SUITE UNLOCK</h2>
+        <h3>📄 PART 4: EXPORTING REPORTS & PRO SUITE UNLOCK</h3>
         <ul>
             <li>Tap <strong>'Export Report'</strong> on the bottom action bar to generate and share professional PDF or JSON field reports.</li>
             <li>Subscribe via the 3-Day Free Trial to unlock the complete 3D Indoor RF & Acoustic Suite.</li>
@@ -333,8 +463,9 @@
 </div>
 
 <footer>
-    <p>&copy; AppStack Studio. Cell Tower Finder v4.0 & WaveScan Pro (<code>com.wavescan.app</code>).</p>
-    <p><a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/privacy.html">Privacy Policy</a> | <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/cell-tower-finder/support.html">App Support</a> | <a href="https://daverimmeruk.github.io/appstack-studio/index.html">Studio Home</a></p>
+    <p>&copy; AppStack Studio. Cell Tower Finder v4.0 & WaveScan Pro (<code>com.celltowerfinder.app</code>).</p>
+    <p>Contact Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/privacy.html">Privacy Policy</a> | <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/support.html">App Support</a> | <a href="https://daverimmeruk.github.io/appstack-studio/index.html">Studio Home</a></p>
 </footer>
 
 </body>
