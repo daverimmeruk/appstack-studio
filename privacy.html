@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Cell Tower Finder v4.0 & WaveScan Pro</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1F1F1F;
+            --accent-green: #00FF99;
+            --text-color: #FFFFFF;
+            --subtext-color: #CCCCCC;
+            --border-color: #333333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #181818;
+            border-bottom: 2px solid var(--accent-green);
+            padding: 24px 16px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--accent-green);
+            margin: 0 0 8px 0;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--accent-green);
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: var(--accent-green);
+            font-size: 1.3rem;
+            margin-top: 20px;
+        }
+
+        p, li {
+            color: #DDDDDD;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 16px;
+            border-top: 1px solid var(--border-color);
+            color: var(--subtext-color);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-green);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔒 Privacy Policy</h1>
+    <p>Cell Tower Finder v4.0 & WaveScan Pro (<code>com.wavescan.app</code>)</p>
+</header>
+
+<nav>
+    <a href="../index.html">🏠 Studio Home</a>
+    <a href="index.html">📖 User Manual</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="support.html">🛡️ App Support</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <p><strong>Effective Date:</strong> March 2025</p>
+        <p><strong>App Name:</strong> Cell Tower Finder v4.0 & WaveScan Pro</p>
+        <p><strong>Package Name:</strong> <code>com.wavescan.app</code></p>
+        <p><strong>Developer:</strong> AppStack Studio</p>
+
+        <h2>1. Overview & Data Philosophy</h2>
+        <p>AppStack Studio built <strong>Cell Tower Finder v4.0 & WaveScan Pro</strong> as a privacy-first utility application. All spatial, cellular, camera, and acoustic spectrum computations are executed <strong>100% locally on your device</strong>. We do not operate external tracking servers, nor do we sell, share, or transmit your personal data, location history, camera feeds, or audio samples to any third party.</p>
+
+        <h2>2. Permissions Requested & On-Device Purpose</h2>
+
+        <h3>• Location Access (<code>ACCESS_FINE_LOCATION</code> & <code>ACCESS_COARSE_LOCATION</code>)</h3>
+        <p>Used strictly on-device to compute the exact geographic distance and azimuth bearing angle to nearby cell towers on OpenStreetMap. Your location data is processed locally in real-time and is never stored on external servers or tracked across time.</p>
+
+        <h3>• Camera Access (<code>CAMERA</code>)</h3>
+        <p>Used strictly on-device to render the CameraX live Augmented Reality (AR) overlay, displaying 3D vector arrows pointing to cell towers and positioning 3D indoor router anchors. Video feeds are processed frame-by-frame in device memory and are <strong>never recorded, stored, or transmitted</strong>.</p>
+
+        <h3>• Microphone / Audio Access (<code>RECORD_AUDIO</code>)</h3>
+        <p>Used strictly on-device to calculate real-time 32-band FFT acoustic frequency resonance (20 Hz - 20 kHz) to identify standing wave echo chambers. Audio signals are converted immediately into frequency band numerical data in local RAM and discarded instantly. No voice recordings or raw audio files are ever saved or transmitted.</p>
+
+        <h2>3. Local Storage & File Exports</h2>
+        <p>When you choose to export field reports (PDF or JSON format), the generated document is saved directly to your device's private app storage or public Downloads directory via Android's secure <code>FileProvider</code> API. You maintain total control over these files and can delete or share them as you see fit.</p>
+
+        <h2>4. Third-Party Libraries</h2>
+        <ul>
+            <li><strong>Osmdroid (OpenStreetMap):</strong> Used to render offline-capable tile maps for cell tower positions. Osmdroid fetches standard map tiles directly from OpenStreetMap tile servers over encrypted HTTPS.</li>
+            <li><strong>Google Play Billing API:</strong> Handles secure subscription transactions for unlocking WaveScan Pro. All payment processing is strictly managed by Google Play. We do not collect or store financial or credit card information.</li>
+        </ul>
+
+        <h2>5. Children’s Privacy</h2>
+        <p>Our application is intended for general technical audiences and does not knowingly collect personal information from children under 13 years of age.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy, please contact AppStack Studio via our <a href="support.html">App Support Page</a>.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; AppStack Studio. Cell Tower Finder v4.0 & WaveScan Pro.</p>
+    <p><a href="index.html">User Manual</a> | <a href="support.html">App Support</a> | <a href="../index.html">Studio Home</a></p>
+</footer>
+
+</body>
+</html>
