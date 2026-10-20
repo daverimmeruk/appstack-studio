@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Tower Finder v4.0 & WaveScan Pro — Official Field Guide & Visual Showcase</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1F1F1F;
+            --accent-green: #00FF99;
+            --text-color: #FFFFFF;
+            --subtext-color: #CCCCCC;
+            --border-color: #333333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #181818;
+            border-bottom: 2px solid var(--accent-green);
+            padding: 24px 16px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--accent-green);
+            margin: 0 0 8px 0;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            color: var(--subtext-color);
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        nav {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--accent-green);
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+
+        /* Screenshots Gallery Styling */
+        .gallery-section {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .gallery-section h2 {
+            color: var(--accent-green);
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .gallery-card {
+            background-color: #151515;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .gallery-card:hover {
+            border-color: var(--accent-green);
+            transform: scale(1.03);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #333333;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .gallery-card h4 {
+            color: var(--accent-green);
+            font-size: 0.85rem;
+            margin: 10px 0 4px 0;
+        }
+
+        .gallery-card p {
+            color: var(--subtext-color);
+            font-size: 0.75rem;
+            margin: 0;
+        }
+
+        /* Section Card Styling */
+        .section-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .section-card h2 {
+            color: var(--accent-green);
+            margin-top: 0;
+            font-size: 1.3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .section-card h3 {
+            color: #66FFCC;
+            font-size: 1.1rem;
+            margin-top: 16px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 16px;
+            border-top: 1px solid var(--border-color);
+            color: var(--subtext-color);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-green);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📖 Cell Tower Finder v4.0 & WaveScan Pro</h1>
+    <p>Official Field Guide, Screenshot Showcase & User Manual</p>
+</header>
+
+<nav>
+    <a href="../index.html">🏠 Studio Home</a>
+    <a href="index.html">📖 User Manual & Visuals</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+    <a href="support.html">🛡️ App Support</a>
+</nav>
+
+<div class="container">
+
+    <!-- Screenshots Visual Showcase -->
+    <div class="gallery-section">
+        <h2>📸 App Screenshots & Feature Visuals</h2>
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="screenshots/step1-cell-tower-map.png" alt="Step 1: Cell Tower Map">
+                <h4>Step 1: Cell Tower Map</h4>
+                <p>360° Neon Green 100% Line-of-Sight Lock</p>
+            </div>
+            <div class="gallery-card">
+                <img src="screenshots/step2-ar-camera.png" alt="Step 2: AR Camera Alignment">
+                <h4>Step 2: AR Camera</h4>
+                <p>3D Vector Pointer & Router Anchor Box</p>
+            </div>
+            <div class="gallery-card">
+                <img src="screenshots/step3-blueprint-modeler.png" alt="Step 3: Blueprint Modeler">
+                <h4>Step 3: Multi-Room Blueprint</h4>
+                <p>Floorplan Modeler & Room Leaderboard</p>
+            </div>
+            <div class="gallery-card">
+                <img src="screenshots/step4-cellular-coverage.png" alt="Step 4: Cellular Coverage">
+                <h4>Step 4: Reception Scanner</h4>
+                <p>Live Signal Scanner & Dead-Zone Alert</p>
+            </div>
+            <div class="gallery-card">
+                <img src="screenshots/extra-tools-diagnostics.png" alt="Extra Tools Diagnostics">
+                <h4>Extra Tools Diagnostics</h4>
+                <p>Nearby Cell Towers Map & RF Matrix</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card">
+        <h2>🌟 PART 1: FREE EDITION WORKFLOW (STEPS 1 & 2)</h2>
+
+        <h3>• Step 1 (🗼 Cell Tower Map - Outdoor Alignment)</h3>
+        <ol>
+            <li>Open the app and tap the <strong>'🗼 Cell Tower'</strong> tab.</li>
+            <li>Hold your phone horizontally at chest height and slowly rotate 360° in a circle.</li>
+            <li>Watch the Directional Pointer Arrow on screen:
+                <ul>
+                    <li>If not facing the tower, it displays: <code>'➔ Turn Right X°'</code> or <code>'⬅ Turn Left X°'</code> in red text.</li>
+                    <li>When facing the cell tower (within ±10°), it locks to BRIGHT NEON GREEN: <code>'🎯 Line-of-Sight: 100% Locked'</code>.</li>
+                </ul>
+            </li>
+            <li>Read the Signal Power (dBm) and Distance (meters). Identify the window in your building facing that exact azimuth angle.</li>
+        </ol>
+
+        <h3>• Step 2 (📷 Camera AR Alignment - Outdoor & Indoor Modes)</h3>
+        <ol>
+            <li>Tap <strong>'📷 AR Camera'</strong> and select <strong>'📡 Cell Tower AR'</strong> at the top.</li>
+            <li>Point your camera out exterior windows. The 3D Direction Arrow overlays live in camera view, pointing towards the exact GPS location of the cell tower.</li>
+            <li>Rotate your camera until the reticle turns green with <code>'🎯 100% LINE-OF-SIGHT ALIGNED WITH CELL TOWER'</code>.</li>
+            <li>Tap <strong>'🏠 Switch AR Mode'</strong> or <strong>'🏠 Indoor Router AR'</strong> at the top to toggle to Indoor Router AR Placement Mode.</li>
+            <li>Point your camera at your designated router spot near the window. A floating 3D anchor box overlays in camera view, displaying 1.2m elevation callouts, wall barrier advice, and optimal router positioning.</li>
+        </ol>
+    </div>
+
+    <div class="section-card">
+        <h2>💎 PART 2: WAVESCAN PRO INDOOR SUITE (STEPS 3 & 4)</h2>
+
+        <h3>• Step 3 (📐 Room Selection & Blueprint Modeler)</h3>
+        <ol>
+            <li>Position your 5G/LTE Gateway directly at the window facing the cell tower.</li>
+            <li>Tap <strong>'📐 Blueprint'</strong>. Select Room A, Room B, or Room C at the top.</li>
+            <li>Touch and drag the Yellow Router Icon (📡) to test different spots in that room.</li>
+            <li>Tap <strong>'🏆 Compare All Rooms'</strong> to view the leaderboard rankings and see which room provides peak throughput.</li>
+            <li><em>Physical Motion Warning:</em> If you switch room tabs without walking (> 3m moved), a warning alerts you to walk to that room for an accurate reading.</li>
+        </ol>
+
+        <h3>• Step 4 (📶 Cellular Signal Coverage & Extension Map)</h3>
+        <ol>
+            <li>Tap <strong>'📶 Cellular Coverage'</strong>. Walk to the room or space furthest from your primary router.</li>
+            <li>Tap <strong>'📶 Test Room Reception'</strong> to scan live signal quality:
+                <ul>
+                    <li><strong style="color: #00FF99;">Flashing Neon Green Diagram:</strong> '🔥 EXCELLENT RECEPTION (No extension nodes needed)'.</li>
+                    <li><strong style="color: #FFCC00;">Amber Diagram:</strong> '⚡ GOOD RECEPTION (Move router 30cm closer to window)'.</li>
+                    <li><strong style="color: #FF3333;">Red Diagram:</strong> '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A CELLULAR EXTENDER / MESH NODE RECOMMENDED HERE.'</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="section-card">
+        <h2>🛠 PART 3: EXTRA TOOLS (ADVANCED PRO DIAGNOSTICS)</h2>
+        <p>Tap <strong>'🛠 Extra Tools'</strong> on the top menu bar to access advanced diagnostic tools:</p>
+
+        <h3>1. 📡 Nearby Alternative Cell Towers Map</h3>
+        <p>Displays an OpenStreetMap showing all 4 nearby cell towers (Primary + 3 Alternatives). Tap any cell tower pin on the map to inspect its frequency band, distance, signal power (dBm), and alignment recommendations.</p>
+
+        <h3>2. 📱 How to Select Bands & Change Towers on Mobile Networks Screen</h3>
+        <p>Tapping <strong>'⚙️ Switch Band / Network'</strong> opens your phone's Mobile Networks settings screen. Follow these steps to force your phone onto an alternative cell tower:</p>
+
+        <h4>• Method 1: Change 'Network Mode' (Switches Between 5G, 4G LTE, and 3G Towers)</h4>
+        <ol>
+            <li>Tap <strong>'Network Mode'</strong> on the Mobile Networks screen.</li>
+            <li>You will see options like:
+                <ul>
+                    <li>5G / LTE / 3G / 2G (Auto connect) [Default]</li>
+                    <li>LTE / 3G / 2G (Auto connect)</li>
+                    <li>LTE Only</li>
+                    <li>3G Only</li>
+                </ul>
+            </li>
+            <li><strong>How this switches towers:</strong> Primary 5G cell towers broadcast on high-frequency 5G C-Band (3,500 MHz). Alternative backup towers broadcast on long-range 4G LTE (800 MHz) or 3G.
+                <ul>
+                    <li>Selecting <strong>'LTE Only'</strong> forces your modem off the 5G tower and locks onto the Alternative 4G LTE Tower!</li>
+                    <li>Selecting <strong>'3G Only'</strong> forces your modem onto the Alternative 3G Tower!</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h4>• Method 2: Use 'Network Operators' (Manual Cell Tower Search)</h4>
+        <ol>
+            <li>Tap <strong>'Network Operators'</strong> at the bottom of the Mobile Networks screen.</li>
+            <li>Turn OFF the switch that says <strong>'Select Automatically'</strong>.</li>
+            <li>Your phone will perform a 30-second live search of every cell tower broadcasting in your area.</li>
+            <li>A list of all nearby cell towers and carriers will appear. Tap any alternative tower/network in the list to force your phone to register onto it!</li>
+        </ol>
+
+        <h3>3. 🎯 5G/LTE Router Antenna Alignment Guide</h3>
+        <p>Tapping <strong>'🎯 Router Antenna Guide'</strong> displays the exact azimuth bearing angle (e.g., 318° NW) to rotate outdoor Yagi/MIMO antennas to lock 5G home gateways onto alternative towers.</p>
+
+        <h3>4. 🗺 3D Room Heatmap Matrix (RF Interference Grid)</h3>
+        <ul>
+            <li><strong>How to Use:</strong> Walk across your room while the 3D grid measures RF signal attenuation.</li>
+            <li><strong>Grid Color Scale:</strong> Green = Clear path; Yellow = Moderate attenuation; Red = Severe barrier loss.</li>
+            <li><strong>Material Loss Values:</strong> Concrete Wall (-18 dB), Metal Foil Insulation (-30 dB), Steel Rebar (-22 dB), Glass (-2 dB).</li>
+        </ul>
+
+        <h3>5. 🔊 32-Band FFT Microphone Spectrum Analyzer</h3>
+        <ul>
+            <li><strong>How to Use:</strong> Samples real-time audio room acoustic resonance across 32 frequency bands (20 Hz - 20 kHz).</li>
+            <li><strong>How to Read:</strong> Identifies peak resonance (Hz), sound level (dB), and standing wave echo chambers caused by tile/glass surfaces.</li>
+        </ul>
+    </div>
+
+    <div class="section-card">
+        <h2>📄 PART 4: EXPORTING REPORTS & PRO SUITE UNLOCK</h2>
+        <ul>
+            <li>Tap <strong>'Export Report'</strong> on the bottom action bar to generate and share professional PDF or JSON field reports.</li>
+            <li>Subscribe via the 3-Day Free Trial to unlock the complete 3D Indoor RF & Acoustic Suite.</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; AppStack Studio. Cell Tower Finder v4.0 & WaveScan Pro (<code>com.wavescan.app</code>).</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="support.html">App Support</a> | <a href="../index.html">Studio Home</a></p>
+</footer>
+
+</body>
+</html>
