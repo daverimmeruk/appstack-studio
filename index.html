@@ -3,219 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppStack Studio — Mobile Innovations Hub</title>
+    <title>AppStack Studio — Developer Hub</title>
     <style>
-        :root {
-            --bg-color: #121212;
-            --card-bg: #1F1F1F;
-            --accent-green: #00FF99;
-            --accent-blue: #00A8FF;
-            --text-color: #FFFFFF;
-            --subtext-color: #CCCCCC;
-            --border-color: #333333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #181818;
-            border-bottom: 2px solid var(--accent-green);
-            padding: 40px 16px;
-            text-align: center;
-        }
-
-        header h1 {
-            color: var(--accent-green);
-            margin: 0 0 12px 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            color: var(--subtext-color);
-            margin: 0;
-            font-size: 1.1rem;
-        }
-
-        nav {
-            background-color: #1A1A1A;
-            border-bottom: 1px solid var(--border-color);
-            padding: 12px;
-            text-align: center;
-        }
-
-        nav a {
-            color: var(--accent-green);
-            text-decoration: none;
-            margin: 0 16px;
-            font-weight: bold;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 950px;
-            margin: 0 auto;
-            padding: 32px 16px;
-        }
-
-        .apps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            margin-top: 24px;
-        }
-
-        .app-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .app-card:hover {
-            border-color: var(--accent-green);
-            transform: translateY(-4px);
-        }
-
-        .app-card h3 {
-            color: var(--accent-green);
-            margin-top: 0;
-            font-size: 1.3rem;
-        }
-
-        .app-card p {
-            color: var(--subtext-color);
-            font-size: 0.95rem;
-            flex-grow: 1;
-        }
-
-        .app-card .btn-group {
-            margin-top: 16px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #2A2A2A;
-            color: var(--accent-green);
-            border: 1px solid var(--accent-green);
-            padding: 8px 14px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-green);
-            color: #000000;
-        }
-
-        .support-card {
-            background-color: #1A2621;
-            border: 1px solid var(--accent-green);
-            border-radius: 12px;
-            padding: 24px;
-            margin-top: 32px;
-            text-align: center;
-        }
-
-        .support-card h3 {
-            color: var(--accent-green);
-            margin-top: 0;
-        }
-
-        .support-card a {
-            color: var(--accent-green);
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 32px 16px;
-            border-top: 1px solid var(--border-color);
-            color: var(--subtext-color);
-            font-size: 0.85rem;
-        }
-
-        footer a {
-            color: var(--accent-green);
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #121212; color: #e0e0e0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #00FF99; text-align: center; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #aaa; margin-bottom: 40px; font-size: 16px; }
+        .app-card { background: #1E1E1E; color: #fff; padding: 24px; border-radius: 16px; margin-bottom: 24px; border: 1px solid #333; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+        .feature-box { background: #2A2A2A; padding: 16px; border-radius: 12px; }
+        .screenshot-gallery { display: flex; gap: 12px; overflow-x: auto; padding: 12px 0; margin: 16px 0; scrollbar-color: #00FF99 #2A2A2A; }
+        .screenshot-gallery img { height: 200px; border-radius: 10px; border: 1px solid #444; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .footer { margin-top: 50px; text-align: center; font-size: 13px; color: #888; border-top: 1px solid #333; padding-top: 20px; }
+        a { color: #64B5F6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
+    <h1>AppStack Studio Hub</h1>
+    <div class="subtitle">Professional Android Utilities &amp; Field Guides</div>
 
-<header>
-    <h1>🚀 AppStack Studio</h1>
-    <p>Innovative Android Utilities & Pro Telemetry Apps</p>
-</header>
-
-<nav>
-    <a href="https://daverimmeruk.github.io/appstack-studio/index.html">🏠 Studio Home</a>
-    <a href="https://daverimmeruk.github.io/appstack-studio/privacy.html">🔒 Master Privacy Policy</a>
-    <a href="https://daverimmeruk.github.io/appstack-studio/support.html">🛡️ Studio Support</a>
-</nav>
-
-<div class="container">
-    <h2 style="border-bottom: 1px solid var(--border-color); padding-bottom: 8px; color: var(--accent-green);">📱 Our Published Apps</h2>
-
-    <div class="apps-grid">
-        <!-- App 1: Cell Tower Finder v4.0 & WaveScan Pro -->
-        <div class="app-card">
-            <div>
-                <h3>🗼 Cell Tower Finder v4.0 & WaveScan Pro</h3>
-                <p>360° OpenStreetMap cell tower vector locator with live CameraX AR directional overlay, multi-room blueprint modeler, cellular coverage dead-zone scanner, and 32-band acoustic spectrum analyzer.</p>
-                <p><small style="color: #888;">Package ID: <code>com.celltowerfinder.app</code> | Support: <a href="mailto:appstack1966@gmail.com" style="color: #00FF99;">appstack1966@gmail.com</a></small></p>
+    <!-- Cell Tower Finder Card (Preserved from 2 days ago) -->
+    <div class="app-card">
+        <h2 style="color: #00FF99; margin-top: 0;">🗼 Cell Tower Finder v4.0 &amp; WaveScan Pro</h2>
+        <p style="font-size: 15px; color: #ccc;">
+            Precision 5G/LTE tower locator, 3D room blueprint modeler, cellular signal coverage analyzer, and RF interference profiler.
+        </p>
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3 style="color: #64B5F6; margin-top: 0;">🗼 Tower Map (Step 1)</h3>
+                <p style="font-size: 13px; color: #ddd;">Outdoor 360° rotational alignment with distance (meters) and live dBm signal telemetry.</p>
             </div>
-            <div class="btn-group">
-                <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/index.html" class="btn">📖 User Manual & Screenshots</a>
-                <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/privacy.html" class="btn">🔒 Privacy Policy</a>
-                <a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/cell-tower-finder/support.html" class="btn">🛡️ App Support</a>
+            <div class="feature-box">
+                <h3 style="color: #81C784; margin-top: 0;">📷 Camera AR (Step 2)</h3>
+                <p style="font-size: 13px; color: #ddd;">Live 3D camera vector overlays pointing towards primary and alternative cell towers.</p>
+            </div>
+            <div class="feature-box">
+                <h3 style="color: #FFB74D; margin-top: 0;">📐 Blueprint Suite (Step 3)</h3>
+                <p style="font-size: 13px; color: #ddd;">Room attenuation mapping, multi-room leaderboard rankings, and router placement advisor.</p>
             </div>
         </div>
-
-        <!-- Placeholder for Future App 2 -->
-        <div class="app-card" style="opacity: 0.6; border-style: dashed;">
+        <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <span style="background: #FFD700; color: #000; padding: 6px 14px; border-radius: 20px; font-weight: bold; font-size: 13px;">
+                ⭐ Pro Suite Unlocked
+            </span>
             <div>
-                <h3 style="color: var(--accent-blue);">⚡ Next Innovation (In Development)</h3>
-                <p>Our engineering team is actively building new high-performance Android utilities. Stay tuned for updates!</p>
-            </div>
-            <div class="btn-group">
-                <span class="btn" style="border-color: var(--accent-blue); color: var(--accent-blue);">Coming Soon</span>
+                <a href="privacy.html" style="margin-right: 16px; font-size: 14px;">Privacy Policy</a>
+                <a href="support.html" style="font-size: 14px;">Support &amp; FAQ</a>
             </div>
         </div>
     </div>
 
-    <!-- Direct Contact & Support Box -->
-    <div class="support-card">
-        <h3>📬 Need Help or Customer Support?</h3>
-        <p>Contact our support engineering team directly at:</p>
-        <p><a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    <!-- Car Finder PRO Card with Screenshots -->
+    <div class="app-card">
+        <h2 style="color: #00FF99; margin-top: 0;">🚗 Car Finder &amp; Anti-Theft Guardian PRO</h2>
+        <p style="font-size: 15px; color: #ccc;">
+            The ultimate phone-only vehicle security guardian, RSSI parking radar, and live AR line-of-sight compass. Never lose your car in multi-story car parks or worry about driveway theft again.
+        </p>
+
+        <!-- Screenshots Gallery -->
+        <div class="screenshot-gallery">
+            <img src="Guardian main.jpg" alt="Guardian Main">
+            <img src="Radar.jpg" alt="Parking Radar">
+            <img src="Map and Ar.jpg" alt="Map and AR">
+            <img src="User Mnual.jpg" alt="User Manual">
+            <img src="Pro Suite.jpg" alt="Pro Suite">
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <h3 style="color: #64B5F6; margin-top: 0;">🛡️ Home Guardian (Free)</h3>
+                <p style="font-size: 13px; color: #ddd;">Monitors Home Wi-Fi and Car Bluetooth. Triggers an instant theft alarm if your vehicle leaves the driveway while you are home.</p>
+            </div>
+            <div class="feature-box">
+                <h3 style="color: #81C784; margin-top: 0;">📡 Parking Radar (PRO)</h3>
+                <p style="font-size: 13px; color: #ddd;">RSSI signal proximity scanner and underground floor level detector (-1, Basement) with a large rotating compass pointer.</p>
+            </div>
+            <div class="feature-box">
+                <h3 style="color: #FFB74D; margin-top: 0;">🗺️ Map &amp; AR (PRO)</h3>
+                <p style="font-size: 13px; color: #ddd;">OpenStreetMap live tracking with giant 32sp distance overlays (e.g. 45m) and neon green 100% line-of-sight crosshairs.</p>
+            </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <span style="background: #FFD700; color: #000; padding: 6px 14px; border-radius: 20px; font-weight: bold; font-size: 13px;">
+                👑 PRO Suite: 3-Day Free Trial (£7.99 lifetime or £2.99/mo)
+            </span>
+            <div>
+                <a href="carfinder-privacy.html" style="color: #64B5F6; text-decoration: none; margin-right: 16px; font-size: 14px;">Privacy Policy</a>
+                <a href="carfinder-support.html" style="color: #64B5F6; text-decoration: none; font-size: 14px;">Support &amp; FAQ</a>
+            </div>
+        </div>
     </div>
-</div>
 
-<footer>
-    <p>&copy; AppStack Studio. All rights reserved. | Official Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
-    <p><a href="https://daverimmeruk.github.io/appstack-studio/privacy.html">Privacy Policy</a> | <a href="https://daverimmeruk.github.io/appstack-studio/support.html">Contact & Support</a></p>
-</footer>
-
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved.
+    </div>
 </body>
 </html>
