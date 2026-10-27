@@ -203,10 +203,37 @@
         <!-- App 2: Car Finder -->
         <div class="app-card">
             <div>
-                <img src="car-finder-feature-banner.svg" alt="Car Finder Feature Graphic" class="banner-img">
+                <!-- Inline Feature Banner -->
+                <svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg" class="banner-img">
+                    <defs>
+                        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#121212"/>
+                            <stop offset="100%" stop-color="#1F1F1F"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="1024" height="500" fill="url(#bgGrad)"/>
+                    <circle cx="820" cy="250" r="200" fill="none" stroke="#00E676" stroke-width="3" opacity="0.2"/>
+                    <circle cx="820" cy="250" r="130" fill="none" stroke="#00E676" stroke-width="4" opacity="0.4"/>
+                    <circle cx="820" cy="250" r="60" fill="none" stroke="#00E676" stroke-width="5" opacity="0.7"/>
+                    <line x1="600" y1="250" x2="1040" y2="250" stroke="#00E676" stroke-width="2" opacity="0.3"/>
+                    <line x1="820" y1="30" x2="820" y2="470" stroke="#00E676" stroke-width="2" opacity="0.3"/>
+                    <g transform="translate(140, 140) scale(2.2)">
+                        <path fill="#FFC107" d="M54,16 L96,88 L12,88 Z"/>
+                        <path fill="#FFA000" d="M54,24 L88,82 L20,82 Z"/>
+                        <path fill="#212121" d="M36,52 L40,42 C41,40 43,39 45,39 L63,39 C65,39 67,40 68,42 L72,52 C74,53 75,55 75,58 L75,68 C75,69.1 74.1,70 73,70 L71,70 C69.9,70 69,69.1 69,68 L69,66 L39,66 L39,68 C39,69.1 38.1,70 37,70 L35,70 C33.9,70 33,69.1 33,68 L33,58 C33,55 34,53 36,52 Z"/>
+                        <circle cx="40" cy="54" r="4" fill="#FFFFFF"/>
+                        <circle cx="68" cy="54" r="4" fill="#FFFFFF"/>
+                        <rect x="34" y="56" width="2" height="2" fill="#00FF99"/>
+                        <rect x="72" y="56" width="2" height="2" fill="#00FF99"/>
+                    </g>
+                    <text x="360" y="220" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#00FF99">Car Finder</text>
+                    <text x="360" y="280" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">AR Compass &amp; Underground Parking Radar</text>
+                    <text x="360" y="325" font-family="Arial, sans-serif" font-size="20" fill="#81C784">Never lose your vehicle again.</text>
+                </svg>
+
                 <h3>🚗 Car Finder</h3>
                 <p>RSSI multi-story Wi-Fi parking radar, and live OpenStreetMap AR compass with 100% line-of-sight tracking.</p>
-                <p><small style="color: #888;">Package ID: <code>com.appstackstudio.carfinder</code> | Support: <a href="mailto:appstack1966@gmail.com" style="color: #00FF99;">appstack1966@gmail.com</a></small></p>
+                <p><small style="color: #888;">Package ID: <code>com.carfinder.app</code> | Support: <a href="mailto:appstack1966@gmail.com" style="color: #00FF99;">appstack1966@gmail.com</a></small></p>
             </div>
             <div class="btn-group">
                 <a href="https://daverimmeruk.github.io/appstack-studio/car-finder/index.html" class="btn">📖 User Manual & Screenshots</a>
@@ -231,4 +258,3 @@
 
 </body>
 </html>
-```
