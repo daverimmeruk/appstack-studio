@@ -35,25 +35,42 @@
 
     <div class="section-box" style="margin-top: 20px;">
         <h2>📖 Car Finder — Comprehensive Field Guide</h2>
-        <p>Complete step-by-step instructions for Outside Map &amp; AR Compass and Underground Parking Radar.</p>
+        <p>Complete step-by-step instructions and technical telemetry explanations for Car Finder.</p>
         
         <h3>🗺️ PART 1: Outside Parking &amp; Map AR Compass (FREE)</h3>
         <p>Mark your car's location when parking outside and navigate back easily:</p>
         <ul>
-            <li><strong>Step 1 (Hold Upright):</strong> Hold your phone upright (facing you like a camera) for accurate AR compass tracking.</li>
-            <li><strong>Step 2 (Mark Location):</strong> When parking in open-air lots or streets, open the Outside Map &amp; AR tab and tap '📍 Mark Parked Car Here' to lock in your GPS coordinates.</li>
-            <li><strong>Step 3 (Distance Tracking):</strong> Watch the extra-large distance overlay (e.g. 🚗 12m) right on the OpenStreetMap view when returning.</li>
-            <li><strong>Step 4 (AR Line-of-Sight):</strong> Rotate your phone until crosshairs turn Bright Neon Green (🟢 100% LINE OF SIGHT ACQUIRED) pointing straight to your vehicle.</li>
+            <li><strong>Step 1 (Startup State):</strong> Upon opening the app, the screen displays <strong>'⏳ Please Wait...'</strong> with <strong>'Tap Mark Parked Car Below to begin'</strong> while centering on your live GPS location.</li>
+            <li><strong>Step 2 (Hold Upright):</strong> Hold your phone upright (facing you like a camera) for accurate AR compass tracking.</li>
+            <li><strong>Step 3 (Mark Location):</strong> When parking outside, tap <strong>'📍 Mark Car'</strong> to lock in your GPS coordinates (displays <strong>'📍 Car Location Saved'</strong>).</li>
+            <li><strong>Step 4 (Distance Tracking):</strong> Watch the extra-large distance overlay (e.g. 🚗 12m) right on the OpenStreetMap view when returning.</li>
+            <li><strong>Step 5 (AR Line-of-Sight &amp; Location Found):</strong> Rotate your phone (matching <em>'Rotate Phone to Align Radar Compass'</em>) until crosshairs turn Bright Neon Green (🟢 100% LINE OF SIGHT ACQUIRED). When you get within 5m, it displays <strong>'😊 Car's location found!'</strong>.</li>
+            <li><strong>Step 6 (Reset Location):</strong> Tap <strong>'🔄 Reset Car's Location'</strong> anytime to clear your parked spot and start a new trip.</li>
+        </ul>
+
+        <h3>⚙️ How Outside Map &amp; AR Feature Works</h3>
+        <ul>
+            <li><strong>OpenStreetMap (OSM) Engine:</strong> Renders crisp, vector-based street maps worldwide without proprietary mapping API dependencies.</li>
+            <li><strong>GPS Coordinate Locking:</strong> Captures latitude and longitude via device hardware GPS and network triangulation.</li>
+            <li><strong>Bearing &amp; Vector Calculation:</strong> Continuously computes the geodesic distance and directional bearing between your live GPS position and parked coordinates.</li>
+            <li><strong>Sensor Fusion &amp; Azimuth Tracking:</strong> Uses device rotation vectors and low-pass filtering to calculate your phone's exact heading relative to True North, ensuring smooth, jitter-free compass arrow rotation and AR line-of-sight alignment.</li>
         </ul>
 
         <h3>📡 PART 2: 🅿️ UNDERGROUND Parking Radar (PRO)</h3>
         <p>Find your way back in multi-story or underground car parks using clever RSSI:</p>
         <ul>
             <li><strong>Step 1 (Hold Upright):</strong> Hold your phone upright (facing you) for precise compass readings.</li>
-            <li><strong>Step 2 (Mark Bay):</strong> When parked in an underground or multi-story bay, open the Underground Radar tab and tap '📍 Mark Parked Car Here' right on the radar screen to lock in your position.</li>
-            <li><strong>Step 3 (Radar Scan):</strong> Tap 'Start Radar Scan' to measure signal strength and detect parking floor levels (-1, Basement, Street Level).</li>
+            <li><strong>Step 2 (Mark Bay):</strong> When parked in an underground or multi-story bay, open the Underground Radar tab and tap 'Mark Parked Car Here' right on the radar screen to lock in your position.</li>
+            <li><strong>Step 3 (Upon Returning):</strong> When you come back to find your car, tap <strong>'Start Radar Scan'</strong> to measure signal strength and detect parking floor levels (-1, Basement, Street Level [Experimental]).</li>
             <li><strong>Step 4 (Turn Instructions):</strong> Follow the large rotating compass arrow pointer and directional turn instructions (e.g., 'Turn Right 45°').</li>
-            <li><strong>Step 5 (Refresh):</strong> Tap '🔄 Refresh' anytime to reset the radar scanner.</li>
+            <li><strong>Step 5 (Reset / Refresh):</strong> Tap <strong>'🔄 Reset Car's Location'</strong> or <strong>'🔄 Refresh'</strong> anytime to reset your target or scanner.</li>
+        </ul>
+
+        <h3>⚙️ How Underground / Multi-Storey Feature Works</h3>
+        <ul>
+            <li><strong>Wi-Fi Fingerprinting (BSSID &amp; RSSI):</strong> When you park underground where GPS fails, the app records surrounding wireless router MAC addresses (BSSIDs) and their signal strengths (RSSI in dBm).</li>
+            <li><strong>Concrete Attenuation &amp; Floor Detection:</strong> Multi-storey car parks absorb RF signals through reinforced concrete and steel. The app analyzes router density and signal propagation patterns to classify your floor level into Basement B2, Basement B1, or Ground Level [Experimental].</li>
+            <li><strong>Hot / Cold Proximity Tracking:</strong> As you navigate back, live RSSI values are compared against your parked snapshot. An increasing signal delta indicates you are approaching your bay, while decreasing delta indicates walking away.</li>
         </ul>
 
         <h3>⚡ WHY CAR FINDER PRO OUTPERFORMS EXPENSIVE RIVALS</h3>
