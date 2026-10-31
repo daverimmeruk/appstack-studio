@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellCoverage 5g & WaveScan Pro — User Manual & Screenshots | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0D1117;
+            --card-bg: #161B22;
+            --primary-color: #00E676;
+            --secondary-color: #29B6F6;
+            --text-color: #F0F6FC;
+            --text-muted: #8B949E;
+            --border-color: #30363D;
+            --gold-accent: #FFD700;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #010409;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #21262D;
+            border: 1px solid var(--border-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero-banner {
+            max-width: 1200px;
+            margin: 1.5rem auto 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .screenshot-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 0.8rem;
+        }
+
+        .screenshot-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .screenshot-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 3rem;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #010409;
+            color: var(--primary-color);
+        }
+
+        td.feature-name {
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        td.our-app {
+            background-color: rgba(0, 230, 118, 0.1);
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .manual-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .manual-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.8rem;
+        }
+
+        footer {
+            background-color: #010409;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>📡 CellCoverage 5g & WaveScan Pro</h1>
+        </div>
+        <nav>
+            <a href="index.html">🏠 Back to Studio Hub</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="hero-banner">
+        <img src="wavescan_5g_banner.svg" alt="WaveScan 5G Banner">
+    </div>
+
+    <!-- Container -->
+    <main class="container">
+
+        <!-- Screenshots Grid -->
+        <h2 class="section-title">📱 Application Interface & Screenshots</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Explore the 7 core telemetry screens of CellCoverage 5g & WaveScan Pro:</p>
+
+        <div class="gallery-grid">
+            <div class="screenshot-card">
+                <img src="cellcoverage-main.jpg" alt="Live Dashboard">
+                <h4>1. Live Dashboard</h4>
+                <p>3GPP RSRP, RSRQ, SINR gauges, 5G NR SA/NSA badges, and band metrics.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="cellcoverage-map.jpg" alt="Worldwide Signal Heatmap">
+                <h4>2. Worldwide Signal Map</h4>
+                <p>OpenStreetMap vector map with shaded 5G C-Band signal heatmaps and location search.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="cellcoverage-radar.jpg" alt="360° Compass Radar">
+                <h4>3. 360° Compass Radar</h4>
+                <p>Real-time directional pointer arrow, line-of-sight lock status, and distance calculations.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="cellcoverage-nearby.jpg" alt="Nearby Alternative Towers">
+                <h4>4. Nearby Towers</h4>
+                <p>Alternative cell masts map, radio band selection shortcuts, and router antenna guides.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="cellcoverage-compare.jpg" alt="Multi-Carrier Comparison">
+                <h4>5. Operator Comparison</h4>
+                <p>Side-by-side regional carrier speed rankings and MCC-MNC operator codes.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="cellcoverage-manual.jpg" alt="User Manual">
+                <h4>6. User Manual</h4>
+                <p>In-depth antenna alignment guides, 3GPP telemetry explanations, and band lock tips.</p>
+            </div>
+            <div class="screenshot-card">
+                <img src="cellcoverage-suite.jpg" alt="WaveScan Pro Suite">
+                <h4>7. WaveScan Pro Suite</h4>
+                <p>3-Day Free Trial unlock overview for PDF/CSV report sharing via Email and WhatsApp.</p>
+            </div>
+        </div>
+
+        <!-- Rival Comparison Table -->
+        <h2 class="section-title">⚡ Why CellCoverage 5g Outperforms Legacy Rivals</h2>
+        <div class="comparison-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Key Feature</th>
+                        <th>CellCoverage 5g (WaveScan Pro)</th>
+                        <th>CellMapper</th>
+                        <th>Network Cell Info</th>
+                        <th>OpenSignal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="feature-name">Map Engine Performance</td>
+                        <td class="our-app">⚡ OpenStreetMap Vector (60 FPS)</td>
+                        <td>Heavy Raster Tiles (Slow)</td>
+                        <td>Google Maps Raster</td>
+                        <td>Static Map Overlays</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">360° Directional Compass Radar</td>
+                        <td class="our-app">✅ Real-Time Azimuth Needle</td>
+                        <td>❌ None</td>
+                        <td>❌ Static Pointer Only</td>
+                        <td>❌ None</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">5G Band Granularity (n78 vs n28)</td>
+                        <td class="our-app">✅ Isolated C-Band & Low-Band</td>
+                        <td>⚠️ Mixed 5G/4G</td>
+                        <td>⚠️ Basic Info</td>
+                        <td>❌ Aggregated Only</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">Battery Optimization</td>
+                        <td class="our-app">⚡ WorkManager (Zero Drain)</td>
+                        <td>❌ Heavy Battery Polling</td>
+                        <td>❌ Continuous Loop</td>
+                        <td>⚠️ Moderate Background</td>
+                    </tr>
+                    <tr>
+                        <td class="feature-name">PDF & CSV Report Export / Share</td>
+                        <td class="our-app">✅ Native Email & WhatsApp Share</td>
+                        <td>❌ CSV Export Only</td>
+                        <td>❌ Paid Add-On</td>
+                        <td>❌ None</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Operating Manual Instructions -->
+        <h2 class="section-title">📖 Complete Field Operating Instructions</h2>
+
+        <div class="manual-card">
+            <h3>Part 1: Finding Optimal Cell Tower Line-of-Sight</h3>
+            <ol>
+                <li>Open the <strong>Step 1: Cell</strong> or <strong>PRO Radar</strong> screen.</li>
+                <li>Hold your phone horizontally and slowly rotate 360°.</li>
+                <li>The compass pointer arrow dynamically rotates toward your connected cell tower.</li>
+                <li>When aligned (&lt; 10° delta), the indicator turns <strong>NEON GREEN</strong> with <code>🎯 Line-of-Sight: 100% Locked</code>. This identifies the best exterior window or wall for your router placement!</li>
+            </ol>
+        </div>
+
+        <div class="manual-card">
+            <h3>Part 2: 3GPP Signal Metrics Guide</h3>
+            <ul>
+                <li><strong>RSRP (Reference Signal Power):</strong> Target &gt; -85 dBm for ultra-fast 5G broadband.</li>
+                <li><strong>RSRQ (Signal Quality):</strong> Target &gt; -10 dB. Measures signal purity.</li>
+                <li><strong>SINR (Signal-to-Noise Ratio):</strong> Target &gt; 15 dB. Higher SINR delivers faster throughput.</li>
+                <li><strong>Band n78 (3,500 MHz):</strong> High-capacity 5G C-Band (requires line-of-sight).</li>
+                <li><strong>Band n28 / B20 (700-800 MHz):</strong> Long-range coverage band for penetrating thick walls.</li>
+            </ul>
+        </div>
+
+        <div class="manual-card">
+            <h3>Part 3: Radio Band Switch & Antenna Alignment</h3>
+            <ol>
+                <li>Tap <strong>⚙️ Switch Band</strong> on Nearby Towers to open the Android Radio Testing screen (<code>*#*#4636#*#*</code>).</li>
+                <li>Select <strong>'LTE Only'</strong> to force your phone off congested 5G cells onto alternative 4G LTE towers.</li>
+                <li>Rotate outdoor Yagi or MIMO 5G/LTE antennas toward the identified 360° azimuth bearing angle for maximum gain.</li>
+            </ol>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Appstack-Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        <p><a href="index.html">Studio Home Hub</a> | <a href="cellcoverage-policy.html">Privacy Policy</a> | <a href="cellcoverage-support.html">Customer Support</a></p>
+    </footer>
+
+</body>
+</html>
+```
