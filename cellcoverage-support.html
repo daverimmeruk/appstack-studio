@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support — CellCoverage 5g & WaveScan Pro | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0D1117;
+            --card-bg: #161B22;
+            --primary-color: #00E676;
+            --secondary-color: #29B6F6;
+            --text-color: #F0F6FC;
+            --text-muted: #8B949E;
+            --border-color: #30363D;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #010409;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #21262D;
+            border: 1px solid var(--border-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .support-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item h3 {
+            color: var(--secondary-color);
+            font-size: 1.15rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .btn-email {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-email:hover {
+            background-color: #00C853;
+        }
+
+        footer {
+            background-color: #010409;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🛡️ Customer Support</h1>
+        </div>
+        <nav>
+            <a href="index.html">🏠 Back to Studio Hub</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Contact Banner -->
+        <article class="support-card">
+            <h2>CellCoverage 5g & WaveScan Pro — Support Center</h2>
+            <p class="subtitle">Official Support Engineering for Appstack-Studio</p>
+
+            <p>If you need assistance with <strong>CellCoverage 5g (WaveScan Pro)</strong>, feature requests, billing inquiries, or radio band alignment troubleshooting, our team is ready to help.</p>
+
+            <p>📧 <strong>Direct Customer Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+            <a href="mailto:appstack1966@gmail.com" class="btn-email">✉️ Contact Support Engineering</a>
+        </article>
+
+        <!-- FAQ Section -->
+        <article class="support-card">
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+            <br>
+
+            <div class="faq-item">
+                <h3>Q1: How do I align my 5G router using the 360° Compass Radar?</h3>
+                <p>Hold your phone horizontally and rotate 360°. The arrow needle dynamically points directly toward your connected 5G cell tower. When the needle locks on target (&lt; 10° delta), it turns neon green with <code>🎯 Line-of-Sight: 100% Locked</code>. Position your 5G/LTE gateway at the window facing this exact azimuth direction.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q2: How do I switch radio bands or lock onto alternative cell towers?</h3>
+                <p>On the <strong>Nearby Towers</strong> tab, tap <strong>⚙️ Switch Band</strong>. This opens Android's hidden Radio Info testing screen (<code>*#*#4636#*#*</code>). Under 'Set Preferred Network Type', select 'LTE Only' or 'NR/LTE' to force your modem onto alternative backup towers.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q3: How do I export and share my signal field report?</h3>
+                <p>On the <strong>Compare</strong> tab, tap <strong>Share PDF Report</strong>. You can instantly send your 3GPP telemetry field report via Email, WhatsApp, Drive, or Bluetooth.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q4: How does the 3-Day Free Trial work?</h3>
+                <p>You can unlock all WaveScan Pro features (360° Compass Radar, Nearby Towers, Operator Comparison, and PDF Export) with a 3-Day Free Trial handled securely through Google Play Console.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Appstack-Studio. All rights reserved. | Official Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        <p><a href="index.html">Studio Home Hub</a> | <a href="cellcoverage-policy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
+```
