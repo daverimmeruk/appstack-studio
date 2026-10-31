@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — CellCoverage 5g & WaveScan Pro | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0D1117;
+            --card-bg: #161B22;
+            --primary-color: #00E676;
+            --secondary-color: #29B6F6;
+            --text-color: #F0F6FC;
+            --text-muted: #8B949E;
+            --border-color: #30363D;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #010409;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #21262D;
+            border: 1px solid var(--border-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .policy-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.6rem 0;
+            font-size: 1.25rem;
+        }
+
+        p, li {
+            color: var(--text-color);
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: #010409;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🔒 Privacy Policy</h1>
+        </div>
+        <nav>
+            <a href="index.html">🏠 Back to Studio Hub</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <article class="policy-card">
+            <h2>CellCoverage 5g & WaveScan Pro — Privacy Policy</h2>
+            <p class="meta">
+                <strong>Package Name:</strong> <code>com.cellcoverage.cellcoverage5g</code> | 
+                <strong>Effective Date:</strong> October 2026 | 
+                <strong>Developer:</strong> Appstack-Studio
+            </p>
+
+            <h3>1. Overview & Data Philosophy</h3>
+            <p>Appstack-Studio built <strong>CellCoverage 5g (WaveScan Pro)</strong> as an independent 5G/4G cellular telemetry and tower directional locator application. We prioritize your privacy: <strong>all personal data, location history, and cellular signal logs are kept 100% on your device</strong> and are never transmitted, sold, or shared with external ad networks or data brokers.</p>
+
+            <h3>2. Required Technical Permissions & Usage</h3>
+            <ul>
+                <li><strong>Location Permissions (<code>ACCESS_FINE_LOCATION</code> & <code>ACCESS_COARSE_LOCATION</code>):</strong> Used strictly on your device to calculate real-time 360° azimuth bearing angles, distance in meters, line-of-sight elevation, and render OpenStreetMap vector map layers. Location data is processed locally on your phone.</li>
+                <li><strong>Telephony & Network Signaling (<code>READ_PHONE_STATE</code>):</strong> Used exclusively on-device via Android's native <code>TelephonyManager</code> hardware APIs to read 3GPP signal metrics (RSRP dBm, RSRQ dB, SINR, frequency bands, Cell IDs, PCI, TAC, and MCC-MNC operator codes).</li>
+                <li><strong>In-App Purchases (Google Play Billing API):</strong> Handled securely by Google Play Console to process optional 3-Day Free Trial subscriptions for WaveScan Pro features.</li>
+            </ul>
+
+            <h3>3. Third-Party Open Source APIs</h3>
+            <p>The application integrates open-source, privacy-focused services:</p>
+            <ul>
+                <li><strong>OpenStreetMap (osmdroid) & Nominatim API:</strong> Used for worldwide vector map rendering and universal city/zip location search.</li>
+                <li><strong>Postcodes.io API:</strong> Used for open-source UK postcode lookup.</li>
+            </ul>
+
+            <h3>4. Local Data Storage & User Control</h3>
+            <p>All signal telemetry logs and cached searches are stored locally in an encrypted Room SQLite database on your device. You can clear or export your logs at any time via the <strong>Share Report</strong> feature.</p>
+
+            <h3>5. Contact & Data Inquiries</h3>
+            <p>If you have any questions regarding data privacy or technical permissions, contact us at:</p>
+            <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Appstack-Studio. All rights reserved. | Official Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
+```
