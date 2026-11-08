@@ -3,356 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CellCoverage 5g & WaveScan Pro — User Manual & Screenshots | AppStack Studio</title>
+    <title>User Manual &amp; Screenshots — Car Finder</title>
     <style>
-        :root {
-            --bg-color: #0D1117;
-            --card-bg: #161B22;
-            --primary-color: #00E676;
-            --secondary-color: #29B6F6;
-            --text-color: #F0F6FC;
-            --text-muted: #8B949E;
-            --border-color: #30363D;
-            --gold-accent: #FFD700;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #010409;
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo h1 {
-            font-size: 1.4rem;
-            color: var(--primary-color);
-        }
-
-        nav {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            background-color: #21262D;
-            border: 1px solid var(--border-color);
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-
-        nav a:hover {
-            background-color: #30363D;
-            color: var(--primary-color);
-        }
-
-        .hero-banner {
-            max-width: 1200px;
-            margin: 1.5rem auto 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .hero-banner img {
-            width: 100%;
-            height: auto;
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            color: #FFFFFF;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--primary-color);
-            display: inline-block;
-            padding-bottom: 4px;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .screenshot-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .screenshot-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 0.8rem;
-        }
-
-        .screenshot-card h4 {
-            color: var(--primary-color);
-            margin-bottom: 0.3rem;
-        }
-
-        .screenshot-card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .comparison-table-wrapper {
-            overflow-x: auto;
-            margin-bottom: 3rem;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 1.5rem;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            text-align: left;
-        }
-
-        th, td {
-            padding: 1rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        th {
-            background-color: #010409;
-            color: var(--primary-color);
-        }
-
-        td.feature-name {
-            font-weight: 600;
-            color: #FFFFFF;
-        }
-
-        td.our-app {
-            background-color: rgba(0, 230, 118, 0.1);
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        .manual-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .manual-card h3 {
-            color: var(--secondary-color);
-            margin-bottom: 0.8rem;
-        }
-
-        footer {
-            background-color: #010409;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 3rem;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #121212; color: #e0e0e0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #00FF99; }
+        h2 { color: #64B5F6; margin-top: 30px; }
+        h3 { color: #81C784; }
+        p, li { color: #ccc; }
+        .section-box { background: #1F1F1F; border: 1px solid #333; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #1F1F1F; border: 1px solid #333; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #444; }
+        .footer { margin-top: 50px; font-size: 13px; color: #888; border-top: 1px solid #333; padding-top: 20px; text-align: center; }
+        a { color: #00FF99; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #444; padding: 10px; text-align: left; }
+        .rival-table th { background: #262626; color: #00FF99; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #333; }
+        .btn { display: inline-block; background-color: #2A2A2A; color: #00FF99; border: 1px solid #00FF99; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #00FF99; color: #000; }
     </style>
 </head>
 <body>
-
-    <!-- Header with Complete Navigation -->
-    <header>
-        <div class="logo">
-            <h1>📡 CellCoverage 5g & WaveScan Pro</h1>
-        </div>
-        <nav>
-            <a href="index.html">🏠 Studio Home</a>
-            <a href="cellcoverage-policy.html">🔒 Privacy Policy</a>
-            <a href="cellcoverage-support.html">🛡️ App Support</a>
-        </nav>
-    </header>
-
-    <!-- Banner -->
-    <div class="hero-banner">
-        <img src="wavescan_5g_banner.svg" alt="WaveScan 5G Banner">
+    <h1>🚗 Car Finder — Comprehensive Field Guide</h1>
+    <img src="car-finder-feature-banner.png" alt="Car Finder Feature Banner" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div class="btn-group">
+        <a href="https://daverimmeruk.github.io/appstack-studio/carfinder-privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/carfinder-support.html" class="btn">🛡️ App Support</a>
     </div>
 
-    <!-- Container -->
-    <main class="container">
+    <div class="section-box" style="margin-top: 20px;">
+        <h2>📖 Car Finder — Comprehensive Field Guide</h2>
+        <p>Complete step-by-step instructions and technical telemetry explanations for Car Finder.</p>
 
-        <!-- Screenshots Grid -->
-        <h2 class="section-title">📱 Application Interface & Screenshots</h2>
-        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Explore the 7 core telemetry screens of CellCoverage 5g & WaveScan Pro:</p>
+        <h3>🗺️ PART 1: Outside Parking &amp; Map AR Compass (FREE)</h3>
+        <p>Mark your car's location when parking outside and navigate back easily:</p>
+        <ul>
+            <li><strong>1. Startup State:</strong> The compass needle stays frozen straight ahead at 0° with '📍 Ready to Mark Location' until you mark your spot.</li>
+            <li><strong>2. Mark Location:</strong> Tap '📍 Mark Parked Car Here' and hold phone steady during the 5-second satellite countdown to lock your spot. Extra taps during the countdown are ignored. If a car is already saved and you are well away from it, the app asks before replacing it, so an accidental tap can't lose your car.</li>
+            <li><strong>3. The 10-Meter Walk Away Rule:</strong> While within 10 meters of your vehicle, the needle stays frozen and shows '🚶 Walk away to begin live tracking' (no turn instructions). This keeps the screen calm until you leave.</li>
+            <li><strong>4. Live Tracking:</strong> Once you walk past 10 meters, the 360° AR compass needle wakes up and actively guides you with live distance (e.g. 🚗 35m) and turn directions. Hold your phone flat or tilted towards you, with the top pointing the way you walk.</li>
+            <li><strong>5. Self-Correcting Compass:</strong> Cars, electricity pylons and other metal can throw a phone's compass off. If this happens you will see an amber '⚠️ Compass disturbed by metal' message - just keep walking at a normal pace and the arrow corrects itself within a few seconds using your GPS direction of travel.</li>
+            <li><strong>6. AR Line-of-Sight &amp; Location Found:</strong> Rotate your phone until the needle and crosshairs turn Neon Green (🟢 100% LINE OF SIGHT ACQUIRED). When returning to within 3m, it displays '😊 Car's location found!'.</li>
+            <li><strong>7. Finished / Reset:</strong> Tap '🔄 Reset Car's Location' to clear both Map and Underground Radar states back to clean standby. The app asks first, so an accidental tap can't lose your car.</li>
+        </ul>
 
-        <div class="gallery-grid">
-            <div class="screenshot-card">
-                <img src="cellcoverage-main.jpg" alt="Live Dashboard">
-                <h4>1. Live Dashboard</h4>
-                <p>3GPP RSRP, RSRQ, SINR gauges, 5G NR SA/NSA badges, and band metrics.</p>
-            </div>
-            <div class="screenshot-card">
-                <img src="cellcoverage-map.jpg" alt="Worldwide Signal Heatmap">
-                <h4>2. Worldwide Signal Map</h4>
-                <p>OpenStreetMap vector map with shaded 5G C-Band signal heatmaps and location search.</p>
-            </div>
-            <div class="screenshot-card">
-                <img src="cellcoverage-radar.jpg" alt="360° Compass Radar">
-                <h4>3. 360° Compass Radar</h4>
-                <p>Real-time directional pointer arrow, line-of-sight lock status, and distance calculations.</p>
-            </div>
-            <div class="screenshot-card">
-                <img src="cellcoverage-nearby.jpg" alt="Nearby Alternative Towers">
-                <h4>4. Nearby Towers</h4>
-                <p>Alternative cell masts map, radio band selection shortcuts, and router antenna guides.</p>
-            </div>
-            <div class="screenshot-card">
-                <img src="cellcoverage-compare.jpg" alt="Multi-Carrier Comparison">
-                <h4>5. Operator Comparison</h4>
-                <p>Side-by-side regional carrier speed rankings and MCC-MNC operator codes.</p>
-            </div>
-            <div class="screenshot-card">
-                <img src="cellcoverage-manual.jpg" alt="User Manual">
-                <h4>6. User Manual</h4>
-                <p>In-depth antenna alignment guides, 3GPP telemetry explanations, and band lock tips.</p>
-            </div>
-            <div class="screenshot-card">
-                <img src="cellcoverage-suite.jpg" alt="WaveScan Pro Suite">
-                <h4>7. WaveScan Pro Suite</h4>
-                <p>3-Day Free Trial unlock overview for PDF/CSV report sharing via Email and WhatsApp.</p>
-            </div>
+        <h3>⚙️ How Outside Map &amp; AR Feature Works</h3>
+        <ul>
+            <li><strong>OpenStreetMap (OSM) Engine:</strong> Renders crisp, vector-based street maps worldwide without proprietary mapping API dependencies.</li>
+            <li><strong>GPS Coordinate Locking:</strong> Captures latitude and longitude via device hardware GPS and network triangulation.</li>
+            <li><strong>Bearing &amp; Vector Calculation:</strong> Continuously computes the geodesic distance and directional bearing between your live GPS position and parked coordinates.</li>
+            <li><strong>Sensor Fusion &amp; Azimuth Tracking:</strong> Uses device rotation vectors and low-pass filtering to calculate your phone's exact heading relative to True North, ensuring smooth, jitter-free compass arrow rotation and AR line-of-sight alignment.</li>
+            <li><strong>GPS Course Correction:</strong> While you walk, your GPS direction of travel is compared with the phone's compass. Any error caused by nearby metal is measured and removed from the arrow automatically.</li>
+            <li><strong>Magnetic Disturbance Detection:</strong> The app compares the magnetic field your phone measures with the expected field for your location, and warns you when nearby metal is affecting the compass.</li>
+        </ul>
+
+        <h3>📡 PART 2: 🅿️ UNDERGROUND Parking Radar (PRO)</h3>
+        <p>Find your way back in multi-storey or underground car parks, where GPS often fails:</p>
+        <ul>
+            <li><strong>1. Mark Bay:</strong> When you park, open this tab and tap '📍 Mark Parked Car Here'. Type your level and bay number if you like (e.g. Level B2, bay 47).</li>
+            <li><strong>2. What gets saved:</strong> the Wi-Fi networks your phone can see at the bay, the air pressure (if your phone has a barometer) and your note, plus a GPS position if one is available.</li>
+            <li><strong>3. Upon Returning:</strong> Tap 'Start Radar Scan'. The app compares fresh readings with the saved ones and tells you whether you are higher or lower than your car (in metres and approximate levels) and how closely the Wi-Fi matches your bay.</li>
+            <li>4. The compass arrow and distance use GPS, which is unreliable underground: trust the level and Wi-Fi match more when indoors.</li>
+            <li><strong>5. Finished:</strong> tap '🔄 Reset Car's Location' when you are back at your car.</li>
+        </ul>
+
+        <h3>⚙️ How Underground / Multi-Storey Feature Works</h3>
+        <ul>
+            <li><strong>Wi-Fi fingerprint:</strong> at your bay the app records the nearby Wi-Fi access points (BSSIDs) and their signal levels (dBm). On return it counts how many are still heard and how their levels changed. A close match means you are probably near your bay; no match usually means a different level or area.</li>
+            <li><strong>Barometer height:</strong> air pressure drops about 0.12 hPa per metre of height. Comparing the pressure now with the pressure at your bay gives the height difference, shown in metres and approximate levels (about 3 m each). Weather slowly changes air pressure, so readings taken many hours apart are approximate.</li>
+            <li><strong>Your note:</strong> the level and bay you typed are shown back to you.</li>
+            <li>If the car park has no Wi-Fi or your phone has no barometer, the app says so rather than guessing.</li>
+        </ul>
+
+        <h3>⚡ WHY CAR FINDER PRO STANDS OUT</h3>
+        <p>Traditional navigation apps struggle in multi-storey concrete car parks and dead zones where satellite GPS signals fail completely.</p>
+        <p><strong>How Car Finder Pro Defeats Them:</strong></p>
+        <ul>
+            <li><strong>Underground Wi-Fi &amp; Barometer Check:</strong> Where standard GPS fails underground, Car Finder compares the Wi-Fi networks and air pressure at your bay with fresh readings, telling you whether you are higher or lower than your car and how closely the Wi-Fi matches your bay.</li>
+            <li><strong>Self-Correcting AR Compass:</strong> Glowing green crosshairs, a magnetic-disturbance warning and automatic GPS course correction keep the arrow on track.</li>
+            <li><strong>Free Core Features:</strong> Outside Map &amp; AR and the in-app field guide are free.</li>
+        </ul>
+
+        <table class="rival-table">
+            <tr>
+                <th>Feature</th>
+                <th>Standard Map Apps (Google / Apple)</th>
+                <th>Car Finder Pro</th>
+            </tr>
+            <tr>
+                <td>Underground / Multi-Storey Tracking</td>
+                <td>Fails (GPS signal lost)</td>
+                <td><strong>Wi-Fi Fingerprint + Barometer Level Check</strong></td>
+            </tr>
+            <tr>
+                <td>AR Line-of-Sight Compass</td>
+                <td>Basic blue dot / arrow</td>
+                <td><strong>Tactical Sweeping Radar &amp; Crosshairs</strong></td>
+            </tr>
+            <tr>
+                <td>Outside Map &amp; AR Core</td>
+                <td>General-purpose, not built for finding your car</td>
+                <td><strong>Clean, Fast &amp; Dedicated</strong></td>
+            </tr>
+        </table>
+
+
+        <h3>👑 PART 3: PRO (via Google Play)</h3>
+        <p>Outside Map &amp; AR is free. Underground Parking Radar is part of Pro:</p>
+        <ul>
+            <li>Pro is sold through Google Play as a one-time lifetime purchase or a monthly subscription. Prices and any free trial are shown by Google Play at checkout.</li>
+            <li>Purchases are restored automatically on reinstall (or tap Restore on the Pro screen).</li>
+            <li>Manage or cancel subscriptions in Google Play › Payments &amp; subscriptions.</li>
+        </ul>
+
+        <h3>ℹ️ PART 4: ABOUT &amp; APP INFO (VERSION 2.6)</h3>
+        <ul>
+            <li><strong>App Name:</strong> Car Finder</li>
+            <li><strong>Version:</strong> 2.6 (Build 18)</li>
+            <li><strong>Target SDK:</strong> Android 36 (Edge-to-Edge Optimized)</li>
+            <li><strong>Core Modules:</strong> Outside Map &amp; AR Compass, Underground Parking Radar (Wi-Fi fingerprint + barometer level check), Sensor-Fusion Azimuth Tracking, GPS Course-Corrected Compass, Magnetic Disturbance Warning, 5s Garmin-Style Weighted GPS Centroid Locking, 10m Calm Walk Away Rule, and In-App Field Guide.</li>
+            <li><strong>Publisher:</strong> AppStack Studio</li>
+            <li><strong>Support:</strong> appstack1966@gmail.com</li>
+        </ul>
+
+        <h3>⚠️ PART 5: IMPORTANT DISCLAIMER — SIGNAL DISCREPANCIES FAQ</h3>
+        <p>Phones are not all the same, so Car Finder can behave a little differently from one phone to another:</p>
+        <p><strong>1. GPS Accuracy (The Hardware Factor)</strong></p>
+        <ul>
+            <li>Premium phones usually have better GPS chips and antennas, and some use two GPS frequencies. Budget phones can be several metres less accurate, especially between tall buildings or under trees.</li>
+            <li>Indoors and underground, GPS is weak or missing. That is why the Underground Radar uses Wi-Fi and air pressure instead.</li>
+            <li>The '±m' shown when you mark your car is the accuracy your phone reported for that spot.</li>
+        </ul>
+        <p><strong>2. Compass and Direction (The Sensor Factor)</strong></p>
+        <ul>
+            <li>The arrow uses your phone's compass (magnetometer) and motion sensors. High-end phones calibrate their compass continuously; others can drift.</li>
+            <li>Metal such as cars, electricity pylons and steel structures can pull the compass off. Car Finder warns you and corrects the arrow from your GPS direction of travel while you walk.</li>
+            <li>If the arrow still seems wrong, move the phone in a figure-8 away from metal to recalibrate the compass.</li>
+        </ul>
+        <p>Please use the features and various metrics provided in this app as a collective guide only.</p>
+    </div>
+
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card">
+            <img src="map-ar.jpg" alt="Outside Map &amp; AR">
+            <p><strong>1. Outside Map &amp; AR</strong><br>Mark parked car, giant distance &amp; line-of-sight.</p>
         </div>
-
-        <!-- Rival Comparison Table -->
-        <h2 class="section-title">⚡ Why CellCoverage 5g Outperforms Legacy Rivals</h2>
-        <div class="comparison-table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Key Feature</th>
-                        <th>CellCoverage 5g (WaveScan Pro)</th>
-                        <th>CellMapper</th>
-                        <th>Network Cell Info</th>
-                        <th>OpenSignal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="feature-name">Map Engine Performance</td>
-                        <td class="our-app">⚡ OpenStreetMap Vector (60 FPS)</td>
-                        <td>Heavy Raster Tiles (Slow)</td>
-                        <td>Google Maps Raster</td>
-                        <td>Static Map Overlays</td>
-                    </tr>
-                    <tr>
-                        <td class="feature-name">360° Directional Compass Radar</td>
-                        <td class="our-app">✅ Real-Time Azimuth Needle</td>
-                        <td>❌ None</td>
-                        <td>❌ Static Pointer Only</td>
-                        <td>❌ None</td>
-                    </tr>
-                    <tr>
-                        <td class="feature-name">5G Band Granularity (n78 vs n28)</td>
-                        <td class="our-app">✅ Isolated C-Band & Low-Band</td>
-                        <td>⚠️ Mixed 5G/4G</td>
-                        <td>⚠️ Basic Info</td>
-                        <td>❌ Aggregated Only</td>
-                    </tr>
-                    <tr>
-                        <td class="feature-name">Battery Optimization</td>
-                        <td class="our-app">⚡ WorkManager (Zero Drain)</td>
-                        <td>❌ Heavy Battery Polling</td>
-                        <td>❌ Continuous Loop</td>
-                        <td>⚠️ Moderate Background</td>
-                    </tr>
-                    <tr>
-                        <td class="feature-name">PDF & CSV Report Export / Share</td>
-                        <td class="our-app">✅ Native Email & WhatsApp Share</td>
-                        <td>❌ CSV Export Only</td>
-                        <td>❌ Paid Add-On</td>
-                        <td>❌ None</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="screenshot-card">
+            <img src="radar.jpg" alt="Underground Radar">
+            <p><strong>2. Underground Radar</strong><br>Radar scope, Wi-Fi match &amp; level check.</p>
         </div>
-
-        <!-- Operating Manual Instructions -->
-        <h2 class="section-title">📖 Complete Field Operating Instructions</h2>
-
-        <div class="manual-card">
-            <h3>Part 1: Finding Optimal Cell Tower Line-of-Sight</h3>
-            <ol>
-                <li>Open the <strong>Step 1: Cell</strong> or <strong>PRO Radar</strong> screen.</li>
-                <li>Hold your phone horizontally and slowly rotate 360°.</li>
-                <li>The compass pointer arrow dynamically rotates toward your connected cell tower.</li>
-                <li>When aligned (&lt; 10° delta), the indicator turns <strong>NEON GREEN</strong> with <code>🎯 Line-of-Sight: 100% Locked</code>. This identifies the best exterior window or wall for your router placement!</li>
-            </ol>
+        <div class="screenshot-card">
+            <img src="manual.jpg" alt="User Manual">
+            <p><strong>3. User Manual</strong><br>In-app comprehensive field guide.</p>
         </div>
-
-        <div class="manual-card">
-            <h3>Part 2: 3GPP Signal Metrics Guide</h3>
-            <ul>
-                <li><strong>RSRP (Reference Signal Power):</strong> Target &gt; -85 dBm for ultra-fast 5G broadband.</li>
-                <li><strong>RSRQ (Signal Quality):</strong> Target &gt; -10 dB. Measures signal purity.</li>
-                <li><strong>SINR (Signal-to-Noise Ratio):</strong> Target &gt; 15 dB. Higher SINR delivers faster throughput.</li>
-                <li><strong>Band n78 (3,500 MHz):</strong> High-capacity 5G C-Band (requires line-of-sight).</li>
-                <li><strong>Band n28 / B20 (700-800 MHz):</strong> Long-range coverage band for penetrating thick walls.</li>
-            </ul>
+        <div class="screenshot-card">
+            <img src="pro-suite.jpg" alt="Pro Suite">
+            <p><strong>4. Pro Suite</strong><br>Lifetime or monthly Pro via Google Play.</p>
         </div>
+    </div>
 
-        <div class="manual-card">
-            <h3>Part 3: Radio Band Switch & Antenna Alignment</h3>
-            <ol>
-                <li>Tap <strong>⚙️ Switch Band</strong> on Nearby Towers to open the Android Radio Testing screen (<code>*#*#4636#*#*</code>).</li>
-                <li>Select <strong>'LTE Only'</strong> to force your phone off congested 5G cells onto alternative 4G LTE towers.</li>
-                <li>Rotate outdoor Yagi or MIMO 5G/LTE antennas toward the identified 360° azimuth bearing angle for maximum gain.</li>
-            </ol>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Appstack-Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
-        <p><a href="index.html">Studio Home Hub</a> | <a href="cellcoverage-policy.html">Privacy Policy</a> | <a href="cellcoverage-support.html">Customer Support</a></p>
-    </footer>
-
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
 </body>
 </html>
-```
