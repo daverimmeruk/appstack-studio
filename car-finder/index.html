@@ -36,16 +36,17 @@
     <div class="section-box" style="margin-top: 20px;">
         <h2>📖 Car Finder — Comprehensive Field Guide</h2>
         <p>Complete step-by-step instructions and technical telemetry explanations for Car Finder.</p>
-        
+
         <h3>🗺️ PART 1: Outside Parking &amp; Map AR Compass (FREE)</h3>
         <p>Mark your car's location when parking outside and navigate back easily:</p>
         <ul>
-            <li><strong>Step 1 (Startup State):</strong> Upon opening the app, the screen displays <strong>'⏳ Please Wait...'</strong> with <strong>'Tap Mark Parked Car Below to begin'</strong> while centering on your live GPS location.</li>
-            <li><strong>Step 2 (Hold Upright):</strong> Hold your phone upright (facing you like a camera) for accurate AR compass tracking.</li>
-            <li><strong>Step 3 (Mark Location):</strong> When parking outside, tap <strong>'📍 Mark Car'</strong> to lock in your GPS coordinates (displays <strong>'📍 Car Location Saved'</strong>).</li>
-            <li><strong>Step 4 (Distance Tracking):</strong> Watch the extra-large distance overlay (e.g. 🚗 12m) right on the OpenStreetMap view when returning.</li>
-            <li><strong>Step 5 (AR Line-of-Sight &amp; Location Found):</strong> Rotate your phone (matching <em>'Rotate Phone to Align Radar Compass'</em>) until crosshairs turn Bright Neon Green (🟢 100% LINE OF SIGHT ACQUIRED). When you get within 5m, it displays <strong>'😊 Car's location found!'</strong>.</li>
-            <li><strong>Step 6 (Reset Location):</strong> Tap <strong>'🔄 Reset Car's Location'</strong> anytime to clear your parked spot and start a new trip.</li>
+            <li><strong>1. Startup State:</strong> The compass needle stays frozen straight ahead at 0° with '📍 Ready to Mark Location' until you mark your spot.</li>
+            <li><strong>2. Mark Location:</strong> Tap '📍 Mark Parked Car Here' and hold phone steady during the 5-second satellite countdown to lock your spot. Extra taps during the countdown are ignored. If a car is already saved and you are well away from it, the app asks before replacing it, so an accidental tap can't lose your car.</li>
+            <li><strong>3. The 10-Meter Walk Away Rule:</strong> While within 10 meters of your vehicle, the needle stays frozen and shows '🚶 Walk away to begin live tracking' (no turn instructions). This keeps the screen calm until you leave.</li>
+            <li><strong>4. Live Tracking:</strong> Once you walk past 10 meters, the 360° AR compass needle wakes up and actively guides you with live distance (e.g. 🚗 35m) and turn directions. Hold your phone flat or tilted towards you, with the top pointing the way you walk.</li>
+            <li><strong>5. Self-Correcting Compass:</strong> Cars, electricity pylons and other metal can throw a phone's compass off. If this happens you will see an amber '⚠️ Compass disturbed by metal' message - just keep walking at a normal pace and the arrow corrects itself within a few seconds using your GPS direction of travel.</li>
+            <li><strong>6. AR Line-of-Sight &amp; Location Found:</strong> Rotate your phone until the needle and crosshairs turn Neon Green (🟢 100% LINE OF SIGHT ACQUIRED). When returning to within 3m, it displays '😊 Car's location found!'.</li>
+            <li><strong>7. Finished / Reset:</strong> Tap '🔄 Reset Car's Location' to clear both Map and Underground Radar states back to clean standby. The app asks first, so an accidental tap can't lose your car.</li>
         </ul>
 
         <h3>⚙️ How Outside Map &amp; AR Feature Works</h3>
@@ -54,32 +55,35 @@
             <li><strong>GPS Coordinate Locking:</strong> Captures latitude and longitude via device hardware GPS and network triangulation.</li>
             <li><strong>Bearing &amp; Vector Calculation:</strong> Continuously computes the geodesic distance and directional bearing between your live GPS position and parked coordinates.</li>
             <li><strong>Sensor Fusion &amp; Azimuth Tracking:</strong> Uses device rotation vectors and low-pass filtering to calculate your phone's exact heading relative to True North, ensuring smooth, jitter-free compass arrow rotation and AR line-of-sight alignment.</li>
+            <li><strong>GPS Course Correction:</strong> While you walk, your GPS direction of travel is compared with the phone's compass. Any error caused by nearby metal is measured and removed from the arrow automatically.</li>
+            <li><strong>Magnetic Disturbance Detection:</strong> The app compares the magnetic field your phone measures with the expected field for your location, and warns you when nearby metal is affecting the compass.</li>
         </ul>
 
         <h3>📡 PART 2: 🅿️ UNDERGROUND Parking Radar (PRO)</h3>
-        <p>Find your way back in multi-story or underground car parks using clever RSSI:</p>
+        <p>Find your way back in multi-storey or underground car parks, where GPS often fails:</p>
         <ul>
-            <li><strong>Step 1 (Hold Upright):</strong> Hold your phone upright (facing you) for precise compass readings.</li>
-            <li><strong>Step 2 (Mark Bay):</strong> When parked in an underground or multi-story bay, open the Underground Radar tab and tap 'Mark Parked Car Here' right on the radar screen to lock in your position.</li>
-            <li><strong>Step 3 (Upon Returning):</strong> When you come back to find your car, tap <strong>'Start Radar Scan'</strong> to measure signal strength and detect parking floor levels (-1, Basement, Street Level [Experimental]).</li>
-            <li><strong>Step 4 (Turn Instructions):</strong> Follow the large rotating compass arrow pointer and directional turn instructions (e.g., 'Turn Right 45°').</li>
-            <li><strong>Step 5 (Reset / Refresh):</strong> Tap <strong>'🔄 Reset Car's Location'</strong> or <strong>'🔄 Refresh'</strong> anytime to reset your target or scanner.</li>
+            <li><strong>1. Mark Bay:</strong> When you park, open this tab and tap '📍 Mark Parked Car Here'. Type your level and bay number if you like (e.g. Level B2, bay 47).</li>
+            <li><strong>2. What gets saved:</strong> the Wi-Fi networks your phone can see at the bay, the air pressure (if your phone has a barometer) and your note, plus a GPS position if one is available.</li>
+            <li><strong>3. Upon Returning:</strong> Tap 'Start Radar Scan'. The app compares fresh readings with the saved ones and tells you whether you are higher or lower than your car (in metres and approximate levels) and how closely the Wi-Fi matches your bay.</li>
+            <li>4. The compass arrow and distance use GPS, which is unreliable underground: trust the level and Wi-Fi match more when indoors.</li>
+            <li><strong>5. Finished:</strong> tap '🔄 Reset Car's Location' when you are back at your car.</li>
         </ul>
 
         <h3>⚙️ How Underground / Multi-Storey Feature Works</h3>
         <ul>
-            <li><strong>Wi-Fi Fingerprinting (BSSID &amp; RSSI):</strong> When you park underground where GPS fails, the app records surrounding wireless router MAC addresses (BSSIDs) and their signal strengths (RSSI in dBm).</li>
-            <li><strong>Concrete Attenuation &amp; Floor Detection:</strong> Multi-storey car parks absorb RF signals through reinforced concrete and steel. The app analyzes router density and signal propagation patterns to classify your floor level into Basement B2, Basement B1, or Ground Level [Experimental].</li>
-            <li><strong>Hot / Cold Proximity Tracking:</strong> As you navigate back, live RSSI values are compared against your parked snapshot. An increasing signal delta indicates you are approaching your bay, while decreasing delta indicates walking away.</li>
+            <li><strong>Wi-Fi fingerprint:</strong> at your bay the app records the nearby Wi-Fi access points (BSSIDs) and their signal levels (dBm). On return it counts how many are still heard and how their levels changed. A close match means you are probably near your bay; no match usually means a different level or area.</li>
+            <li><strong>Barometer height:</strong> air pressure drops about 0.12 hPa per metre of height. Comparing the pressure now with the pressure at your bay gives the height difference, shown in metres and approximate levels (about 3 m each). Weather slowly changes air pressure, so readings taken many hours apart are approximate.</li>
+            <li><strong>Your note:</strong> the level and bay you typed are shown back to you.</li>
+            <li>If the car park has no Wi-Fi or your phone has no barometer, the app says so rather than guessing.</li>
         </ul>
 
-        <h3>⚡ WHY CAR FINDER PRO OUTPERFORMS EXPENSIVE RIVALS</h3>
+        <h3>⚡ WHY CAR FINDER PRO STANDS OUT</h3>
         <p>Traditional navigation apps struggle in multi-storey concrete car parks and dead zones where satellite GPS signals fail completely.</p>
         <p><strong>How Car Finder Pro Defeats Them:</strong></p>
         <ul>
-            <li><strong>Underground RSSI Fingerprinting:</strong> While standard GPS fails underground, our intelligent wireless signal scanner maps surrounding access points to find your exact parking floor.</li>
-            <li><strong>AR Line-of-Sight Precision:</strong> No guesswork—our glowing green crosshairs and traditional sweeping radar scope guide you with 100% directional accuracy.</li>
-            <li><strong>100% Free Core Features:</strong> Outside Map &amp; AR and our comprehensive field guide are 100% free forever.</li>
+            <li><strong>Underground Wi-Fi &amp; Barometer Check:</strong> Where standard GPS fails underground, Car Finder compares the Wi-Fi networks and air pressure at your bay with fresh readings, telling you whether you are higher or lower than your car and how closely the Wi-Fi matches your bay.</li>
+            <li><strong>Self-Correcting AR Compass:</strong> Glowing green crosshairs, a magnetic-disturbance warning and automatic GPS course correction keep the arrow on track.</li>
+            <li><strong>Free Core Features:</strong> Outside Map &amp; AR and the in-app field guide are free.</li>
         </ul>
 
         <table class="rival-table">
@@ -91,7 +95,7 @@
             <tr>
                 <td>Underground / Multi-Storey Tracking</td>
                 <td>Fails (GPS signal lost)</td>
-                <td><strong>Smart RSSI Floor Scanner</strong></td>
+                <td><strong>Wi-Fi Fingerprint + Barometer Level Check</strong></td>
             </tr>
             <tr>
                 <td>AR Line-of-Sight Compass</td>
@@ -100,17 +104,45 @@
             </tr>
             <tr>
                 <td>Outside Map &amp; AR Core</td>
-                <td>Cluttered with ads</td>
+                <td>General-purpose, not built for finding your car</td>
                 <td><strong>Clean, Fast &amp; Dedicated</strong></td>
             </tr>
         </table>
 
-        <h3>👑 PART 3: PRO Suite &amp; 3-Day Free Trial</h3>
-        <p>Outside Map &amp; AR is 100% Free forever. Underground Parking Radar is part of the Pro Suite:</p>
+
+        <h3>👑 PART 3: PRO (via Google Play)</h3>
+        <p>Outside Map &amp; AR is free. Underground Parking Radar is part of Pro:</p>
         <ul>
-            <li>Start a 3-Day Free Trial anytime by tapping the Pro tab.</li>
-            <li>Upgrade to Lifetime Pro (£7.99) or Monthly Subscription (£2.99/mo).</li>
+            <li>Pro is sold through Google Play as a one-time lifetime purchase or a monthly subscription. Prices and any free trial are shown by Google Play at checkout.</li>
+            <li>Purchases are restored automatically on reinstall (or tap Restore on the Pro screen).</li>
+            <li>Manage or cancel subscriptions in Google Play › Payments &amp; subscriptions.</li>
         </ul>
+
+        <h3>ℹ️ PART 4: ABOUT &amp; APP INFO (VERSION 2.6)</h3>
+        <ul>
+            <li><strong>App Name:</strong> Car Finder</li>
+            <li><strong>Version:</strong> 2.6 (Build 18)</li>
+            <li><strong>Target SDK:</strong> Android 36 (Edge-to-Edge Optimized)</li>
+            <li><strong>Core Modules:</strong> Outside Map &amp; AR Compass, Underground Parking Radar (Wi-Fi fingerprint + barometer level check), Sensor-Fusion Azimuth Tracking, GPS Course-Corrected Compass, Magnetic Disturbance Warning, 5s Garmin-Style Weighted GPS Centroid Locking, 10m Calm Walk Away Rule, and In-App Field Guide.</li>
+            <li><strong>Publisher:</strong> AppStack Studio</li>
+            <li><strong>Support:</strong> appstack1966@gmail.com</li>
+        </ul>
+
+        <h3>⚠️ PART 5: IMPORTANT DISCLAIMER — SIGNAL DISCREPANCIES FAQ</h3>
+        <p>Phones are not all the same, so Car Finder can behave a little differently from one phone to another:</p>
+        <p><strong>1. GPS Accuracy (The Hardware Factor)</strong></p>
+        <ul>
+            <li>Premium phones usually have better GPS chips and antennas, and some use two GPS frequencies. Budget phones can be several metres less accurate, especially between tall buildings or under trees.</li>
+            <li>Indoors and underground, GPS is weak or missing. That is why the Underground Radar uses Wi-Fi and air pressure instead.</li>
+            <li>The '±m' shown when you mark your car is the accuracy your phone reported for that spot.</li>
+        </ul>
+        <p><strong>2. Compass and Direction (The Sensor Factor)</strong></p>
+        <ul>
+            <li>The arrow uses your phone's compass (magnetometer) and motion sensors. High-end phones calibrate their compass continuously; others can drift.</li>
+            <li>Metal such as cars, electricity pylons and steel structures can pull the compass off. Car Finder warns you and corrects the arrow from your GPS direction of travel while you walk.</li>
+            <li>If the arrow still seems wrong, move the phone in a figure-8 away from metal to recalibrate the compass.</li>
+        </ul>
+        <p>Please use the features and various metrics provided in this app as a collective guide only.</p>
     </div>
 
     <h2>App Screenshots Gallery</h2>
@@ -121,7 +153,7 @@
         </div>
         <div class="screenshot-card">
             <img src="radar.jpg" alt="Underground Radar">
-            <p><strong>2. Underground Radar</strong><br>Sweeping radar scope &amp; floor level detector.</p>
+            <p><strong>2. Underground Radar</strong><br>Radar scope, Wi-Fi match &amp; level check.</p>
         </div>
         <div class="screenshot-card">
             <img src="manual.jpg" alt="User Manual">
@@ -129,7 +161,7 @@
         </div>
         <div class="screenshot-card">
             <img src="pro-suite.jpg" alt="Pro Suite">
-            <p><strong>4. Pro Suite</strong><br>3-day trial &amp; flexible upgrade options.</p>
+            <p><strong>4. Pro Suite</strong><br>Lifetime or monthly Pro via Google Play.</p>
         </div>
     </div>
 
@@ -138,4 +170,3 @@
     </div>
 </body>
 </html>
-```
