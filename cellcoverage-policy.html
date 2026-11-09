@@ -130,7 +130,7 @@
             <h1>🔒 Privacy Policy</h1>
         </div>
         <nav>
-            <a href="index.html">🏠 Back to Studio Hub</a>
+            <a href="https://daverimmeruk.github.io/appstack-studio/CellCoverage5g.index.html">🏠 CellCoverage Home Page</a>
         </nav>
     </header>
 
@@ -139,42 +139,60 @@
         <article class="policy-card">
             <h2>CellCoverage 5g & WaveScan Pro — Privacy Policy</h2>
             <p class="meta">
-                <strong>Package Name:</strong> <code>com.cellcoverage5g</code> | 
-                <strong>Effective Date:</strong> October 2026 | 
-                <strong>Developer:</strong> Appstack-Studio
+                <strong>Package Name:</strong> <code>com.cellcoverage5g</code> |
+                <strong>Effective Date:</strong> 9 November 2026 |
+                <strong>Developer:</strong> AppStack Studio
             </p>
 
-            <h3>1. Overview & Data Philosophy</h3>
-            <p>Appstack-Studio built <strong>CellCoverage 5g (WaveScan Pro)</strong> as an independent 5G/4G cellular telemetry and tower directional locator application. We prioritize your privacy: <strong>all personal data, location history, and cellular signal logs are kept 100% on your device</strong> and are never transmitted, sold, or shared with external ad networks or data brokers.</p>
+            <h3>1. Overview</h3>
+            <p><strong>CellCoverage 5g (WaveScan Pro)</strong> measures your own phone's mobile and Wi-Fi signal and shows it as live readings, a coverage map and room-by-room comparisons. <strong>Everything the app records is stored on your phone only.</strong> We have no servers, and we do not collect, sell or share your data. The app needs no account, and it has no ads and no analytics.</p>
 
-            <h3>2. Required Technical Permissions & Usage</h3>
+            <h3>2. Information Stored on Your Phone Only</h3>
             <ul>
-                <li><strong>Location Permissions (<code>ACCESS_FINE_LOCATION</code> & <code>ACCESS_COARSE_LOCATION</code>):</strong> Used strictly on your device to calculate real-time 360° azimuth bearing angles, distance in meters, line-of-sight elevation, and render OpenStreetMap vector map layers. Location data is processed locally on your phone.</li>
-                <li><strong>Telephony & Network Signaling (<code>READ_PHONE_STATE</code>):</strong> Used exclusively on-device via Android's native <code>TelephonyManager</code> hardware APIs to read 3GPP signal metrics (RSRP dBm, RSRQ dB, SINR, frequency bands, Cell IDs, PCI, TAC, and MCC-MNC operator codes).</li>
-                <li><strong>In-App Purchases (Google Play Billing API):</strong> Handled securely by Google Play Console to process optional 3-Day Free Trial subscriptions for WaveScan Pro features.</li>
+                <li><strong>Signal readings:</strong> your carrier name and network code, the network type (4G/5G), band and frequency, signal levels (RSRP, RSRQ, RSSI, SINR), cell identifiers (cell ID, PCI, TAC), the network's distance measurement when your phone reports it, and the GPS position and time of each reading. These draw your Map and 5G Heatmap.</li>
+                <li><strong>Room readings (📶 Coverage and 📐 Blueprint):</strong> the signal levels you record in each room and the room names you type.</li>
+                <li><strong>App settings:</strong> for example whether Pro is unlocked.</li>
             </ul>
 
-            <h3>3. Third-Party Open Source APIs</h3>
-            <p>The application integrates open-source, privacy-focused services:</p>
+            <h3>3. Permissions Used</h3>
             <ul>
-                <li><strong>OpenStreetMap (osmdroid) & Nominatim API:</strong> Used for worldwide vector map rendering and universal city/zip location search.</li>
-                <li><strong>Postcodes.io API:</strong> Used for open-source UK postcode lookup.</li>
+                <li><strong>Location (<code>ACCESS_FINE_LOCATION</code> & <code>ACCESS_COARSE_LOCATION</code>):</strong> Android requires location permission before an app can read cell details. The app also uses your position to place your readings on the map and for the Blueprint's "walk to that room" warning. Location is used only while the app is open, never in the background.</li>
+                <li><strong>Wi-Fi state (<code>ACCESS_WIFI_STATE</code>):</strong> to read your Wi-Fi signal level for 📶 Coverage and 📐 Blueprint.</li>
+                <li><strong>Internet and network state:</strong> to download map images and to check purchases with Google Play.</li>
+            </ul>
+            <p>The app does not use the phone permission, your contacts, camera or microphone.</p>
+
+            <h3>4. Third-Party Services</h3>
+            <ul>
+                <li><strong>OpenStreetMap:</strong> map images (tiles) are downloaded from OpenStreetMap's tile servers. Like any website, those servers receive your IP address, the app's name and which map area is being loaded. See the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation Privacy Policy</a>.</li>
+                <li><strong>Google Play Billing:</strong> if you buy Pro (a monthly subscription or a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. Prices and any free trial are shown by Google Play at checkout.</li>
+                <li><strong>Android location services:</strong> your position comes from your phone's location service (Google Play services), which follows your phone's location settings and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
             </ul>
 
-            <h3>4. Local Data Storage & User Control</h3>
-            <p>All signal telemetry logs and cached searches are stored locally in an encrypted Room SQLite database on your device. You can clear or export your logs at any time via the <strong>Share Report</strong> feature.</p>
+            <h3>5. PDF Reports (Pro)</h3>
+            <p>A PDF report is created on your phone only when you tap Export. It is shared only with the app or person you choose on Android's share screen.</p>
 
-            <h3>5. Contact & Data Inquiries</h3>
-            <p>If you have any questions regarding data privacy or technical permissions, contact us at:</p>
+            <h3>6. Keeping and Deleting Your Data</h3>
+            <ul>
+                <li>Your readings stay on your phone until you delete them. In 📐 Blueprint, long-press a room tab to clear that room's readings or delete the room. Map readings are deleted by clearing the app's storage (below).</li>
+                <li>Uninstalling the app, or Android Settings › Apps › CellCoverage 5g › Storage › Clear storage, deletes everything the app has stored.</li>
+                <li>If Android backup to your Google account is turned on, Android may include the app's data in your own backup. This is controlled by your phone's settings.</li>
+                <li>We never receive your data, so we hold nothing about you to delete.</li>
+            </ul>
+
+            <h3>7. Changes to This Policy</h3>
+            <p>If the app changes what it stores or shares, we will update this page and its effective date.</p>
+
+            <h3>8. Contact & Data Inquiries</h3>
+            <p>If you have any questions regarding data privacy or permissions, contact us at:</p>
             <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
         </article>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Appstack-Studio. All rights reserved. | Official Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
     </footer>
 
 </body>
 </html>
-```
