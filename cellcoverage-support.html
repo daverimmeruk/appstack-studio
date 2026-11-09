@@ -130,22 +130,23 @@
             <h1>🛡️ Customer Support</h1>
         </div>
         <nav>
-            <a href="index.html">🏠 Back to Studio Hub</a>
+            <a href="https://daverimmeruk.github.io/appstack-studio/CellCoverage5g.index.html">🏠 CellCoverage Home Page</a>
         </nav>
     </header>
 
     <!-- Main Container -->
     <main class="container">
-        
+
         <!-- Contact Banner -->
         <article class="support-card">
             <h2>CellCoverage 5g & WaveScan Pro — Support Center</h2>
-            <p class="subtitle">Official Support Engineering for Appstack-Studio</p>
+            <p class="subtitle">Support from AppStack Studio</p>
 
-            <p>If you need assistance with <strong>CellCoverage 5g (WaveScan Pro)</strong>, feature requests, billing inquiries, or radio band alignment troubleshooting, our team is ready to help.</p>
+            <p>If you need help with <strong>CellCoverage 5g (WaveScan Pro)</strong>, have a feature request or a billing question, please email us.</p>
+            <p>It helps if you include your phone model, your Android version and the app version (shown in the app's 📖 User Manual, Part 9).</p>
 
-            <p>📧 <strong>Direct Customer Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
-            <a href="mailto:appstack1966@gmail.com" class="btn-email">✉️ Contact Support Engineering</a>
+            <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+            <a href="mailto:appstack1966@gmail.com" class="btn-email">✉️ Contact Support</a>
         </article>
 
         <!-- FAQ Section -->
@@ -154,23 +155,43 @@
             <br>
 
             <div class="faq-item">
-                <h3>Q1: How do I align my 5G router using the 360° Compass Radar?</h3>
-                <p>Hold your phone horizontally and rotate 360°. The arrow needle dynamically points directly toward your connected 5G cell tower. When the needle locks on target (&lt; 10° delta), it turns neon green with <code>🎯 Line-of-Sight: 100% Locked</code>. Position your 5G/LTE gateway at the window facing this exact azimuth direction.</p>
+                <h3>Q1: How do I find the best spot for my 5G/4G router?</h3>
+                <p>Open the 'Step 1: Cell' screen and walk around your home with the app open, watching the signal level: the higher (closer to 0 dBm), the better. Windows facing your mast usually read best. Then use 📶 Coverage and 📐 Blueprint to compare rooms.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Q2: How do I switch radio bands or lock onto alternative cell towers?</h3>
-                <p>On the <strong>Nearby Towers</strong> tab, tap <strong>⚙️ Switch Band</strong>. This opens Android's hidden Radio Info testing screen (<code>*#*#4636#*#*</code>). Under 'Set Preferred Network Type', select 'LTE Only' or 'NR/LTE' to force your modem onto alternative backup towers.</p>
+                <h3>Q2: Why doesn't the map show cell towers?</h3>
+                <p>Android does not report where cell towers are, so towers are not drawn. The map shows your own signal readings as colour-coded rings wherever you have walked with the app open. Tap '5G Heatmap' to see where you had 5G.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Q3: How do I export and share my signal field report?</h3>
-                <p>On the <strong>Compare</strong> tab, tap <strong>Share PDF Report</strong>. You can instantly send your 3GPP telemetry field report via Email, WhatsApp, Drive, or Bluetooth.</p>
+                <h3>Q3: What does purple mean on the 5G Heatmap?</h3>
+                <p>Purple means you were on 5G, but your phone does not report the 5G signal level (some phones, e.g. Samsung, don't). Grey means no 5G (4G only).</p>
             </div>
 
             <div class="faq-item">
-                <h3>Q4: How does the 3-Day Free Trial work?</h3>
-                <p>You can unlock all WaveScan Pro features (360° Compass Radar, Nearby Towers, Operator Comparison, and PDF Export) with a 3-Day Free Trial handled securely through Google Play Console.</p>
+                <h3>Q4: How do I find a weak room and where to put a mesh node?</h3>
+                <p>Tap '📶 Coverage', walk to the room furthest from your router and tap '📶 Test Room Reception'. A red result means a dead-zone where an extender or mesh node is recommended. '📶 Extender Node Guide' shows where to place it: about halfway between your router and the dead-zone.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q5: What does Pro include?</h3>
+                <p>Step 1, the Map and 📶 Coverage are free. Pro adds 📐 Blueprint (record readings room by room and compare rooms on a leaderboard) and PDF report exports.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q6: How do I buy, restore or cancel Pro?</h3>
+                <p>Pro is bought through Google Play as a monthly subscription or a one-time lifetime purchase. Prices and any free trial are shown by Google Play at checkout. Purchases are restored automatically on reinstall. Manage or cancel subscriptions in Google Play › Payments &amp; subscriptions.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q7: Why does the app need location permission?</h3>
+                <p>Android requires location permission before any app can read cell details such as band and signal level. The app also uses it to place your readings on the map. Your readings stay on your phone; see our <a href="https://daverimmeruk.github.io/appstack-studio/cellcoverage-policy.html">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q8: Why does another phone show a different signal?</h3>
+                <p>The radio waves are the same, but phones differ in their modems, antennas and how their software smooths readings. Two phones side by side can read differently from the same tower. Please use the app's readings as a guide.</p>
             </div>
         </article>
 
@@ -178,10 +199,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Appstack-Studio. All rights reserved. | Official Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
-        <p><a href="index.html">Studio Home Hub</a> | <a href="cellcoverage-policy.html">Privacy Policy</a></p>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        <p><a href="https://daverimmeruk.github.io/appstack-studio/CellCoverage5g.index.html">CellCoverage Home Page</a> | <a href="https://daverimmeruk.github.io/appstack-studio/cellcoverage-policy.html">Privacy Policy</a></p>
     </footer>
 
 </body>
 </html>
-```
