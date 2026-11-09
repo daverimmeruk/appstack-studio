@@ -234,7 +234,7 @@
 
 <header>
     <h1>🗼 Cell Tower Finder v4.0 & WaveScan Pro</h1>
-    <p>3D Spatial AR Map, Multi-Room Floorplan Modeler & 32-Band FFT Acoustic Suite</p>
+    <p>Indoor Router AR, Multi-Room Floorplan Modeler & 32-Band FFT Acoustic Suite</p>
 </header>
 
 <nav>
@@ -249,13 +249,13 @@
     <!-- Juiced-Up Marketing Hero -->
     <div class="hero-banner">
         <h2>🔥 Find Your Best 5G/LTE Signal Spot From Your Own Live Signal</h2>
-        <p>Tired of slow 5G/LTE home internet, dropped calls, and random cellular dead-zones? <strong>Cell Tower Finder v4.0 & WaveScan Pro</strong> doesn't rely on crowd-sourced tower databases, which can be approximate or out of date. It works from what your own phone measures right now: your live signal strength, the cell you're connected to, the network's distance measurement when your phone reports it, and GPS. It shows which way your signal gets stronger, marks your ⭐ strongest spot, compares rooms with the multi-room Blueprint, and analyses room echo with a 32-band FFT acoustic analyzer.</p>
+        <p>Tired of slow 5G/LTE home internet, dropped calls, and random cellular dead-zones? <strong>Cell Tower Finder v4.0 & WaveScan Pro</strong> doesn't rely on crowd-sourced tower databases, which can be approximate or out of date. It works from what your own phone measures right now: your live signal strength, the cell you're connected to, the network's distance measurement when your phone reports it, and GPS. It shows which way your signal gets stronger, marks a ⭐ strong spot, compares rooms with the multi-room Blueprint, and analyses room echo with a 32-band FFT acoustic analyzer.</p>
         <p><small style="color: #00FF99;">Support Contact: <a href="mailto:appstack1966@gmail.com" style="color: #00FF99; font-weight: bold;">appstack1966@gmail.com</a></small></p>
 
         <div class="badge-list">
             <span class="badge">📡 No Crowd-Sourced Maps</span>
             <span class="badge">🎯 Signal-Direction Aim Lock</span>
-            <span class="badge">📷 Camera AR</span>
+            <span class="badge">📷 Indoor Router AR (Free)</span>
             <span class="badge">📐 Floorplan Modeler</span>
             <span class="badge">📶 Dead-Zone Simulator</span>
             <span class="badge">🗺 3D Heatmap Matrix</span>
@@ -271,12 +271,12 @@
             <div class="gallery-card">
                 <img src="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/cell-tower-finder/cell-tower-finder/screenshots/step1-cell-tower-map.png" alt="Step 1: Cell Tower Map">
                 <h4>Step 1: Cell Tower Map</h4>
-                <p>Live Signal Heatmap, ⭐ Best Spot & Compass</p>
+                <p>Live Signal Heatmap, ⭐ Strong Spot & Compass</p>
             </div>
             <div class="gallery-card">
                 <img src="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/cell-tower-finder/cell-tower-finder/screenshots/step2-ar-camera.png" alt="Step 2: AR Camera Alignment">
                 <h4>Step 2: AR Camera</h4>
-                <p>Signal-Direction Reticle & Router Anchor Box</p>
+                <p>Live Wi-Fi Crosshairs & Router Anchor Box</p>
             </div>
             <div class="gallery-card">
                 <img src="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/cell-tower-finder/cell-tower-finder/cell-tower-finder/screenshots/step3-blueprint-modeler.png" alt="Step 3: Blueprint Modeler">
@@ -320,7 +320,7 @@
                 </tr>
                 <tr>
                     <td><strong>Camera AR Overlays</strong></td>
-                    <td><span class="check">✔ Signal-Direction Reticle & 1.2m Elevation Anchor</span></td>
+                    <td><span class="check">✔ Live Wi-Fi crosshairs (Coverage score) & 1.2m Elevation Anchor</span></td>
                     <td><span class="cross">✖ 2D static camera overlays only</span></td>
                 </tr>
                 <tr>
@@ -330,7 +330,7 @@
                 </tr>
                 <tr>
                     <td><strong>Coverage Dead-Zone Scanner</strong></td>
-                    <td><span class="check">✔ Flashing Neon/Amber/Red + Weak Signal Simulation</span></td>
+                    <td><span class="check">✔ Green / Flashing Green / Amber / Red + Weak Signal Simulation</span></td>
                     <td><span class="cross">✖ Basic RSSI bar indicator</span></td>
                 </tr>
                 <tr>
@@ -364,42 +364,43 @@
 
         <h3>ℹ️ HOW THIS APP WORKS</h3>
         <p>Cell Tower Finder doesn't rely on crowd-sourced tower databases, which can be approximate or out of date. It works from what your own phone measures right now: your live signal strength, the cell you're connected to, the network's distance measurement when your phone reports it, and GPS.</p>
-        <p>Walk around your home, front and back. The app shows which way your signal gets stronger and marks your ⭐ strongest spot. It places the tower once your readings allow. Walls and reflections can affect the direction, and the app always tells you when the tower isn't located yet.</p>
+        <p>Walk around your home, front and back. The app shows which way your signal gets stronger and marks a ⭐ strong spot. It places the tower once your readings allow. Walls and reflections can affect the direction, and the app always tells you when the tower isn't located yet.</p>
 
         <h3>🌟 PART 1: FREE EDITION WORKFLOW (STEPS 1 &amp; 2)</h3>
         <h4>• Step 1 (🗼 Cell Tower Map - Outdoor Alignment):</h4>
         <ol>
             <li>Open the app and tap the '🗼 Cell Tower' tab. Allow location: Android requires precise location before apps can read cell details.</li>
             <li>The map opens zoomed in on your home. Walk slowly around the house and garden: every reading your phone takes becomes a coloured circle on the map (🟢 strong, 🟡 fair, 🔴 weak), building a live signal heatmap (EXPERIMENTAL: GPS indoors is only accurate to about 5-15 m, so treat it as a guide). The circle where you stand pulses with the live signal.</li>
-            <li>⭐ marks the strongest spot measured so far, and the big compass on the map points to it. Its ring shows the signal where you are standing, in the same colour as the pulsing circle on the map. On Wi-Fi it uses the same colours as 📶 Coverage: GREEN = excellent (-55 dBm or better), AMBER = good (down to -70 dBm), RED = weak, grey = not connected. On mobile signal: GREEN = excellent (-80 dBm or better), LIME = good (down to -90), ORANGE = fair (down to -100), RED = poor. When you are within GPS accuracy of the ⭐ (about 10-20 m indoors) the label says '⭐ On best spot' and the arrow is held still and dimmed, because there the direction is only GPS noise. The ⭐ only moves to a new spot when that spot is clearly stronger (3 dB or more), so it doesn't jump with every reading. The compass works held flat, tilted towards you or upright. If the label shows '🧲 Compass disturbed', move away from metal, appliances or speakers; '🧭 Calibrate' means move the phone in a figure-8. Walking steadily outdoors with the phone pointing the way you walk lets the app measure and remove the compass error from your GPS direction of travel. The small pointer arrow at the top points to the cell tower once it's located. Until then, once you have walked around the outside of your home, front and back, it points the way your mobile signal gets stronger ('📶 Signal stronger towards…', EXPERIMENTAL: worked out from your own readings; usually the side facing the tower, but walls and reflections can mislead it, so it is a signal direction, not a located tower). It stays greyed out (Aim '—') until your readings show a real lean: each 3 m spot counts once, however long you stand there, so a few steps in a small garden are usually not enough; readings from different sides of the house are needed. The 🎯 Aim bar under the Signal bar fills up as you turn to face the pointer's target: 100% facing it, red when facing away, amber when close, GREEN when locked on (within ±10°). The Aim bar shows your aim, not signal strength; the Signal bar above it is your real signal. The Line-of-Sight line shows '➔ Turn Right X°' / '⬅ Turn Left X°'. The ⭐ spot is the best place for your phone or 5G/4G router. The ⭐ is a place to walk to, not the direction of the tower. 💡 Tip: the ring helps indoors: its colour shows how good the signal is in the room you're in. The arrow helps outdoors: once you're further from the ⭐ than GPS can resolve (about 10-20 m), it points the way to it. Indoors you're usually within that, so it shows '⭐ On best spot'.<br>Tap the label under the big compass to switch the heatmap between mobile signal and Wi-Fi (each keeps its own readings). In Wi-Fi mode the ⭐ marks your best Wi-Fi spot, usually towards your router. To start a fresh walk, tap '🔄 Start again' at the bottom of the map (it clears your readings for the heatmap you are viewing).</li>
-            <li>Cell tower: the network tells your phone how far away the tower is (timing advance, while mobile data is in use). This shows as 'Distance: ≈…m (network-measured)' and a dashed ring on the map: the tower is on that ring. Walk around your home and garden: the app keeps measuring, and once it has readings from far enough apart (for example with the app open on a walk down your road) it works out where the tower is ('located from your readings') and draws the line to it.</li>
-            <li>Speed &amp; Terrain Test: tap '⚡ Test Tower Speed' at the bottom for a real download/upload test (about 30 MB of data maximum). Turn Wi-Fi off to test the mobile tower itself. 'Terrain' shows the path loss and Fresnel zone calculated from distance and frequency (the app has no terrain or building data). 'Best Tower' lists the cells your phone can hear.</li>
+            <li>⭐ marks a strong spot measured so far, and the big compass on the map points to it. Its ring shows the signal where you are standing, in the same colour as the pulsing circle on the map. On Wi-Fi it uses the same colours as 📶 Coverage: GREEN = excellent (-55 dBm or better), AMBER = good (down to -70 dBm), RED = weak, grey = not connected. On mobile signal it follows your phone's own signal bars (the same as its status-bar icon): GREEN = 4 bars, LIME = 3, ORANGE = 2, RED = 0-1. When you are within GPS accuracy of the ⭐ (about 10-20 m indoors) the label says '⭐ On strong spot' and the arrow is held still and dimmed, because there the direction is only GPS noise. The ⭐ only moves to a new spot when that spot is clearly stronger (3 dB or more), so it doesn't jump with every reading. The compass works held flat, tilted towards you or upright. If the label shows '🧲 Compass disturbed', move away from metal, appliances or speakers; '🧭 Calibrate' means move the phone in a figure-8. Walking steadily outdoors with the phone pointing the way you walk lets the app measure and remove the compass error from your GPS direction of travel. The small pointer arrow at the top points to the cell tower once it's located. Until then, once you have walked around the outside of your home, front and back, it points the way your mobile signal gets stronger ('📶 Signal stronger towards…', EXPERIMENTAL: worked out from your own readings; usually the side facing the tower, but walls and reflections can mislead it, so it is a signal direction, not a located tower). It stays greyed out (Aim '—') until your readings show a real lean: each 3 m spot counts once, however long you stand there, so a few steps in a small garden are usually not enough; readings from different sides of the house are needed. The 🎯 Aim bar under the Signal bar fills up as you turn to face the pointer's target: 100% facing it, red when facing away, amber when close, GREEN when locked on (within ±10°). The Aim bar shows your aim, not signal strength; the Signal bar above it shows your phone's own signal bars (0-4). The Line-of-Sight line shows '➔ Turn Right X°' / '⬅ Turn Left X°'. The ⭐ spot is a good place for your phone or 5G/4G router. The ⭐ is a place to walk to, not the direction of the tower. 💡 Tip: the ring helps indoors: its colour shows how good the signal is in the room you're in. The arrow helps outdoors: once you're further from the ⭐ than GPS can resolve (about 10-20 m), it points the way to it. Indoors you're usually within that, so it shows '⭐ On strong spot'.<br>Tap the label under the big compass to switch the heatmap between mobile signal and Wi-Fi (each keeps its own readings). In Wi-Fi mode the ⭐ marks a strong Wi-Fi spot, usually towards your router. To start a fresh walk, tap '🔄 Start again' at the bottom of the map (it clears your readings for the heatmap you are viewing).</li>
+            <li>Signal and distance on this screen come straight from your phone and network. The Signal bar and the 'Signal Power' line show the measured dBm and your phone's own signal bars, the same as its status bar (e.g. '📶 Moderate (phone: 2/4 bars)'). Cell tower: the network tells your phone how far away the tower is (timing advance, while mobile data is in use). This shows as 'Distance: ≈…m (network-measured)' and a dashed ring on the map: the tower is on that ring. Walk around your home and garden: the app keeps measuring, and once it has readings from far enough apart (for example with the app open on a walk down your road) it works out where the tower is ('located from your readings') and draws the line to it. The network-measured distance is still shown first; the located position gives the bearing (estimated).</li>
+            <li>Speed &amp; Terrain Test: tap '⚡ Test Tower Speed' at the bottom for a real download/upload test (about 30 MB of data maximum). Turn Wi-Fi off to test the mobile tower itself. 'Terrain' shows the path loss and Fresnel zone calculated from the distance (network-measured when available) and the frequency (the app has no terrain or building data). 'Best Tower' lists the cells your phone can hear.</li>
         </ol>
-        <h4>• Step 2 (📷 Camera AR Alignment - Outdoor &amp; Indoor Modes):</h4>
+        <h4>• Step 2 (📷 Camera AR - Indoor Router AR Placement Mode):</h4>
         <ol>
-            <li>Tap '📷 Camera AR' and select '📡 Cell Tower AR' at the top.</li>
-            <li>Point your camera out exterior windows. Rotate until the reticle turns GREEN (within ±12°) and the Aim % in the card is near 100%: that window faces your cell tower. If the tower isn't located yet, it aims at your measured signal direction instead ('📶 Signal Direction', EXPERIMENTAL) once you have walked around the outside of your home, front and back.</li>
-            <li>Tap '🏠 Switch AR Mode' or '🏠 Indoor Router AR' to toggle to Indoor Router AR Placement Mode (Pro).</li>
-            <li>Point your camera at your router spot near the window. The crosshairs FLASH GREEN when you face your ⭐ strongest-signal spot (within 15°) or stand on it, turn amber within 45° and red when facing away. Until a ⭐ is measured they aim at the tower (if located). A floating anchor box shows your live signal plus 1.2m elevation and wall barrier advice.</li>
+            <li>Tap '📷 Camera AR' and allow the camera when asked. The Indoor Router AR view opens.</li>
+            <li>Point your camera around the room and move slowly from spot to spot. The crosshairs follow your live Wi-Fi signal, rated with the same Coverage score as 📶 Cellular Coverage; the anchor box shows it, e.g. '• From Wi-Fi -59 dBm: score 68%'. Indoors the app uses Wi-Fi only: mobile signal is hard to pinpoint room by room, while Wi-Fi changes clearly from spot to spot. If Wi-Fi is off it shows '⚪ WI-FI NOT CONNECTED'.</li>
+            <li>The score runs from -100 dBm or weaker (low) to -40 dBm or stronger (high), shown between 10% and 98%, so every 1 dB moves it by about 1.7%. The crosshairs FLASH GREEN at 75% or more ('🎯 OPTIMAL ROUTER SPOT!'), turn amber from 50% ('🟡 GOOD AREA - STABLE SIGNAL') and red below 50% ('🔴 AVOID - WEAK SIGNAL HERE'). The phone updates its readings every few seconds, so give each spot a moment.</li>
+            <li>The floating anchor box also shows 1.2m elevation and wall barrier advice. Place your router or gateway where the crosshairs flash green. '💡 Router Spot Guide' at the bottom shows these tips again.</li>
         </ol>
 
         <h3>💎 PART 2: WAVESCAN PRO INDOOR SUITE (STEPS 3 &amp; 4)</h3>
         <h4>• Step 3 (📐 Room Selection &amp; Blueprint Modeler):</h4>
         <ol>
             <li>Tap '📐 Blueprint'. Select Room A, Room B, or Room C at the top (long-press a tab to rename it or add rooms).</li>
-            <li>Walk to that room. Touch and drag the Yellow Router Icon (📡) to where you're standing and let go: a real reading is recorded for that room. Take at least 3 readings per room.</li>
-            <li>The header shows the room's measured rating: 🟢 Excellent or Good, 🟡 Fair or 🔴 Avoid (bands as in Part 5). With only one room measured there's nothing to compare yet.</li>
-            <li>Tap '🏆 Compare All Rooms' to view the leaderboard. Rooms are ranked by their median measured signal; rooms with no readings are listed as not measured.</li>
-            <li>Physical Motion Warning: if you switch room tabs without walking (&lt; 3m moved, from GPS), a warning reminds you to walk to that room for an accurate reading.</li>
+            <li>Walk to that room. Touch and drag the Yellow Router Icon (📡) to where you're standing and let go: a real Wi-Fi reading is recorded for that room (Wi-Fi must be connected). Take at least 3 readings per room.</li>
+            <li>The header shows the room's rating with the same Coverage score as 📶 Coverage, from its median Wi-Fi reading: 🟢 Excellent (75% or more), 🟡 Good (50% or more) or 🔴 Avoid (below 50%). With only one room measured there's nothing to compare yet.</li>
+            <li>Tap '🏆 Compare All Rooms' to view the leaderboard. Rooms are ranked by their median Wi-Fi reading and its Coverage score; rooms with no readings are listed as not measured.</li>
+            <li>Physical Motion Warning: if you switch room tabs without walking (&lt; 3m moved, from GPS), a warning reminds you to walk to that room for an accurate reading. It relies on GPS, which indoors can be out by 5-15 m or more, so it may not always appear, and it can appear when you didn't mean to switch rooms.</li>
         </ol>
         <h4>• Step 4 (📶 Cellular Signal Coverage &amp; Extension Map):</h4>
         <ol>
             <li>Tap '📶 Cellular Coverage'. Walk to the room or space furthest from your primary router.</li>
-            <li>The diagram and colours follow your live Wi-Fi reading (or mobile signal if Wi-Fi is off); the line under the heading shows which, e.g. 'From Wi-Fi -59 dBm'. Tap '📶 Test Room Reception' for the diagnosis:
+            <li>The diagram and colours follow your live Wi-Fi reading; the line under the heading shows it, e.g. 'From Wi-Fi -59 dBm (68%)'. Green at a 75% score or more (-55 dBm or better), amber from 50% (down to -70 dBm), red below. If Wi-Fi is off it shows 'WI-FI NOT CONNECTED'. Tap '📶 Test Room Reception' for the diagnosis:
                 <ul>
-                    <li>Flashing Neon Green: '🔥 EXCELLENT RECEPTION (No extension nodes needed)'.</li>
+                    <li>Green = Strong Signal (75-89% score): '🟢 STRONG SIGNAL (No extension nodes needed)'; the screen shows '🟢 GREEN — STRONG SIGNAL'.</li>
+                    <li>Flashing Green = Excellent (90% or more, -46 dBm or better, usually right next to your router): '🔥 EXCELLENT SIGNAL (No extension nodes needed)'; the screen FLASHES green with the background pulsing and shows '🌟 FLASHING GREEN — EXCELLENT SIGNAL!'.</li>
                     <li>Amber: '⚡ GOOD RECEPTION (Move router 30cm closer to window)'.</li>
-                    <li>Red: '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A CELLULAR EXTENDER / MESH NODE RECOMMENDED HERE.'</li>
+                    <li>Red: '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A WI-FI EXTENDER / MESH NODE RECOMMENDED HERE.'</li>
                 </ul>
             </li>
             <li>'🧪 Test Weak Signal' shows what the dead-zone display looks like (-95 dBm simulation, clearly labelled); switch back to live afterwards.</li>
@@ -410,8 +411,8 @@
         <p>Tap '🛠 Extra Tools' on the top menu bar:</p>
         <h4>1. 🗺 3D Room Heatmap Matrix (EXPERIMENTAL):</h4>
         <ul>
-            <li>How to Use: tap the grid square you're standing on, then '🗺 Scan Interference Grid' to record a real reading there. Repeat across the room.</li>
-            <li>Grid Colour Scale: green = strong measured signal, through yellow to red = weak. Squares you haven't measured show animated colours for display only (not readings). The yellow dot marks the strongest square.</li>
+            <li>How to Use: tap the grid square you're standing on, then '🗺 Scan Interference Grid' to record a real Wi-Fi reading there (Wi-Fi must be connected). Repeat across the room.</li>
+            <li>Grid Colour Scale: the same Coverage score as 📶 Coverage: green 75% or more, amber 50% or more, red below. Squares you haven't measured show animated colours for display only (not readings). The yellow dot marks a strong square.</li>
             <li>'🧱 Barrier Material Guide' lists typical published losses (concrete, foil insulation, glass…).</li>
         </ul>
         <h4>2. 🔊 32-Band FFT Microphone Spectrum Analyzer:</h4>
@@ -434,7 +435,12 @@
             <li>-90 to -100 dBm: 🟠 FAIR SIGNAL (Position antenna closer to window)</li>
             <li>Below -100 dBm: 🔴 POOR / DEAD ZONE (External antenna, booster or Wi-Fi Calling recommended)</li>
         </ul>
-        <p>Wi-Fi: -55 dBm or better excellent, -55 to -67 good, -67 to -75 fair, below -75 weak (mesh/extender may help).</p>
+        <p>Wi-Fi (the Coverage score used everywhere in the app): -55 dBm or better 🟢 EXCELLENT (75% or more), down to -70 dBm 🟡 GOOD (50% or more), below -70 dBm 🔴 WEAK (a Wi-Fi extender or mesh node may help).</p>
+        <p>How the app uses these:</p>
+        <ul>
+            <li>🗼 Cell Tower (Step 1): mobile signal straight from your phone: the measured dBm, your phone's own signal bars (0-4, the same as its status bar) and the network-measured distance. The bands above are a general guide.</li>
+            <li>Indoors (📷 Camera AR, 📶 Coverage, 📐 Blueprint and the 🗺 Heatmap): Wi-Fi only, with the Coverage score: -100 dBm or weaker = 10%, -40 dBm or stronger = 98%; green 75% or more (-55 dBm or better), amber 50% or more (down to -70 dBm), red below. Mobile signal is hard to pinpoint room by room, while Wi-Fi changes clearly from spot to spot.</li>
+        </ul>
 
         <h3>⚠️ IMPORTANT DISCLAIMER - SIGNAL DISCREPANCIES FAQ</h3>
         <p>While the incoming radio waves are the same, the hardware and software on the phone change how that data is interpreted.</p>
@@ -460,12 +466,12 @@
             <li>Measurements and calculations are provided for guidance only, without warranty. Your mobile network operator is the authority on its own network and coverage.</li>
         </ul>
 
-        <h3>ℹ️ ABOUT &amp; APP INFO (VERSION 2.1)</h3>
+        <h3>ℹ️ ABOUT &amp; APP INFO (VERSION 2.2)</h3>
         <ul>
             <li>App Name: Cell Tower Finder v4.0 (WaveScan Pro)</li>
-            <li>Version: 2.1 (Build 12)</li>
+            <li>Version: 2.2 (Build 13)</li>
             <li>Target SDK: Android 36 (Edge-to-Edge &amp; Full Debug Symbols)</li>
-            <li>Core Modules: Outdoor Cell Tower Azimuth Alignment, AR Camera Overlay, Indoor Blueprint Modeler, Cellular Coverage &amp; Extension Map, Room Heatmap Matrix and 32-Band Acoustic Spectrum Analyzer.</li>
+            <li>Core Modules: Outdoor Cell Tower Azimuth Alignment, Indoor Router AR Camera Overlay, Indoor Blueprint Modeler, Cellular Coverage &amp; Extension Map, Room Heatmap Matrix and 32-Band Acoustic Spectrum Analyzer.</li>
             <li>Maps © OpenStreetMap contributors.</li>
             <li>Publisher: Appstack Studio</li>
             <li>Support: Support through developer website</li>
