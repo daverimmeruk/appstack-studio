@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — Banking Buddy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0F172A; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #0EA5E9; }
+        h2 { color: #38BDF8; margin-top: 30px; }
+        h3 { color: #7DD3FC; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #1E293B; border: 1px solid #334155; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #1E293B; border: 1px solid #334155; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #334155; padding-top: 20px; text-align: center; }
+        a { color: #0EA5E9; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0F172A; color: #38BDF8; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #334155; }
+        .btn { display: inline-block; background-color: #1E293B; color: #0EA5E9; border: 1px solid #0EA5E9; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #0EA5E9; color: #0F172A; }
+    </style>
+</head>
+<body>
+    <h1>🏦 Banking Buddy — User Manual</h1>
+    <img src="banking-buddy-feature-banner.png" alt="Banking Buddy Feature Banner" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div class="btn-group">
+        <a href="https://daverimmeruk.github.io/appstack-studio/banking-buddy/banking-buddy-privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/banking-buddy/banking-buddy-support.html" class="btn">🛡️ App Support</a>
+    </div>
 
+    <div class="section-box" style="margin-top: 20px;">
+        <h2>📖 Banking Buddy Manual</h2>
+        <p>How Banking Buddy works, step by step</p>
+
+        <h3>What Banking Buddy does</h3>
+        <p>Your banking apps send alerts when money comes in or goes out. Banking Buddy collects those alerts from all your chosen banking apps into one place, so you don't need to open each bank's app.</p>
+        <p>Each alert is marked 💚 Money in, ❤️ Money out or 🔔 Notice and saved in Logs, where you can add a note and share it.</p>
+
+        <h3>⚠️ Important: your bank's own alerts must be on</h3>
+        <p>Banking Buddy does not connect to your bank and never asks for bank logins or passwords. It can only see the notifications your banking apps already show on this phone.</p>
+        <ul>
+            <li>Open each banking app and switch on its notifications (payment, transaction or spending alerts). Each bank names them differently.</li>
+            <li>Also check Android allows that banking app to show notifications (Settings &gt; Notifications).</li>
+            <li>If your bank doesn't send an alert for something, Banking Buddy can't show it.</li>
+            <li>Alerts that arrived before Banking Buddy was turned on can't be added.</li>
+        </ul>
+
+        <h3>Getting started (3 steps)</h3>
+        <p>1. Banks tab: tap + Bank and pick your banking apps. Apps that look like banking apps are listed first, with their own icons.</p>
+        <p>2. Tap Turn on at the top, read the short explanation and tap Agree &amp; continue. In Android's Notification access screen, find Banking Buddy and switch it on, then come back. The top card turns green and says "Banking Buddy is on".</p>
+        <p>3. That's it. From now on, every alert your chosen banking apps send is saved in the Logs tab.</p>
+
+        <h3>Banks tab</h3>
+        <ul>
+            <li>+ Bank: pick a banking app from your phone.</li>
+            <li>Switch: on = its alerts are saved, off = its alerts are ignored.</li>
+            <li>Bin: removes the app from Banking Buddy. Alerts already saved stay in Logs.</li>
+            <li>The free version reads 2 banking apps. Pro reads as many as you like. A bank showing "Needs Pro - alerts not being read" is over the free limit.</li>
+        </ul>
+
+        <h3>Filters tab</h3>
+        <p>Choose which alerts are saved:</p>
+        <ul>
+            <li>Money In, Money Out and General Bank Notices can each be switched off.</li>
+            <li>Must Include Keywords: only save alerts that contain one of these words.</li>
+            <li>Exclude Keywords: never save alerts that contain these words (for example Offer, Marketing).</li>
+            <li>Switching off Enable Filtering Rules saves everything.</li>
+        </ul>
+        <p>Tap Save Filter Settings when you're done. Filters apply to new alerts.</p>
+
+        <h3>Logs tab</h3>
+        <ul>
+            <li>Tap a bank name at the top to see only that bank, or All Banks to see everything.</li>
+            <li>Under the bank name: today's money in and money out, added up from today's alerts.</li>
+            <li>🔍 Search: type a shop, payee, amount or note to find alerts.</li>
+            <li>Each alert shows MONEY IN, MONEY OUT or NOTICE, the bank, the time and the bank's message.</li>
+        </ul>
+        <p>Buttons on each alert:</p>
+        <ul>
+            <li>✏️ Note: add your own note. Tap a quick button (Salary, Rent, Bills, Shopping, Business, Transfer) or type your own. To remove a note, tap ✏️ Note, then Delete note (the alert is kept).</li>
+            <li>💾 Save: marks the alert ⭐ Saved. Saved alerts are kept when you tap Clear.</li>
+            <li>🔁 Regular: name a payment that comes round regularly, like Salary or Car loan (see Regular tab).</li>
+            <li>📤 Share: send one alert by WhatsApp, email, text or any app.</li>
+            <li>🗑️: delete one alert (you'll be asked first).</li>
+        </ul>
+        <ul>
+            <li>📤 Share at the top: share all the alerts shown.</li>
+            <li>Clear: deletes all alerts except ⭐ Saved ones.</li>
+        </ul>
+        <p>The free version shows the last 30 days (plus ⭐ Saved alerts). Older alerts stay on your phone and show again with Pro. Banking Buddy keeps up to 1,000 alerts; when full, the oldest unsaved ones are removed first.</p>
+
+        <h3>🔁 Regular tab</h3>
+        <p>Give regular payments a name, like Salary (money in) or Car loan (money out).</p>
+        <p>1. In Logs, tap 🔁 Regular on the alert.</p>
+        <p>2. Type a name or tap a quick button (Salary, Car loan, Rent, Mortgage…).</p>
+        <p>3. Check the words to look for. Banking Buddy suggests the payer or payee from the alert, for example "ACME LTD". Tap Save.</p>
+        <p>Saved alerts from the same banking app with those words are named straight away, and so are new ones. Named alerts show 🔁 and the name, and the pop-up says, for example, "💚 Salary · Nationwide".</p>
+        <p>The Regular tab lists each one with its last amount and date, and:</p>
+        <ul>
+            <li>✅ Seen this month, or</li>
+            <li>⏳ Not seen yet this month, plus the usual day once it has been seen in 2 or more months.</li>
+        </ul>
+        <p>This is worked out only from the alerts your phone received.</p>
+        <p>Tap a regular payment to change it; the bin deletes it (the alerts themselves are kept). The free version names 2 regular payments; Pro names as many as you like.</p>
+
+        <h3>Pop-ups</h3>
+        <p>When a new alert is saved, Banking Buddy shows a short pop-up at the bottom of the screen, for example "💚 Money in · Nationwide" and the bank's headline.</p>
+        <p>If a bank sends the same alert again within 2 minutes, it is saved and shown only once.</p>
+
+        <h3>⭐ Pro</h3>
+        <p>Pro is one payment for life. No subscription.</p>
+        <ul>
+            <li>Unlimited banking apps</li>
+            <li>Full alert history</li>
+            <li>Unlimited regular payments</li>
+            <li>CSV: a spreadsheet file with date, time, bank, type, regular name, amount (money out as minus), message and your note, for Excel, Google Sheets or your accountant.</li>
+            <li>Totals: money in and money out for each month, added up from the amounts written in the alerts. Alerts without an amount aren't counted, so totals may differ from your bank statement.</li>
+        </ul>
+        <p>Tap GO PRO at the top. Already bought it, or on a new phone with the same Google account? Tap Restore purchase.</p>
+
+        <h3>Your privacy</h3>
+        <ul>
+            <li>Banking Buddy only reads alerts from the banking apps you add and switch on. Notifications from every other app are ignored and never saved.</li>
+            <li>Alerts are saved on this phone only. They are not backed up and the app never sends them anywhere. They only leave your phone when you tap Share or export a CSV.</li>
+            <li>No bank logins, passwords or accounts are needed.</li>
+            <li>To stop Banking Buddy reading alerts, tap Settings on the green card and switch Banking Buddy off.</li>
+        </ul>
+
+        <h3>Not seeing alerts?</h3>
+        <ul>
+            <li>Is the top card green ("Banking Buddy is on")? If not, tap Turn on.</li>
+            <li>Is the bank's switch on in the Banks tab?</li>
+            <li>Are notifications switched on inside the banking app itself? Banking Buddy can only show alerts your bank sends.</li>
+            <li>Are your Filters switching that kind of alert off?</li>
+            <li>Free version: only 2 banking apps are read.</li>
+        </ul>
+
+        <h3>About</h3>
+        <p>Banking Buddy v1.0 (Build 1)</p>
+
+        <h3>⚡ WHY BANKING BUDDY</h3>
+        <p>Banking Buddy keeps the money in / money out alerts from all your chosen banking apps together in one list, on your phone.</p>
+
+        <table class="rival-table">
+            <tr>
+                <th>Feature</th>
+                <th>Opening each banking app</th>
+                <th>Banking Buddy</th>
+            </tr>
+            <tr>
+                <td>Alerts from all your banks in one place</td>
+                <td>One app at a time</td>
+                <td><strong>One list, with a filter for each bank</strong></td>
+            </tr>
+            <tr>
+                <td>Your own notes on payments</td>
+                <td>Depends on the bank</td>
+                <td><strong>✏️ Note on any alert</strong></td>
+            </tr>
+            <tr>
+                <td>Named regular payments (e.g. Salary, Car loan)</td>
+                <td>Depends on the bank</td>
+                <td><strong>🔁 Regular tab: last amount and "seen this month"</strong></td>
+            </tr>
+            <tr>
+                <td>Bank logins needed</td>
+                <td>Yes, for each app</td>
+                <td><strong>None: it reads the alerts your banking apps already show</strong></td>
+            </tr>
+        </table>
+
+        <h3>⚠️ IMPORTANT DISCLAIMER</h3>
+        <ul>
+            <li>Banking Buddy is not a bank and is not connected to any bank. It only shows the notifications your banking apps send to this phone.</li>
+            <li>Money in / money out, amounts and totals are read from the text of those alerts, so they may differ from your bank statement. Always check your banking app or statement for your real balance.</li>
+            <li>Banking Buddy is not affiliated with any bank. Bank names and icons shown in the app belong to their owners and come from the apps installed on your phone.</li>
+        </ul>
+    </div>
+
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card">
+            <img src="banking-buddy-banks.jpg" alt="Banks">
+            <p><strong>1. Banks</strong><br>Your chosen banking apps, with their icons and on/off switches.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="banking-buddy-logs.jpg" alt="Logs">
+            <p><strong>2. Logs</strong><br>Money in / money out alerts, today's totals, search, notes and share.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="banking-buddy-regular.jpg" alt="Regular payments">
+            <p><strong>3. Regular</strong><br>Named regular payments: last amount and "seen this month".</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="banking-buddy-manual.jpg" alt="User Manual">
+            <p><strong>4. Manual</strong><br>The full in-app guide.</p>
+        </div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots show test alerts from a sample "My Bank" app, with Pro switched on.</p>
+
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>
