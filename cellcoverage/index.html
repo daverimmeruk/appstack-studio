@@ -225,22 +225,22 @@
             <div class="screenshot-card">
                 <img src="cellcoverage-main.jpg" alt="Step 1: Cell">
                 <h4>1. Step 1: Cell (FREE)</h4>
-                <p>Your live connection: carrier, 4G / 5G (NSA or SA), band, RSRP, RSRQ, SINR and RSSI, with targets to aim for.</p>
+                <p>Your live connection: carrier, 4G / 5G (NSA or SA), band, RSRP, RSRQ, SINR and RSSI, with targets to aim for and signal quality straight from your phone's own bars.</p>
             </div>
             <div class="screenshot-card">
                 <img src="cellcoverage-map.jpg" alt="Coverage Map">
                 <h4>2. Coverage Map (FREE)</h4>
-                <p>OpenStreetMap showing your own signal readings as coloured rings where you've walked, plus a 5G Heatmap switch.</p>
+                <p>OpenStreetMap showing your own signal readings as coloured rings where you've walked (tap a ring to see that reading), plus a 5G Heatmap switch.</p>
             </div>
             <div class="screenshot-card">
                 <img src="cellcoverage-coverage.jpg" alt="Coverage">
                 <h4>3. 📶 Coverage (FREE)</h4>
-                <p>Test the reception in each room from your live Wi-Fi or mobile signal, and see where an extender or mesh node would help.</p>
+                <p>Test the reception in each room from your live Wi-Fi signal and its Coverage score, and see where a Wi-Fi extender or mesh node would help.</p>
             </div>
             <div class="screenshot-card">
                 <img src="cellcoverage-blueprint.jpg" alt="Blueprint">
                 <h4>4. 📐 Blueprint (PRO)</h4>
-                <p>Record real readings room by room, then Compare All Rooms to find the best room for your router.</p>
+                <p>Record real Wi-Fi readings room by room, then Compare All Rooms to find the best room for your router (rooms within 2 dB are too close to call).</p>
             </div>
             <div class="screenshot-card">
                 <img src="cellcoverage-manual.jpg" alt="User Manual">
@@ -301,14 +301,15 @@
 
         <div class="manual-card">
             <h3>📖 CellCoverage 5g User Manual</h3>
-            <p style="color: var(--text-muted);">Complete guide to cell tower finding, heatmaps &amp; signal optimization</p>
+            <p style="color: var(--text-muted);">Complete guide to your live signal, coverage heatmaps &amp; signal optimization</p>
         </div>
 
         <div class="manual-card">
-            <h3>Part 1: Finding Your Optimal Cell Tower (Step 1)</h3>
-            <p>1. Open the 'Step 1: Cell' screen. It shows your live connection as measured by the phone: carrier, network (4G / 5G), band, signal level (RSRP) and quality, and the cell IDs.<br>
-2. Walk around your home with the app open and watch the signal level: the higher (closer to 0 dBm), the better. Windows facing your mast usually read best.<br>
-3. Then use 📶 Coverage and 📐 Blueprint (Parts 3 and 4) to compare rooms and find the best spot for your router.</p>
+            <h3>Part 1: Your Live Mobile Signal (Step 1)</h3>
+            <p>1. Open the 'Step 1: Cell' screen. It shows your live connection as measured by the phone: carrier, network (4G / 5G), band, signal level (RSRP), RSRQ, SINR and the cell IDs.<br>
+2. 'Signal Quality' is your phone's own rating, straight from the phone: its signal bars (the same as its status-bar icon), e.g. 'Great (phone: 4/4 bars)'. GREEN = 4 bars (Great), BLUE = 3 (Good), AMBER = 2 (Moderate), RED = 0-1 (Poor / None). If the phone doesn't report its bars, the RSRP band from Part 2 is used and the line says so.<br>
+3. Walk around your home with the app open and watch the signal level: the higher (closer to 0 dBm), the better. Windows facing your mast usually read best.<br>
+4. Then use 📶 Coverage and 📐 Blueprint (Parts 3 and 4) to compare rooms and find the best spot for your router.</p>
         </div>
 
         <div class="manual-card">
@@ -320,29 +321,30 @@
 &nbsp;&nbsp;&nbsp;• 🟡 Amber: Fair (RSRP -95 to -105 dBm)<br>
 &nbsp;&nbsp;&nbsp;• 🔴 Red: Poor (RSRP &lt; -105 dBm)<br>
 &nbsp;&nbsp;&nbsp;(These colours show signal strength. Whether you were on 5G is shown by the '5G Heatmap' switch.)<br>
-3. Use the '+' and '-' zoom buttons to zoom down to street level (17.0x) or zoom out to see a wider area.</p>
+3. Use the '+' and '-' zoom buttons to zoom down to street level (17.0x) or zoom out to see a wider area. Drag the map to look around; tap a ring to see that reading (carrier, network, signal level and band); the green location button brings you back to where you are. Until the phone has a GPS position the map shows a world view and '🌍 Waiting for GPS…'.</p>
         </div>
 
         <div class="manual-card">
             <h3>Part 3: 📶 Cellular Signal Coverage &amp; Extension Map (FREE)</h3>
             <p>1. Tap '📶 Coverage'. Walk to the room or space furthest from your primary router.<br>
-2. The diagram and colours follow your live Wi-Fi reading (or mobile signal if Wi-Fi is off); the line under the heading shows which, e.g. 'From Wi-Fi -59 dBm'. Tap '📶 Test Room Reception' for the diagnosis:<br>
-&nbsp;&nbsp;&nbsp;- Flashing Neon Green: '🔥 EXCELLENT RECEPTION (No extension nodes needed)'.<br>
+2. The diagram and colours follow your live Wi-Fi reading; the line under the heading shows it, e.g. 'From Wi-Fi -59 dBm (68%)'. Green at a 75% score or more (-55 dBm or better), amber from 50% (down to -70 dBm), red below. Indoors the app uses Wi-Fi only: mobile signal is hard to pinpoint room by room, while Wi-Fi changes clearly from spot to spot. If Wi-Fi is off it shows 'WI-FI NOT CONNECTED'. Tap '📶 Test Room Reception' for the diagnosis:<br>
+&nbsp;&nbsp;&nbsp;- Green = Strong Signal (75-89% score): '🟢 STRONG SIGNAL (No extension nodes needed)'; the screen shows '🟢 GREEN — STRONG SIGNAL'.<br>
+&nbsp;&nbsp;&nbsp;- Flashing Green = Excellent (90% or more, -46 dBm or better, usually right next to your router): '🔥 EXCELLENT SIGNAL (No extension nodes needed)'; the screen FLASHES green with the background pulsing and shows '🌟 FLASHING GREEN — EXCELLENT SIGNAL!'.<br>
 &nbsp;&nbsp;&nbsp;- Amber: '⚡ GOOD RECEPTION (Move router 30cm closer to window)'.<br>
-&nbsp;&nbsp;&nbsp;- Red: '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A CELLULAR EXTENDER / MESH NODE RECOMMENDED HERE.'<br>
+&nbsp;&nbsp;&nbsp;- Red: '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A WI-FI EXTENDER / MESH NODE RECOMMENDED HERE.'<br>
 3. '🧪 Test Weak Signal' shows what the dead-zone display looks like (-95 dBm simulation, clearly labelled); switch back to live afterwards.<br>
 4. '📶 Extender Node Guide': place the extension node about halfway between your router and the dead-zone.<br>
-5. '📄 Export Extender Analysis' (PRO) shares a PDF report of the readings.</p>
+5. '📄 Export Extender Report' (PRO) shares a PDF report of the readings.</p>
         </div>
 
         <div class="manual-card">
             <h3>Part 4: 📐 Room Selection &amp; Blueprint Modeler (PRO)</h3>
             <p>1. Tap '📐 Blueprint'. Select Room A, Room B, or Room C at the top (long-press a tab to rename it or add rooms).<br>
-2. Walk to that room. Touch and drag the Yellow Router Icon (📡) to where you're standing and let go: a real reading is recorded for that room. Take at least 3 readings per room.<br>
-3. The header shows the room's measured rating: 🟢 Excellent or Good, 🟡 Fair or 🔴 Avoid. With only one room measured there's nothing to compare yet.<br>
-4. Tap '🏆 Compare All Rooms' to view the leaderboard. Rooms are ranked by their median measured signal; rooms with no readings are listed as not measured.<br>
-5. Physical Motion Warning: if you switch room tabs without walking (&lt; 3m moved, from GPS), a warning reminds you to walk to that room for an accurate reading.<br>
-6. '📄 Export Floorplan Analysis' shares the leaderboard as a PDF report.</p>
+2. Walk to that room. Touch and drag the Yellow Router Icon (📡) to where you're standing and let go: a real Wi-Fi reading is recorded for that room (Wi-Fi must be connected). Take at least 3 readings per room.<br>
+3. The header shows the room's rating with the same Coverage score as 📶 Coverage, from its median Wi-Fi reading: 🟢 Excellent (75% or more), 🟡 Good (50% or more) or 🔴 Avoid (below 50%). With only one room measured there's nothing to compare yet.<br>
+4. Tap '🏆 Compare All Rooms' to view the leaderboard. Rooms are ranked by their median Wi-Fi reading and its Coverage score; rooms with no readings are listed as not measured. If the top rooms are within 2 dB of each other, it says they are too close to call (readings vary by a couple of dB on their own).<br>
+5. Physical Motion Warning: if you switch room tabs without walking (&lt; 3m moved, from GPS), a warning reminds you to walk to that room for an accurate reading. It relies on GPS, which indoors can be out by 5-15 m or more, so it may not always appear, and it can appear when you didn't mean to switch rooms.<br>
+6. '📄 Export Floorplan Report' shares the leaderboard as a PDF report.</p>
         </div>
 
         <div class="manual-card">
@@ -395,7 +397,7 @@ Please use the features and various metrics provided in this app as a collective
         <div class="manual-card">
             <h3>Part 9: Application Information &amp; Version</h3>
             <p>• Application Name: CellCoverage 5g &amp; WaveScan Pro<br>
-• Version: v1.6 (Build 7)<br>
+• Version: v1.7 (Build 8)<br>
 • Package ID: com.cellcoverage5g<br>
 • Pro: bought through Google Play (monthly subscription or one-time lifetime). Purchases are restored automatically on reinstall; manage or cancel subscriptions in Google Play › Payments &amp; subscriptions.<br>
 • Developer: AppStack Studio<br>
