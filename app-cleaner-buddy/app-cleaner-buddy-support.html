@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support — App-Cleaner Buddy | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --card-bg: #112240;
+            --primary-color: #00B4D8;
+            --secondary-color: #48CAE4;
+            --text-color: #F1F5F9;
+            --text-muted: #94A3B8;
+            --border-color: #233554;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #020617;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #112240;
+            border: 1px solid var(--border-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .support-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item h3 {
+            color: var(--secondary-color);
+            font-size: 1.15rem;
+            margin-bottom: 0.4rem;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: var(--secondary-color);
+        }
+
+        .btn-email {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: #0A192F;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-email:hover {
+            background-color: #0284C7;
+        }
+
+        footer {
+            background-color: #020617;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🛡️ Customer Support</h1>
+        </div>
+        <nav>
+            <a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/index.html">🏠 App-Cleaner Buddy Home Page</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Contact Banner -->
+        <article class="support-card">
+            <h2>App-Cleaner Buddy — Support Center</h2>
+            <p class="subtitle">Support from AppStack Studio</p>
+
+            <p>If you need help with <strong>App-Cleaner Buddy</strong>, have a feature request or a billing question, please email us.</p>
+            <p>It helps if you include your phone model, your Android version and the app version (shown at the bottom of the app's Manual tab, under About).</p>
+
+            <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+            <a href="mailto:appstack1966@gmail.com" class="btn-email">✉️ Contact Support</a>
+        </article>
+
+        <!-- FAQ Section -->
+        <article class="support-card">
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+            <br>
+
+            <div class="faq-item">
+                <h3>Q1: Why does it ask for Usage access?</h3>
+                <p>Android only tells an app how big other apps are, and when they were last used, if you switch on Usage access for it. App-Cleaner Buddy uses it only to read app sizes and last-use times on your phone; nothing is sent anywhere. See our <a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/app-cleaner-buddy-privacy.html">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q2: Why does my 128 GB phone show 137 GB?</h3>
+                <p>Some phones count 1 GB = 1,024 MB. App-Cleaner Buddy uses 1 GB = 1,000 MB, so 128 × 1,024 MB shows as 137 GB. The app says so under the free space when that's the case.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q3: Can it delete apps, photos or junk for me?</h3>
+                <p>No. Uninstall opens Android's own "Uninstall this app?" screen, so you always confirm. Google Play only lets gallery and file manager apps read all your photos and files, and Android only lets you clear another app's cache yourself in its App info (Storage › Clear cache).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q4: An app says "No use recorded by Android". What does that mean?</h3>
+                <p>Android keeps usage records for a limited time (often up to about 2 years). If it has no record of an app being used in that time, App-Cleaner Buddy shows the install date instead.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q5: Why are Growth and the forecast empty?</h3>
+                <p>They are worked out from the daily readings saved on your phone. Growth appears once there are readings from two different days; the forecast needs at least 4 readings over 7 days. Android decides exactly when the daily reading runs, so some days may be missed.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q6: I didn't get a low-storage alert.</h3>
+                <p>The alert (Pro) is checked once a day, and only if free space is below the level you chose in the Growth tab. On Android 13 and newer, notifications must be allowed for App-Cleaner Buddy (Settings › Apps › App-Cleaner Buddy › Notifications).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q7: What does Pro include?</h3>
+                <p>Free includes the storage breakdown, unused apps, biggest apps and the demo. Pro adds app growth, the storage forecast, the low-storage alert, the free-space history graph, CSV export and the PDF report.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q8: How do I buy or restore Pro?</h3>
+                <p>Pro is one payment for life through Google Play, with no subscription. The price is shown by Google Play at checkout. On a new phone with the same Google account, tap GO PRO and then Restore purchase.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        <p><a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/index.html">App-Cleaner Buddy Home Page</a> | <a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/app-cleaner-buddy-privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>

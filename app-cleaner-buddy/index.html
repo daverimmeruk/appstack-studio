@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — App-Cleaner Buddy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0A192F; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #00B4D8; }
+        h2 { color: #48CAE4; margin-top: 30px; }
+        h3 { color: #90E0EF; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #233554; padding-top: 20px; text-align: center; }
+        a { color: #00B4D8; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0A192F; color: #48CAE4; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #233554; }
+        .btn { display: inline-block; background-color: #112240; color: #00B4D8; border: 1px solid #00B4D8; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #00B4D8; color: #0A192F; }
+    </style>
+</head>
+<body>
+    <h1>🧹 App-Cleaner Buddy — User Manual</h1>
+    <img src="app-cleaner-buddy-feature-banner.png" alt="App-Cleaner Buddy Feature Banner" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div class="btn-group">
+        <a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/app-cleaner-buddy-privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/app-cleaner-buddy-support.html" class="btn">🛡️ App Support</a>
+    </div>
 
+    <div class="section-box" style="margin-top: 20px;">
+        <h2>📖 App-Cleaner Buddy Manual</h2>
+        <p>How App-Cleaner Buddy works, step by step</p>
+
+        <h3>What App-Cleaner Buddy does</h3>
+        <p>App-Cleaner Buddy shows where your phone's storage goes, using Android's own figures, and helps you find the apps worth removing: apps you haven't opened for months, and apps that keep getting bigger.</p>
+        <p>It never deletes anything itself. Uninstall and App info open Android's own screens, and you confirm there. It has no ads, no pop-up warnings and no "junk" or "boost" buttons: every number is a reading from Android.</p>
+
+        <h3>Why it asks for Usage access</h3>
+        <p>Android only tells an app how big other apps are, and when they were last used, if you switch on Usage access for it. Tap Turn on in the card at the top, find App-Cleaner Buddy in the list and switch it on.</p>
+        <ul>
+            <li>Usage access is only used to read app sizes and when apps were last used, on this phone. Nothing is sent anywhere.</li>
+            <li>Without it, App-Cleaner Buddy can only show total and free space. The demo still works.</li>
+        </ul>
+
+        <h3>Overview tab</h3>
+        <ul>
+            <li>Used and free space, and a coloured bar showing Apps, Photos, Videos, Audio, System &amp; other, and Free.</li>
+            <li>System &amp; other is the used space not counted in the other parts: Android itself, downloads and other files.</li>
+            <li>A shortcut to your unused apps, with how much space they take.</li>
+            <li>🔮 Storage forecast (Pro), see below.</li>
+        </ul>
+        <p>Sizes use 1 GB = 1,000 MB. Some phones count 1 GB = 1,024 MB, so a 128 GB phone shows as 137 GB here; App-Cleaner Buddy says so under the free space when that's the case.</p>
+
+        <h3>Unused tab</h3>
+        <p>Apps you haven't opened in 30, 60 or 90 days (tap to choose), biggest first, with when Android last recorded you using each one.</p>
+        <ul>
+            <li>"No use recorded by Android" means Android has no record of the app being used in the time it keeps (often up to about 2 years). The install date is shown instead.</li>
+            <li>Apps that came with the phone aren't listed here, because they can't be uninstalled.</li>
+            <li>🗑️ Uninstall opens Android's own "Uninstall this app?" screen. You confirm there.</li>
+            <li>ℹ️ App info opens Android's App info screen for that app.</li>
+        </ul>
+
+        <h3>Apps tab</h3>
+        <p>Every app in your app drawer, biggest first. Sort by Total, Data or Cache.</p>
+        <ul>
+            <li>App = the app itself. Data = everything it has saved, including its cache. Cache = files it can download or make again.</li>
+            <li>To clear an app's cache, tap ℹ️ App info, then Storage, then Clear cache. Android only lets you do this yourself, app by app.</li>
+            <li>Apps that came with the phone show "came with the phone" and have no Uninstall button; App info can disable some of them.</li>
+        </ul>
+
+        <h3>📈 Growth tab (Pro)</h3>
+        <p>App-Cleaner Buddy saves one storage reading a day on this phone: free space and the size of each app. From these readings:</p>
+        <ul>
+            <li>Growing fastest: the apps that got biggest since the reading closest to 30 days ago, for example "Chat app +1.2 GB".</li>
+            <li>Free space over time: a graph of free space.</li>
+            <li>The first comparison appears once there are readings from two different days.</li>
+        </ul>
+        <p>Android decides exactly when the daily reading runs, so some days may be missed.</p>
+
+        <h3>🔮 Storage forecast (Pro)</h3>
+        <p>From the daily readings of the last 60 days, App-Cleaner Buddy works out how fast free space is going down and when the phone would be full at that rate. It needs at least 4 readings over 7 days.</p>
+        <p>If free space isn't going down, it says so. The forecast is a rough guide: installing or deleting something big changes it.</p>
+
+        <h3>🔔 Low-storage alert (Pro)</h3>
+        <p>In the Growth tab, tap 🔔 Low-storage alert and choose a level (1, 2, 5 or 10 GB). When the daily reading finds less free space than that, App-Cleaner Buddy sends a notification, at most once a day. On Android 13 and newer, allow notifications when asked.</p>
+
+        <h3>📄 CSV and PDF report (Pro)</h3>
+        <ul>
+            <li>CSV: every app with its sizes, last use and install date, then the daily readings, for Excel or Google Sheets.</li>
+            <li>PDF report: the storage breakdown, forecast, unused apps, biggest apps and the apps growing fastest.</li>
+        </ul>
+        <p>Files are only shared when you choose an app on Android's share screen.</p>
+
+        <h3>🧪 Demo</h3>
+        <p>Tap 🧪 Try the demo (the card at the top, or the Manual tab) to see every screen with sample apps and 60 days of sample readings. A yellow strip says DEMO: sample apps, not this phone, and exports made in the demo say DEMO too. In the demo you can try Growth, the forecast, CSV and the PDF report for free. Tap Exit demo to go back to your phone.</p>
+        <p>Once you've bought Pro, the Manual tab no longer shows 🧪 Try the demo.</p>
+
+        <h3>What it can't do</h3>
+        <ul>
+            <li>Delete photos, videos or files: Google Play only lets gallery and file manager apps read all your photos and files.</li>
+            <li>Clear other apps' cache by itself: Android only lets you do that in each app's App info.</li>
+            <li>"Boost" memory or speed: Android manages memory itself.</li>
+        </ul>
+        <p>For photos and downloads, use your phone's Gallery or Files app.</p>
+
+        <h3>⭐ Pro</h3>
+        <p>Pro is one payment for life. No subscription.</p>
+        <ul>
+            <li>📈 App growth</li>
+            <li>🔮 Storage forecast</li>
+            <li>🔔 Low-storage alert</li>
+            <li>🕒 Free-space history graph</li>
+            <li>📄 CSV and PDF report</li>
+        </ul>
+        <p>Tap GO PRO at the top. Already bought it, or on a new phone with the same Google account? Tap Restore purchase.</p>
+
+        <h3>Your privacy</h3>
+        <ul>
+            <li>App sizes, last-use times and the daily readings are kept on this phone only. They are not backed up and are never sent anywhere.</li>
+            <li>No account and no ads. Pro is bought through Google Play.</li>
+            <li>Files only leave your phone when you share a CSV or PDF yourself.</li>
+        </ul>
+
+        <h3>About</h3>
+        <p>App-Cleaner Buddy v1.0 (Build 1)</p>
+        <p>Publisher: AppStack Studio</p>
+
+        <h3>⚡ WHY APP-CLEANER BUDDY</h3>
+        <p>App-Cleaner Buddy shows where your storage goes using Android's own figures, and finds the apps worth removing: the ones you no longer open, and the ones that keep getting bigger. No ads, no pop-up warnings and no "junk" or "boost" buttons.</p>
+
+        <table class="rival-table">
+            <tr>
+                <th>Feature</th>
+                <th>Typical "cleaner" apps</th>
+                <th>App-Cleaner Buddy</th>
+            </tr>
+            <tr>
+                <td>Where the numbers come from</td>
+                <td>"Junk found" totals that come back the next day</td>
+                <td><strong>Android's own readings: app, data and cache for each app</strong></td>
+            </tr>
+            <tr>
+                <td>Apps you no longer use</td>
+                <td>Often not shown</td>
+                <td><strong>Not opened in 30, 60 or 90 days, biggest first, with the last date Android recorded</strong></td>
+            </tr>
+            <tr>
+                <td>Apps that keep getting bigger</td>
+                <td>Not shown</td>
+                <td><strong>⭐ Pro: growth since about 30 days ago, from daily readings on your phone</strong></td>
+            </tr>
+            <tr>
+                <td>When will my phone be full?</td>
+                <td>Not shown</td>
+                <td><strong>⭐ Pro: forecast from your own readings, plus a low-storage alert</strong></td>
+            </tr>
+            <tr>
+                <td>Ads and scare pop-ups</td>
+                <td>Common</td>
+                <td><strong>None</strong></td>
+            </tr>
+        </table>
+
+        <h3>⚠️ IMPORTANT DISCLAIMER</h3>
+        <ul>
+            <li>App-Cleaner Buddy shows the sizes and last-use dates that Android reports. Some phones count 1 GB = 1,024 MB, so totals can look different from the phone's own Settings.</li>
+            <li>"Last opened" is only as complete as Android's usage records, which are kept for a limited time (often up to about 2 years).</li>
+            <li>The forecast is a rough guide based on past readings; installing or deleting something big changes it.</li>
+            <li>App-Cleaner Buddy never deletes anything itself: Uninstall and App info open Android's own screens. App names and icons shown belong to their owners.</li>
+        </ul>
+    </div>
+
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card">
+            <img src="app-cleaner-buddy-overview.jpg" alt="Overview">
+            <p><strong>1. Overview</strong><br>Used and free space, where it goes, unused apps and the forecast.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="app-cleaner-buddy-unused.jpg" alt="Unused apps">
+            <p><strong>2. Unused</strong><br>Apps not opened in 30, 60 or 90 days, biggest first.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="app-cleaner-buddy-apps.jpg" alt="Apps">
+            <p><strong>3. Apps</strong><br>Every app's size, data and cache.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="app-cleaner-buddy-growth.jpg" alt="Growth (Pro)">
+            <p><strong>4. Growth (Pro)</strong><br>Apps growing fastest and free space over time.</p>
+        </div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots show the app's built-in demo (sample apps, not a real phone), with Pro switched on.</p>
+
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>
