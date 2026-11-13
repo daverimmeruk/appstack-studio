@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — Wi-Fi Buddy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0A192F; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #00B4D8; }
+        h2 { color: #48CAE4; margin-top: 30px; }
+        h3 { color: #90E0EF; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #233554; padding-top: 20px; text-align: center; }
+        a { color: #00B4D8; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0A192F; color: #48CAE4; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #233554; }
+        .btn { display: inline-block; background-color: #112240; color: #00B4D8; border: 1px solid #00B4D8; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #00B4D8; color: #0A192F; }
+    </style>
+</head>
+<body>
+    <h1>📶 Wi-Fi Buddy — User Manual</h1>
+    <img src="wifi-buddy-feature-banner.png" alt="Wi-Fi Buddy Feature Banner" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div class="btn-group">
+        <a href="https://daverimmeruk.github.io/appstack-studio/wifi-buddy/wifi-buddy-privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/wifi-buddy/wifi-buddy-support.html" class="btn">🛡️ App Support</a>
+    </div>
 
+    <div class="section-box" style="margin-top: 20px;">
+        <h2>📖 Wi-Fi Buddy Manual</h2>
+        <p>How Wi-Fi Buddy works, step by step</p>
+
+        <h3>What Wi-Fi Buddy does</h3>
+        <p>Wi-Fi Buddy shows what your phone measures: the Wi-Fi networks it can hear, the channels they use, and the live signal of the network you're connected to. Every number comes from Android's own Wi-Fi readings.</p>
+        <p>It can't make your Wi-Fi faster by itself. It helps you see where the signal is weak and which channels are crowded, so you can move your router, change its channel in the router's settings, or pick a better spot.</p>
+
+        <h3>Why it asks for location</h3>
+        <p>Android only gives the list of nearby Wi-Fi networks to apps with precise location permission, and only while Location is switched on. That's Android's rule for every Wi-Fi app.</p>
+        <ul>
+            <li>The map at the bottom of Networks shows where you are, on this phone only. Wi-Fi Buddy never saves or sends your location.</li>
+            <li>If you allow only approximate location, Android gives no scan results: the card at the top explains how to turn on precise location.</li>
+            <li>Without the permission, the Signal tab can still show your connection's signal, but Android hides the network's name.</li>
+        </ul>
+
+        <h3>Networks tab</h3>
+        <ul>
+            <li>Every network your phone heard, strongest first, with its signal in dBm, band (2.4, 5 or 6 GHz), channel, channel width, security and Wi-Fi standard (Wi-Fi 4 to 7, on Android 11 and newer).</li>
+            <li>★ marks the network you're connected to.</li>
+            <li>Tap a band button to show only that band.</li>
+            <li>🔄 Scan asks Android for a new scan. Android allows an app 4 scans every 2 minutes, so Wi-Fi Buddy also scans by itself every 40 seconds while Networks or Channels is open, and tells you when the next scan is allowed.</li>
+            <li>The line above the list says when the results are from. "Heard 1 min ago" means Android hasn't heard that network in the latest scan.</li>
+            <li>A hidden network shows as "(hidden network)".</li>
+            <li>The map at the bottom shows where you are (GPS) with your Wi-Fi network and its signal on the pin. It centres on you once; drag and zoom freely, and tap ◎ to centre on you again. "Waiting for GPS…" means no location fix yet. Map © OpenStreetMap contributors.</li>
+        </ul>
+
+        <h3>Signal levels (Coverage score)</h3>
+        <p>dBm is how strong the signal reaches your phone: closer to 0 is stronger. Wi-Fi Buddy rates it with the same Coverage maths as Cell Tower Finder and CellCoverage: Coverage score = (dBm + 100), counted from 0 to 60 as 0 to 100%, kept between 10% and 98%.</p>
+        <ul>
+            <li>🌟 Excellent: 90% or more (-46 dBm or better). On the Signal tab it flashes green: you're right next to the router.</li>
+            <li>🟢 Strong: 75 to 89% (-55 to -47 dBm), solid green.</li>
+            <li>🟡 Good: 50 to 74% (-70 to -56 dBm).</li>
+            <li>🔴 Weak: below 50% (weaker than -70 dBm).</li>
+        </ul>
+        <p>Real speed also depends on the router, interference and how many devices share the network.</p>
+
+        <h3>Channels tab</h3>
+        <ul>
+            <li>The graph draws each network as a hill across the channels it uses, as high as its signal. Your network is drawn in dark blue with ★.</li>
+            <li>Below the graph: how many other networks use the same channels as yours, and the channel or channels with the fewest networks heard.</li>
+            <li>On 2.4 GHz it compares channels 1, 6 and 11, which don't overlap each other. On 5 and 6 GHz it lists the channels in use.</li>
+        </ul>
+        <p>This is only what your phone heard where it is now. Your router may hear different networks, so "fewest networks heard" is a hint, not a guarantee. To change channel, use your router's settings or app.</p>
+
+        <h3>Signal tab</h3>
+        <ul>
+            <li>Your connected network's live signal in dBm, its Coverage score and level (🌟 Excellent flashes green), and a graph of the last 90 seconds.</li>
+            <li>Band, channel, link speed (send and receive where Android gives them), Wi-Fi standard, router BSSID, the phone's IP address, the router's IP (gateway) and DNS.</li>
+        </ul>
+        <p>Android updates the signal every few seconds. Link speed is the radio link between phone and router, not your internet speed.</p>
+
+        <h3>⭐ Rooms tab (Pro)</h3>
+        <p>Find the room with the strongest Wi-Fi:</p>
+        <p>1. Stand where you'd use Wi-Fi and tap 📏 Measure this room.</p>
+        <p>2. Pick or type a room name and tap Start. Keep still for 10 seconds: Wi-Fi Buddy reads your connected network's signal once a second.</p>
+        <p>3. Repeat in other rooms.</p>
+        <p>Rooms are ranked by the median of their 10 readings (the middle value, as CellCoverage's Blueprint), with the Coverage score and level. 🏆 marks the strongest of the rooms you measured. If rooms are within 2 dB of each other, Wi-Fi Buddy says they're too close to call. Measuring a room again with the same name replaces its reading. If rooms were measured on different networks or bands, it says so.</p>
+
+        <h3>🧪 Demo</h3>
+        <p>Tap 🧪 Try the demo (Manual tab, or the card at the top when Wi-Fi Buddy can't scan) to see every screen with sample networks, a sample connection and sample rooms. A yellow strip says DEMO: sample data, not measured, and exports made in the demo say DEMO too.</p>
+        <p>In the demo you can try the Rooms list, CSV and the PDF report for free. Measuring rooms and saving scans use your real Wi-Fi, so they need the demo switched off. Tap Exit demo to go back to your real Wi-Fi.</p>
+
+        <h3>⭐ Pro</h3>
+        <p>Pro is one payment for life. No subscription.</p>
+        <ul>
+            <li>Room comparison (Rooms tab)</li>
+            <li>⭐ Save a scan and look at it again later with 📂 Saved (a saved scan can be deleted from its banner)</li>
+            <li>CSV export of networks and rooms, for a spreadsheet</li>
+            <li>PDF report of your connection, rooms and networks</li>
+        </ul>
+        <p>Tap GO PRO at the top. Already bought it, or on a new phone with the same Google account? Tap Restore purchase.</p>
+
+        <h3>Your privacy</h3>
+        <ul>
+            <li>Scans, saved scans and room readings are stored on this phone only. They are not backed up and the app never sends them anywhere.</li>
+            <li>Your location is only shown on the map on this phone. Wi-Fi Buddy never saves or sends it.</li>
+            <li>The map pictures come from OpenStreetMap over the internet: like any map, their server sees which map area is downloaded, not your Wi-Fi details.</li>
+            <li>Your scans, rooms and Wi-Fi details only leave your phone if you tap CSV or PDF and share the file yourself.</li>
+            <li>No account, login or password is needed.</li>
+        </ul>
+
+        <h3>Not seeing networks?</h3>
+        <ul>
+            <li>Is the card at the top asking for something? Follow it: location permission (precise), Location switched on, Wi-Fi switched on.</li>
+            <li>Just allowed the permission? Tap 🔄 Scan.</li>
+            <li>"Next scan in …s": Android's limit of 4 scans every 2 minutes. The list still shows Android's latest results.</li>
+            <li>Some networks only appear in some scans, especially weak ones. Scan again a little later.</li>
+        </ul>
+
+        <h3>About</h3>
+        <p>Wi-Fi Buddy v1.0 (Build 1)</p>
+        <p>Publisher: AppStack Studio</p>
+
+        <h3>⚡ WHY WI-FI BUDDY</h3>
+        <p>Wi-Fi Buddy shows what your own phone measures, rated with the same Coverage maths as Cell Tower Finder and CellCoverage, and it tells you plainly what Android does and doesn't allow.</p>
+
+        <table class="rival-table">
+            <tr>
+                <th>Feature</th>
+                <th>Android's Wi-Fi settings</th>
+                <th>Wi-Fi Buddy</th>
+            </tr>
+            <tr>
+                <td>Signal of every nearby network</td>
+                <td>Signal bars only</td>
+                <td><strong>Measured dBm, Coverage score and level for each network</strong></td>
+            </tr>
+            <tr>
+                <td>Which channels are crowded</td>
+                <td>Not shown</td>
+                <td><strong>Channel graph and "fewest networks heard here"</strong></td>
+            </tr>
+            <tr>
+                <td>Live signal while you walk round</td>
+                <td>Not shown</td>
+                <td><strong>Live dBm, 90-second graph, flashing green when Excellent</strong></td>
+            </tr>
+            <tr>
+                <td>Room-by-room comparison</td>
+                <td>Not available</td>
+                <td><strong>⭐ Pro: rooms ranked by median signal, with a PDF report</strong></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>Built in</td>
+                <td><strong>Free, Pro is one payment for life (no subscription)</strong></td>
+            </tr>
+        </table>
+
+        <h3>⚠️ IMPORTANT DISCLAIMER</h3>
+        <ul>
+            <li>Wi-Fi Buddy shows what this phone measured, where it was at the time. Signal levels change as you move, and other devices or your router may hear different networks.</li>
+            <li>Wi-Fi Buddy can't make your Wi-Fi faster by itself and can't change your router's settings. "Fewest networks heard" is a hint, not a guarantee.</li>
+            <li>Link speed is the radio link between phone and router, not your internet speed.</li>
+            <li>Network names shown in the app are broadcast by the networks around you. Wi-Fi Buddy is not affiliated with any router maker or broadband provider.</li>
+        </ul>
+    </div>
+
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card">
+            <img src="wifi-buddy-networks.jpg" alt="Networks">
+            <p><strong>1. Networks</strong><br>Every network heard, with its signal, band, channel and Coverage level, and the map.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="wifi-buddy-channels.jpg" alt="Channels">
+            <p><strong>2. Channels</strong><br>Each network drawn across its channels, and the fewest networks heard.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="wifi-buddy-signal.jpg" alt="Signal">
+            <p><strong>3. Signal</strong><br>Your live signal, Coverage score and graph: flashing green when Excellent.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="wifi-buddy-rooms.jpg" alt="Rooms">
+            <p><strong>4. Rooms (Pro)</strong><br>Rooms ranked by their median signal.</p>
+        </div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots show the app's built-in demo (sample data, not measured), with a sample place on the map.</p>
+
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>
