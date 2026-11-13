@@ -149,8 +149,8 @@
 
             <h3>2. Usage access</h3>
             <ul>
-                <li>Android only tells an app how big other apps are, and when they were last used, if you switch on <strong>Usage access</strong> for it. App-Cleaner Buddy asks you to switch it on for that reason.</li>
-                <li>It uses Usage access only to read, on your phone: each app's size, data and cache, the storage totals (apps, photos, videos, audio), and the last time each app was used.</li>
+                <li>Android only tells an app how big other apps are, when they were last used and for how long, if you switch on <strong>Usage access</strong> for it. App-Cleaner Buddy asks you to switch it on for that reason.</li>
+                <li>It uses Usage access only to read, on your phone: each app's size, data and cache, the storage totals (apps, photos, videos, audio), the last time each app was used, and how many minutes it was used in the last 30 days.</li>
                 <li>It does not read the content of other apps, your messages, photos, files or browsing.</li>
                 <li>You can switch Usage access off at any time in Android's settings. App-Cleaner Buddy then only shows total and free space.</li>
             </ul>
@@ -158,14 +158,16 @@
             <h3>3. Information Stored on Your Phone Only</h3>
             <ul>
                 <li><strong>Daily storage readings:</strong> once a day, the free space and the size of each app (with the app's name and package name), used for the history, growth and forecast. Up to 400 days are kept.</li>
-                <li><strong>Settings:</strong> your choices (unused period, sort order, low-storage alert level), whether the welcome guide was shown, whether the demo is on, and whether Pro is unlocked.</li>
+                <li><strong>Freed total:</strong> how much space was measured as freed after you used Uninstall, Archive, App info or the guided cache clean.</li>
+                <li><strong>Settings:</strong> your choices (unused period, sort order, low-storage alert level, weekly summary on or off), whether the welcome guide was shown, whether the demo is on, and whether Pro is unlocked.</li>
             </ul>
 
             <h3>4. Permissions and Access Used</h3>
             <ul>
                 <li><strong>Usage access (<code>PACKAGE_USAGE_STATS</code>):</strong> to read app sizes and last-use times, as described above. Switched on by you in Android's settings.</li>
-                <li><strong>Request uninstall (<code>REQUEST_DELETE_PACKAGES</code>):</strong> to open Android's own "Uninstall this app?" screen when you tap Uninstall. Android asks you to confirm; App-Cleaner Buddy never removes anything by itself.</li>
-                <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> only for the Pro low-storage alert, if you turn it on.</li>
+                <li><strong>Request uninstall (<code>REQUEST_DELETE_PACKAGES</code>):</strong> to open Android's own "Uninstall this app?" screen when you tap Uninstall, and (Android 15+) to ask Android to archive an app when you tap Archive. Android asks you to confirm; App-Cleaner Buddy never removes anything by itself.</li>
+                <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> only for the Pro low-storage alert and weekly summary, if you turn them on.</li>
+                <li><strong>Home-screen widget (Pro):</strong> shows free space and the forecast on your home screen, from the same readings. It sends nothing anywhere.</li>
                 <li><strong>Google Play Billing:</strong> to handle the Pro purchase.</li>
             </ul>
             <p>The app does not use your location, contacts, camera, microphone, SMS, photos or files. It lists the apps in your app drawer without the "all apps" permission.</p>
