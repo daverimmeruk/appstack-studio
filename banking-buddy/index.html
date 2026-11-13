@@ -61,7 +61,7 @@
             <li>The sample alerts are dated this month and the two months before (they refresh when a new month starts): salary, card payments, a car loan, Council Tax, a refund, a payment in dollars, a declined payment and a statement notice, with a note, a ⭐ Saved alert and two regular payments (Salary and Car loan).</li>
             <li>📨 Send a demo alert (Banks tab): adds a new demo alert the same way a bank alert is saved, with the pop-up. The Demo Bank switch and your Filters apply to it too.</li>
             <li>The demo doesn't use any of the free places (2 banking apps, 2 regular payments), and its alerts are always shown.</li>
-            <li>Free version: with Demo Bank selected in Logs, you can try ⭐ CSV and ⭐ Totals on the sample alerts.</li>
+            <li>Free version: with Demo Bank selected in Logs, you can try ⭐ CSV and ⭐ Summary on the sample alerts. Today's sample alerts also start as ⚠️ new, so you can see how unread alerts are marked.</li>
             <li>🙈 Hide demo (or the Demo Bank's bin) hides the demo. Your own banks and alerts are not touched. 🧪 Show the demo bank brings it back with fresh sample alerts.</li>
         </ul>
 
@@ -71,6 +71,7 @@
             <li>Switch: on = its alerts are saved, off = its alerts are ignored.</li>
             <li>Bin: removes the app from Banking Buddy. Alerts already saved stay in Logs.</li>
             <li>The free version reads 2 banking apps. Pro reads as many as you like. A bank showing "Needs Pro - alerts not being read" is over the free limit.</li>
+            <li>⚠️ 2 new · tap to read: new alerts you haven't looked at yet, even if you swiped the pop-up away. Tap it to open that bank in Logs. ✓ Mark all alerts read clears every ⚠️ at once.</li>
         </ul>
 
         <h3>Filters tab</h3>
@@ -89,6 +90,7 @@
             <li>Under the bank name: today's money in and money out, added up from today's alerts.</li>
             <li>🔍 Search: type a shop, payee, amount or note to find alerts.</li>
             <li>Each alert shows MONEY IN, MONEY OUT or NOTICE, the bank, the time and the bank's message.</li>
+            <li>New alerts show ⚠️ NEW before the bank name. Once you've seen them in Logs, they count as read when you leave Logs, switch to another bank or close the app, and the ⚠️ on the Banks tab goes.</li>
         </ul>
         <p>Buttons on each alert:</p>
         <ul>
@@ -101,6 +103,7 @@
         <ul>
             <li>📤 Share at the top: share all the alerts shown.</li>
             <li>Clear: deletes all alerts except ⭐ Saved ones.</li>
+            <li>⭐ CSV and ⭐ Summary: see ⭐ Pro below.</li>
         </ul>
         <p>The free version shows the last 30 days (plus ⭐ Saved alerts). Older alerts stay on your phone and show again with Pro. Banking Buddy keeps up to 1,000 alerts; when full, the oldest unsaved ones are removed first.</p>
 
@@ -129,8 +132,9 @@
             <li>Unlimited banking apps</li>
             <li>Full alert history</li>
             <li>Unlimited regular payments</li>
-            <li>CSV: a spreadsheet file with date, time, bank, type, regular name, amount (money out as minus), message and your note, for Excel, Google Sheets or your accountant.</li>
-            <li>Totals: money in and money out for each month, added up from the amounts written in the alerts. Alerts without an amount aren't counted, so totals may differ from your bank statement.</li>
+            <li>📊 Summary: choose Week, Month or Year. For each bank: money in, money out and the difference (in minus out), split by type: your named regular payments (Salary, Car loan…), then Other money in and Other money out. With All Banks chosen in Logs, it also shows all banks together. Different currencies are kept apart.</li>
+            <li>📄 CSV: first choose All banks together or one bank. The file has the Summary (every week, month and year, by bank and type, plus all banks together when chosen), then every alert with date, time, bank, type, regular name, amount (money out as minus), message and your note, for Excel, Google Sheets or your accountant.</li>
+            <li>Totals are added up from the amounts written in the alerts. Notices and alerts without an amount aren't counted, so totals may differ from your bank statement.</li>
         </ul>
         <p>Tap GO PRO at the top. Already bought it, or on a new phone with the same Google account? Tap Restore purchase.</p>
 
@@ -152,7 +156,7 @@
         </ul>
 
         <h3>About</h3>
-        <p>Banking Buddy v1.2 (Build 3)</p>
+        <p>Banking Buddy v1.3 (Build 4)</p>
 
         <h3>⚡ WHY BANKING BUDDY</h3>
         <p>Banking Buddy keeps the money in / money out alerts from all your chosen banking apps together in one list, on your phone.</p>
@@ -179,6 +183,16 @@
                 <td><strong>🔁 Regular tab: last amount and "seen this month"</strong></td>
             </tr>
             <tr>
+                <td>Week, month and year totals for each bank and all banks together</td>
+                <td>One bank at a time</td>
+                <td><strong>📊 Summary (Pro): money in, money out and the difference, by type</strong></td>
+            </tr>
+            <tr>
+                <td>New alerts you swiped away</td>
+                <td>Gone from the notification bar</td>
+                <td><strong>⚠️ New on the bank's card until you've seen them in Logs</strong></td>
+            </tr>
+            <tr>
                 <td>Bank logins needed</td>
                 <td>Yes, for each app</td>
                 <td><strong>None: it reads the alerts your banking apps already show</strong></td>
@@ -197,22 +211,26 @@
     <div class="screenshot-grid">
         <div class="screenshot-card">
             <img src="banking-buddy-banks.jpg" alt="Banks">
-            <p><strong>1. Banks</strong><br>Your chosen banking apps, with their icons and on/off switches.</p>
+            <p><strong>1. Banks</strong><br>Your chosen banking apps, with their icons, on/off switches and ⚠️ new alerts.</p>
         </div>
         <div class="screenshot-card">
             <img src="banking-buddy-logs.jpg" alt="Logs">
-            <p><strong>2. Logs</strong><br>Money in / money out alerts, today's totals, search, notes and share.</p>
+            <p><strong>2. Logs</strong><br>Money in / money out alerts, today's totals, ⚠️ NEW marks, search, notes and share.</p>
+        </div>
+        <div class="screenshot-card">
+            <img src="banking-buddy-summary.jpg" alt="Summary">
+            <p><strong>3. Summary</strong><br>Week, month and year: money in, money out and the difference, by type.</p>
         </div>
         <div class="screenshot-card">
             <img src="banking-buddy-regular.jpg" alt="Regular payments">
-            <p><strong>3. Regular</strong><br>Named regular payments: last amount and "seen this month".</p>
+            <p><strong>4. Regular</strong><br>Named regular payments: last amount and "seen this month".</p>
         </div>
         <div class="screenshot-card">
             <img src="banking-buddy-manual.jpg" alt="User Manual">
-            <p><strong>4. Manual</strong><br>The full in-app guide.</p>
+            <p><strong>5. Manual</strong><br>The full in-app guide.</p>
         </div>
     </div>
-    <p style="font-size: 13px; color: #94A3B8;">Screenshots show test alerts from a sample "My Bank" app, with Pro switched on.</p>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots show test alerts from a sample "My Bank" app and the built-in Demo Bank (sample alerts, not real money), with Pro switched on.</p>
 
     <div class="footer">
         &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
