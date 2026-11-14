@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support — Phone Check Buddy | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --card-bg: #112240;
+            --primary-color: #00B4D8;
+            --secondary-color: #48CAE4;
+            --text-color: #F1F5F9;
+            --text-muted: #94A3B8;
+            --border-color: #233554;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #020617;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #112240;
+            border: 1px solid var(--border-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .support-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item h3 {
+            color: var(--secondary-color);
+            font-size: 1.15rem;
+            margin-bottom: 0.4rem;
+        }
+
+        p {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: var(--secondary-color);
+        }
+
+        .btn-email {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: #0A192F;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 1rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-email:hover {
+            background-color: #0284C7;
+        }
+
+        footer {
+            background-color: #020617;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🛡️ Customer Support</h1>
+        </div>
+        <nav>
+            <a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/index.html">🏠 Phone Check Buddy Home Page</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Contact Banner -->
+        <article class="support-card">
+            <h2>Phone Check Buddy — Support Center</h2>
+            <p class="subtitle">Support from AppStack Studio</p>
+
+            <p>If you need help with <strong>Phone Check Buddy</strong>, have a feature request or a billing question, please email us.</p>
+            <p>It helps if you include your phone model, your Android version and the app version (shown at the end of the app's 📖 Manual, under About). Please don't send us check codes: they unlock reports.</p>
+
+            <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+            <a href="mailto:appstack1966@gmail.com" class="btn-email">✉️ Contact Support</a>
+        </article>
+
+        <!-- FAQ Section -->
+        <article class="support-card">
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+            <br>
+
+            <div class="faq-item">
+                <h3>Q1: Who pays for a check code?</h3>
+                <p>Whoever makes the code pays for it: one check code at a time, or ⭐ Pro for unlimited codes. Typing in a code you were sent is always free, so the other person only needs to install the free app.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q2: The seller answered my code, but I can't see the report.</h3>
+                <p>Reports are collected when you open the app. Open Phone Check Buddy and look under 📨 My check codes, or tap 🔄 Check now. Your phone needs the internet. If the code shows "Expired or already used", ask the seller to answer a new code.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q3: It says "That code isn't right".</h3>
+                <p>Codes have 12 letters and numbers, like 7K4M-29QX-D3HZ. The letters O, I and L and the numbers 0 and 1 are never used. The last character checks the others, so a mistyped or swapped character is caught straight away. Capitals, spaces and dashes don't matter.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q4: It says "No check found".</h3>
+                <p>The code has already been used, is more than 7 days old, or was never made. Each code works once. Ask for a new code.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q5: How do I know the report is genuine?</h3>
+                <p>The report is signed inside the phone's security chip, and Phone Check Buddy checks that signature against Google's certificates. If the report was changed, didn't come from a real phone's security chip, or its keys were withdrawn by Google, the report isn't shown at all. A phone with modified software or an unlocked bootloader still gets its report, with a ⚠️ or ❌ warning at the top.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q6: Why does a back camera show ℹ️ instead of ✅?</h3>
+                <p>During the automatic test the phone lies on its back, so the back cameras face the table. If a back camera sends pictures but only sees darkness, it is shown as working but not judged (ℹ️), not as failed. To judge the back cameras' pictures, run ▶ Start full test and point the phone at something with detail.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q7: A test says "Not tested".</h3>
+                <p>The step was skipped, a permission wasn't allowed, or the feature was switched off (for example Bluetooth). Switch on Bluetooth, Wi-Fi and Location before the test, and tap Allow when Android asks for the microphone, camera, location or nearby devices.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q8: Can it check whether a phone is stolen or blocked?</h3>
+                <p>No. Android doesn't let apps read the IMEI, so Phone Check Buddy can't check whether a phone is reported lost or stolen, or blocked by a network. Check the IMEI with the network or a checking service.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q9: How is battery health worked out?</h3>
+                <p>Android doesn't tell apps the battery's original size. Enter it with 🔋 (from the box or the maker's specification, for example 4000 mAh) and Phone Check Buddy estimates the health from the charge Android reports. It is an estimate.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q10: What is sent when I use a check code?</h3>
+                <p>Only the report (the spec sheet and test results) and the security certificates that prove it is genuine, locked with the code so nobody else can read it. It is deleted as soon as the code is used, and can't be opened after 7 days. Photos, messages, contacts, accounts, files and your location are never read or sent. See our <a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/privacy.html">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q11: How do I buy or restore Pro?</h3>
+                <p>Tap ⭐ Pro &amp; purchases. Pro is one payment for life through Google Play, with no subscription; the price is shown by Google Play at checkout. On a new phone with the same Google account, tap ⭐ Pro &amp; purchases, then Restore. Check codes bought one at a time are kept on the phone they were bought on.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        <p><a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/index.html">Phone Check Buddy Home Page</a> | <a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>

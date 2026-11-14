@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Phone Check Buddy | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --card-bg: #112240;
+            --primary-color: #00B4D8;
+            --secondary-color: #48CAE4;
+            --text-color: #F1F5F9;
+            --text-muted: #94A3B8;
+            --border-color: #233554;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #020617;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: #112240;
+            border: 1px solid var(--border-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .policy-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.6rem 0;
+            font-size: 1.25rem;
+        }
+
+        p, li {
+            color: var(--text-color);
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: #020617;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🔒 Privacy Policy</h1>
+        </div>
+        <nav>
+            <a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/index.html">🏠 Phone Check Buddy Home Page</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <article class="policy-card">
+            <h2>Phone Check Buddy — Privacy Policy</h2>
+            <p class="meta">
+                <strong>Package Name:</strong> <code>com.appstackstudio.phonecheckbuddy</code> |
+                <strong>Effective Date:</strong> 14 November 2026 |
+                <strong>Developer:</strong> AppStack Studio
+            </p>
+
+            <h3>1. Overview</h3>
+            <p><strong>Phone Check Buddy</strong> reads a phone's spec, tests its parts and produces a report signed by the phone's own security chip, so buyers and sellers of used phones can trust it. The app needs no account, and it has no ads and no analytics. <strong>A report only leaves the phone when you make or answer a check code</strong>, and it is locked with that code before it is sent, so we cannot read it.</p>
+
+            <h3>2. What the test reads</h3>
+            <ul>
+                <li><strong>The phone's hardware and settings:</strong> make and model, Android version, build and security update, processor, memory (RAM), storage size and free space, screen, cameras, Wi-Fi and Bluetooth features, NFC, SIM slots, battery status and charge, whether developer options are on, whether fingerprint or face unlock is set up, and signs of rooting.</li>
+                <li><strong>Test measurements:</strong> how loud a test tone is at each microphone, how much the phone shakes when it vibrates, the brightness and detail of each camera's picture, sensor readings, the Wi-Fi signal strength, whether the SIM works and the mobile network's name, GPS accuracy and the number of satellites used, and how many Bluetooth devices were heard and the strongest signal.</li>
+                <li><strong>Sound and pictures are never saved or sent.</strong> The microphone only listens during the tone test and each camera only opens during its test; only the result (for example "Tone 90 dB above room noise" or "brightness 117/255") is kept.</li>
+                <li><strong>Location is never saved or sent.</strong> The GPS test only checks that the phone can find its position; only the accuracy and the number of satellites are kept, not where the phone is.</li>
+                <li>The app never reads photos, messages, contacts, call logs, accounts, files, the IMEI, Wi-Fi network names, or the names or addresses of Bluetooth devices.</li>
+            </ul>
+
+            <h3>3. Check codes and the check service</h3>
+            <ul>
+                <li>When you <strong>make or answer a check code</strong>, the phone sends a report to our check service: the spec sheet and test results described above, plus security certificates from the phone's security chip that prove the report came from that phone and hasn't been changed.</li>
+                <li>Before it leaves the phone, the report is <strong>locked (AES-256 encryption) with a key made from the check code</strong>. The check service only ever holds the locked report, stored under a fingerprint of the code, so neither we nor our service provider can read it without the code.</li>
+                <li>Only someone with the code can open the report. Pass your code only to the person you are buying from or selling to.</li>
+                <li>A report is <strong>deleted from the check service as soon as the code is used</strong> to open it. A report that is never opened <strong>can't be opened after 7 days</strong> and is then removed by the app's automatic tidy-up.</li>
+                <li>A buyer's code with no report yet holds no information about anyone: only that the code exists and when it expires.</li>
+                <li>The check service is Google Cloud Firestore (part of Google Firebase), stored in London (europe-west2). Like any internet service, Google receives the connection's IP address in order to provide it.</li>
+            </ul>
+
+            <h3>4. Information Stored on Your Phone Only</h3>
+            <ul>
+                <li><strong>Your last full test:</strong> the results of ▶ Start full test, and the original battery capacity if you entered it.</li>
+                <li><strong>Your check codes:</strong> the codes you made or answered, and the reports you received with them.</li>
+                <li><strong>Purchases and settings:</strong> how many paid check codes you have left, whether Pro is unlocked, and whether the welcome guide was shown.</li>
+            </ul>
+            <p>Phone Check Buddy's data is not included in Android backups and is not copied to a new phone.</p>
+
+            <h3>5. Permissions and Access Used</h3>
+            <ul>
+                <li><strong>Internet (<code>INTERNET</code>):</strong> for check codes, Google's list of withdrawn security keys, and Google Play Billing.</li>
+                <li><strong>Microphone (<code>RECORD_AUDIO</code>, <code>MODIFY_AUDIO_SETTINGS</code>):</strong> to measure the test tone from the loudspeaker and the call earpiece. Asked for when the sound test starts.</li>
+                <li><strong>Camera (<code>CAMERA</code>):</strong> to check that each camera produces a picture, and to switch the flashlight on in the full test. Asked for when the camera test starts.</li>
+                <li><strong>Location (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>):</strong> to check that GPS can find a position. Asked for when the GPS test starts. On older Android versions it is also needed for the Bluetooth test.</li>
+                <li><strong>Nearby devices (<code>BLUETOOTH_SCAN</code>, declared "never for location"):</strong> to check that Bluetooth can hear nearby devices. Asked for when the Bluetooth test starts.</li>
+                <li><strong>Wi-Fi and network state (<code>ACCESS_WIFI_STATE</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> to read the Wi-Fi features and signal strength.</li>
+                <li><strong>Vibration (<code>VIBRATE</code>):</strong> for the vibration test.</li>
+                <li><strong>Biometrics (<code>USE_BIOMETRIC</code>):</strong> only to see whether a fingerprint or face unlock is set up. The app never asks you to scan your fingerprint or face.</li>
+                <li><strong>Google Play Billing:</strong> to handle paid check codes and Pro.</li>
+            </ul>
+            <p>If you refuse a permission, that test is shown as not tested and the rest of the test carries on.</p>
+
+            <h3>6. Third-Party Services</h3>
+            <ul>
+                <li><strong>Google Play Billing:</strong> if you buy a check code (a single purchase) or Pro (a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. The price is shown by Google Play at checkout.</li>
+                <li><strong>Google Firebase (Cloud Firestore):</strong> the check service described in section 3. It only holds locked reports.</li>
+                <li><strong>Google's key attestation service:</strong> when a report is checked, the app downloads Google's public list of withdrawn security keys (android.googleapis.com). Nothing about you or the report is sent.</li>
+            </ul>
+            <p>See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+            <h3>7. PDF Reports</h3>
+            <p>A PDF report is only made when you tap 📄 PDF, and only shared with the app or person you choose on Android's share screen.</p>
+
+            <h3>8. Keeping and Deleting Your Data</h3>
+            <ul>
+                <li>Uninstalling the app, or Android Settings › Apps › Phone Check Buddy › Storage › Clear storage, deletes everything the app has stored on the phone, including your codes and received reports. Removing a code from 📨 My check codes deletes that code and its report from the phone.</li>
+                <li>Reports on the check service are deleted as soon as their code is used, and can't be opened after 7 days.</li>
+                <li>We can't read or identify the locked reports, so we hold nothing about you. If you have a question about your data, email us.</li>
+            </ul>
+
+            <h3>9. Changes to This Policy</h3>
+            <p>If the app changes what it reads, stores or sends, we will update this page and its effective date.</p>
+
+            <h3>10. Contact &amp; Data Inquiries</h3>
+            <p>If you have any questions regarding data privacy or permissions, contact us at:</p>
+            <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
