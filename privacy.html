@@ -80,6 +80,10 @@
             padding-left: 20px;
         }
 
+        a {
+            color: var(--accent-green);
+        }
+
         footer {
             text-align: center;
             padding: 24px 16px;
@@ -108,34 +112,51 @@
 
 <div class="container">
     <div class="card">
-        <p><strong>Effective Date:</strong> March 2025</p>
+        <p><strong>Effective Date:</strong> 15 November 2026</p>
         <p><strong>Developer:</strong> AppStack Studio</p>
 
-        <h2>1. Overview & Data Philosophy</h2>
-        <p>AppStack Studio develops privacy-first mobile applications. All spatial, cellular, camera, and telemetry computations are executed <strong>100% locally on your device</strong>. We do not operate external tracking servers, nor do we sell, share, or transmit your personal data, location history, camera feeds, or audio samples to any third party.</p>
+        <h2>1. Overview</h2>
+        <p>This page covers what all AppStack Studio apps have in common. Each app also has its own privacy policy that lists exactly what it reads, stores and sends (see section 6). If the two ever differ, the app's own policy is the one that applies.</p>
 
-        <h2>2. Permissions & On-Device Purpose</h2>
-
-        <h3>• Location Access</h3>
-        <p>Used strictly on-device to compute geographic distance and azimuth bearing angles to cell towers on OpenStreetMap. Your location data is processed locally in real-time and is never stored on external servers or tracked across time.</p>
-
-        <h3>• Camera Access</h3>
-        <p>Used strictly on-device to render live Augmented Reality (AR) overlays pointing to cell towers and positioning 3D indoor router anchors. Video feeds are processed frame-by-frame in device memory and are <strong>never recorded, stored, or transmitted</strong>.</p>
-
-        <h3>• Audio Access</h3>
-        <p>Used strictly on-device to calculate real-time 32-band FFT acoustic frequency resonance (20 Hz - 20 kHz) to identify standing wave echo chambers. Numerical data is held in local RAM and discarded instantly. No voice recordings or raw audio files are ever saved or transmitted.</p>
-
-        <h2>3. Local Storage & File Exports</h2>
-        <p>When you choose to export field reports (PDF or JSON format), the generated document is saved directly to your device's local storage. You maintain total control over these files and can delete or share them as you see fit.</p>
-
-        <h2>4. Third-Party Services</h2>
+        <h2>2. What all our apps have in common</h2>
         <ul>
-            <li><strong>OpenStreetMap (Osmdroid):</strong> Used to render tile maps for cell tower positions over encrypted HTTPS.</li>
-            <li><strong>Google Play Billing API:</strong> Handles secure in-app purchases (Pro). Payment details are strictly managed by Google Play.</li>
+            <li><strong>No account:</strong> none of our apps asks you to sign up or log in.</li>
+            <li><strong>No ads, no analytics and no tracking.</strong> We do not sell or share your data.</li>
+            <li><strong>Stored on your phone:</strong> the readings, settings and reports an app saves are kept in its private storage on your phone. We have no servers that receive them.</li>
+            <li><strong>Permissions are used for the app's own features only</strong>, for example location for a map, the camera for a camera view, or the microphone for a sound measurement. Each app's policy explains its permissions.</li>
+            <li><strong>Exports:</strong> a PDF, CSV or other file is only made when you tap the button, and only shared with the app or person you choose on Android's share screen.</li>
         </ul>
 
-        <h2>5. Contact Us</h2>
-        <p>If you have any questions or concerns regarding this Privacy Policy, please contact AppStack Studio via our <a href="https://daverimmeruk.github.io/appstack-studio/support.html">Studio Support Page</a>.</p>
+        <h2>3. When an app uses the internet</h2>
+        <ul>
+            <li><strong>Map pictures:</strong> apps with a map download map pictures (tiles) from OpenStreetMap. Like any website, OpenStreetMap's servers receive your IP address and which map area is loaded.</li>
+            <li><strong>Cell Tower Finder's speed test:</strong> only when you run it, test data is downloaded from and uploaded to Cloudflare's public speed-test service (speed.cloudflare.com).</li>
+            <li><strong>Phone Check Buddy's check codes:</strong> only when you make or answer a check code, the phone's report is locked (AES-256) with a key made from the code and passed through Google Cloud Firestore (Google Firebase, London). We can't read it, it is deleted as soon as the code is used, and it can't be opened after 7 days.</li>
+            <li><strong>Purchases:</strong> Pro and credits are bought through Google Play.</li>
+        </ul>
+
+        <h2>4. Purchases</h2>
+        <p>Payments are handled by Google Play Billing. We do not receive or store your payment details. Prices are shown by Google Play at checkout. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+        <h2>5. Deleting your data</h2>
+        <p>Uninstalling an app, or Android Settings › Apps › [the app] › Storage › Clear storage, deletes everything that app has stored on your phone. As we hold no copy of your data, there is nothing for us to delete; if you have a question about your data, email us.</p>
+
+        <h2>6. Each app's own privacy policy</h2>
+        <ul>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/cell-tower-finder/privacy.html">Cell Tower Finder</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/car-finder/carfinder-privacy.html">Car Finder</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/cellcoverage/cellcoverage-policy.html">CellCoverage 5g</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/banking-buddy/banking-buddy-privacy.html">Banking Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/wifi-buddy/wifi-buddy-privacy.html">Wi-Fi Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/app-cleaner-buddy-privacy.html">App-Cleaner Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/privacy.html">Phone Check Buddy</a></li>
+        </ul>
+
+        <h2>7. Changes to this policy</h2>
+        <p>If what our apps read, store or send changes, we update this page, the app's own policy and the effective date.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions about privacy, email <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a> or see our <a href="https://daverimmeruk.github.io/appstack-studio/support.html">Studio Support Page</a>.</p>
     </div>
 </div>
 
