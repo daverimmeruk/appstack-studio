@@ -109,19 +109,22 @@
 
 <div class="container">
     <div class="card">
-        <p><strong>Effective Date:</strong> March 2025</p>
+        <p><strong>Effective Date:</strong> 15 November 2026</p>
         <p><strong>App Name:</strong> Cell Tower Finder v4.0 & WaveScan Pro</p>
         <p><strong>Package Name:</strong> <code>com.celltowerfinder.app</code></p>
         <p><strong>Developer:</strong> AppStack Studio</p>
         <p><strong>Contact Email:</strong> <a href="mailto:appstack1966@gmail.com" style="color: #00FF99; font-weight: bold;">appstack1966@gmail.com</a></p>
 
         <h2>1. Overview & Data Philosophy</h2>
-        <p>AppStack Studio built <strong>Cell Tower Finder v4.0 & WaveScan Pro</strong> as a privacy-first utility application. All spatial, cellular, camera, and acoustic spectrum computations are executed <strong>100% locally on your device</strong>. We do not operate external tracking servers, nor do we sell, share, or transmit your personal data, location history, camera feeds, or audio samples to any third party.</p>
+        <p>AppStack Studio built <strong>Cell Tower Finder v4.0 & WaveScan Pro</strong> as a privacy-first utility application. All signal, location, camera and sound measurements are worked out <strong>on your phone</strong>, and what the app saves is kept on your phone. We have no servers, the app needs no account, and it has no ads or analytics. We do not sell or share your data. The only times the app uses the internet are listed in section 4.</p>
 
         <h2>2. Permissions Requested & On-Device Purpose</h2>
 
         <h3>• Location Access (<code>ACCESS_FINE_LOCATION</code> & <code>ACCESS_COARSE_LOCATION</code>)</h3>
-        <p>Used strictly on-device to compute the exact geographic distance and azimuth bearing angle to nearby cell towers on OpenStreetMap. Your location data is processed locally in real-time and is never stored on external servers or tracked across time.</p>
+        <p>Used on your phone to show your position on the map, to read the details of the cell your phone is using (Android requires location for this), and to work out the distance and direction to a tower. Tower positions you enter, and towers located from your own readings (each reading with the GPS position where it was taken), are saved on your phone so the map and AR view can show them. They are never uploaded.</p>
+
+        <h3>• Wi-Fi and Network State (<code>ACCESS_WIFI_STATE</code>, <code>CHANGE_WIFI_STATE</code>, <code>ACCESS_NETWORK_STATE</code>)</h3>
+        <p>Used to read the signal strength and link speed of the Wi-Fi network you're connected to (for Coverage and Blueprint), and to check whether you're online. Wi-Fi details are not uploaded.</p>
 
         <h3>• Camera Access (<code>CAMERA</code>)</h3>
         <p>Used strictly on-device to render the CameraX live Augmented Reality (AR) overlay, displaying 3D vector arrows pointing to cell towers and positioning 3D indoor router anchors. Video feeds are processed frame-by-frame in device memory and are <strong>never recorded, stored, or transmitted</strong>.</p>
@@ -130,11 +133,15 @@
         <p>Used strictly on-device to calculate real-time 32-band FFT acoustic frequency resonance (20 Hz - 20 kHz) to identify standing wave echo chambers. Audio signals are converted immediately into frequency band numerical data in local RAM and discarded instantly. No voice recordings or raw audio files are ever saved or transmitted.</p>
 
         <h2>3. Local Storage & File Exports</h2>
-        <p>When you choose to export field reports (PDF or JSON format), the generated document is saved directly to your device's private app storage or public Downloads directory via Android's secure <code>FileProvider</code> API. You maintain total control over these files and can delete or share them as you see fit.</p>
+        <p>Tower positions, your readings, Blueprint rooms and settings are kept in the app's private storage on your phone. Android's own backup (if you have it switched on) may include this app data in your Google account backup, like other apps' data.</p>
+        <p>When you export a report (PDF or JSON), the file is made in the app's private storage and only shared with the app or person you choose on Android's share screen, using Android's secure <code>FileProvider</code> API.</p>
+        <p>Uninstalling the app, or Android Settings › Apps › Cell Tower Finder › Storage › Clear storage, deletes everything the app has stored on your phone.</p>
 
-        <h2>4. Third-Party Libraries</h2>
+        <h2>4. Internet and Third-Party Services</h2>
         <ul>
-            <li><strong>Osmdroid (OpenStreetMap):</strong> Used to render offline-capable tile maps for cell tower positions over encrypted HTTPS.</li>
+            <li><strong>Internet (<code>INTERNET</code>):</strong> used only for the three services below.</li>
+            <li><strong>Osmdroid (OpenStreetMap):</strong> map pictures (tiles) are downloaded from OpenStreetMap's servers over encrypted HTTPS. Like any website, those servers receive your IP address and which map area is loaded.</li>
+            <li><strong>Speed test (Cloudflare):</strong> only when you run the speed test, test data (up to about 30 MB) is downloaded from and uploaded to Cloudflare's public speed-test service, speed.cloudflare.com. Like any website, Cloudflare receives your IP address. No other data is sent.</li>
             <li><strong>Google Play Billing API:</strong> Handles the secure one-time purchase that unlocks WaveScan Pro. All payment processing is strictly managed by Google Play. We do not collect or store financial or credit card information.</li>
         </ul>
 
