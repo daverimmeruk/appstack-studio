@@ -140,12 +140,12 @@
             <h2>Phone Check Buddy — Privacy Policy</h2>
             <p class="meta">
                 <strong>Package Name:</strong> <code>com.appstackstudio.phonecheckbuddy</code> |
-                <strong>Effective Date:</strong> 14 November 2026 |
+                <strong>Effective Date:</strong> 15 November 2026 |
                 <strong>Developer:</strong> AppStack Studio
             </p>
 
             <h3>1. Overview</h3>
-            <p><strong>Phone Check Buddy</strong> reads a phone's spec, tests its parts and produces a report signed by the phone's own security chip, so buyers and sellers of used phones can trust it. The app needs no account, and it has no ads and no analytics. <strong>A report only leaves the phone when you make or answer a check code</strong>, and it is locked with that code before it is sent, so we cannot read it.</p>
+            <p><strong>Phone Check Buddy</strong> reads a phone's spec, tests its parts and produces a report signed by the phone's own security chip, so anyone checking a used phone can trust it. The app needs no account, and it has no ads and no analytics. <strong>A report only leaves the phone when you make or answer a check code</strong>, and it is locked with that code before it is sent, so we cannot read it.</p>
 
             <h3>2. What the test reads</h3>
             <ul>
@@ -160,9 +160,9 @@
             <ul>
                 <li>When you <strong>make or answer a check code</strong>, the phone sends a report to our check service: the spec sheet and test results described above, plus security certificates from the phone's security chip that prove the report came from that phone and hasn't been changed.</li>
                 <li>Before it leaves the phone, the report is <strong>locked (AES-256 encryption) with a key made from the check code</strong>. The check service only ever holds the locked report, stored under a fingerprint of the code, so neither we nor our service provider can read it without the code.</li>
-                <li>Only someone with the code can open the report. Pass your code only to the person you are buying from or selling to.</li>
+                <li>Only someone with the code can open the report. Pass your code only to the person who should see or answer the check.</li>
                 <li>A report is <strong>deleted from the check service as soon as the code is used</strong> to open it. A report that is never opened <strong>can't be opened after 7 days</strong> and is then removed by the app's automatic tidy-up.</li>
-                <li>A buyer's code with no report yet holds no information about anyone: only that the code exists and when it expires.</li>
+                <li>A code made with 🛒 Check a phone that has no report yet holds no information about anyone: only that the code exists and when it expires.</li>
                 <li>The check service is Google Cloud Firestore (part of Google Firebase), stored in London (europe-west2). Like any internet service, Google receives the connection's IP address in order to provide it.</li>
             </ul>
 
@@ -170,7 +170,8 @@
             <ul>
                 <li><strong>Your last full test:</strong> the results of ▶ Start full test, and the original battery capacity if you entered it.</li>
                 <li><strong>Your check codes:</strong> the codes you made or answered, and the reports you received with them.</li>
-                <li><strong>Purchases and settings:</strong> how many paid check codes you have left, whether Pro is unlocked, and whether the welcome guide was shown.</li>
+                <li><strong>📜 History:</strong> a list of credits and Pro bought, the codes made with them, reports sent and received, and codes that expired.</li>
+                <li><strong>Purchases and settings:</strong> your available credits, whether Pro is unlocked, and whether the welcome guide was shown.</li>
             </ul>
             <p>Phone Check Buddy's data is not included in Android backups and is not copied to a new phone.</p>
 
@@ -184,13 +185,13 @@
                 <li><strong>Wi-Fi and network state (<code>ACCESS_WIFI_STATE</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> to read the Wi-Fi features and signal strength.</li>
                 <li><strong>Vibration (<code>VIBRATE</code>):</strong> for the vibration test.</li>
                 <li><strong>Biometrics (<code>USE_BIOMETRIC</code>):</strong> only to see whether a fingerprint or face unlock is set up. The app never asks you to scan your fingerprint or face.</li>
-                <li><strong>Google Play Billing:</strong> to handle paid check codes and Pro.</li>
+                <li><strong>Google Play Billing:</strong> to handle credits and Pro.</li>
             </ul>
             <p>If you refuse a permission, that test is shown as not tested and the rest of the test carries on.</p>
 
             <h3>6. Third-Party Services</h3>
             <ul>
-                <li><strong>Google Play Billing:</strong> if you buy a check code (a single purchase) or Pro (a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. The price is shown by Google Play at checkout.</li>
+                <li><strong>Google Play Billing:</strong> if you buy 1 credit (a single purchase) or Pro (a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. The price is shown by Google Play at checkout.</li>
                 <li><strong>Google Firebase (Cloud Firestore):</strong> the check service described in section 3. It only holds locked reports.</li>
                 <li><strong>Google's key attestation service:</strong> when a report is checked, the app downloads Google's public list of withdrawn security keys (android.googleapis.com). Nothing about you or the report is sent.</li>
             </ul>
@@ -201,7 +202,7 @@
 
             <h3>8. Keeping and Deleting Your Data</h3>
             <ul>
-                <li>Uninstalling the app, or Android Settings › Apps › Phone Check Buddy › Storage › Clear storage, deletes everything the app has stored on the phone, including your codes and received reports. Removing a code from 📨 My check codes deletes that code and its report from the phone.</li>
+                <li>Uninstalling the app, or Android Settings › Apps › Phone Check Buddy › Storage › Clear storage, deletes everything the app has stored on the phone, including your codes, received reports and 📜 History. 🗑 in 📜 History deletes that line from History.</li>
                 <li>Reports on the check service are deleted as soon as their code is used, and can't be opened after 7 days.</li>
                 <li>We can't read or identify the locked reports, so we hold nothing about you. If you have a question about your data, email us.</li>
             </ul>
