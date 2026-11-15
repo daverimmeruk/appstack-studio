@@ -40,6 +40,7 @@
         <h3>What Wi-Fi Buddy does</h3>
         <p>Wi-Fi Buddy shows what your phone measures: the Wi-Fi networks it can hear, the channels they use, and the live signal of the network you're connected to. Every number comes from Android's own Wi-Fi readings.</p>
         <p>It can't make your Wi-Fi faster by itself. It helps you see where the signal is weak and which channels are crowded, so you can move your router, change its channel in the router's settings, or pick a better spot.</p>
+        <p>To keep this manual, tap 📤 Share the manual at the top of the Manual tab: it makes a PDF to save, email or print.</p>
 
         <h3>Why it asks for location</h3>
         <p>Android only gives the list of nearby Wi-Fi networks to apps with precise location permission, and only while Location is switched on. That's Android's rule for every Wi-Fi app.</p>
@@ -56,6 +57,8 @@
             <li>Tap a band button to show only that band.</li>
             <li>🔄 Scan asks Android for a new scan. Android allows an app 4 scans every 2 minutes, so Wi-Fi Buddy also scans by itself every 40 seconds while Networks or Channels is open, and tells you when the next scan is allowed.</li>
             <li>The line above the list says when the results are from. "Heard 1 min ago" means Android hasn't heard that network in the latest scan.</li>
+            <li>While the card at the top shows a problem (Wi-Fi off, airplane mode, Location off or no permission), the list is empty: no old results are shown as if they were current.</li>
+            <li>⭐ Share (Pro): the PDF report to save, email or print, or a CSV for a spreadsheet.</li>
             <li>A hidden network shows as "(hidden network)".</li>
             <li>The map at the bottom shows where you are (GPS) with your Wi-Fi network and its signal on the pin. It centres on you once; drag and zoom freely, and tap ◎ to centre on you again. "Waiting for GPS…" means no location fix yet. Map © OpenStreetMap contributors.</li>
             <li>If the map pictures can't download, a message says so over the map (see No map? below).</li>
@@ -69,6 +72,12 @@
             <li>🟡 Good: 50 to 74% (-70 to -56 dBm).</li>
             <li>🔴 Weak: below 50% (weaker than -70 dBm).</li>
         </ul>
+        <p>When your own signal is red, Wi-Fi Buddy gives the same advice as CellCoverage:</p>
+        <ul>
+            <li>-71 to -80 dBm: "⚠️ WEAK SIGNAL. A WI-FI EXTENDER / MESH NODE MAY HELP HERE."</li>
+            <li>Weaker than -80 dBm (a dead zone): "⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A WI-FI EXTENDER / MESH NODE RECOMMENDED HERE."</li>
+        </ul>
+        <p>Place the extender / mesh node about halfway between your router and the weak spot, where the signal is still Good or better, so it has a strong signal to pass on.</p>
         <p>Real speed also depends on the router, interference and how many devices share the network.</p>
 
         <h3>Channels tab</h3>
@@ -82,6 +91,8 @@
         <h3>Signal tab</h3>
         <ul>
             <li>Your connected network's live signal in dBm, its Coverage score and level (🌟 Excellent flashes green), and a graph of the last 90 seconds.</li>
+            <li>When the signal is red, the extender / mesh node advice shows under the level (see Signal levels).</li>
+            <li>When Wi-Fi disconnects, the graph starts again: readings from before are not kept.</li>
             <li>Band, channel, link speed (send and receive where Android gives them), Wi-Fi standard, router BSSID, the phone's IP address, the router's IP (gateway) and DNS.</li>
         </ul>
         <p>Android updates the signal every few seconds. Link speed is the radio link between phone and router, not your internet speed.</p>
@@ -92,10 +103,11 @@
         <p>2. Pick or type a room name and tap Start. Keep still for 10 seconds: Wi-Fi Buddy reads your connected network's signal once a second.</p>
         <p>3. Repeat in other rooms.</p>
         <p>Rooms are ranked by the median of their 10 readings (the middle value, as CellCoverage's Blueprint), with the Coverage score and level. 🏆 marks the strongest of the rooms you measured. If rooms are within 2 dB of each other, Wi-Fi Buddy says they're too close to call. Measuring a room again with the same name replaces its reading. If rooms were measured on different networks or bands, it says so.</p>
+        <p>A red room shows the extender / mesh node advice in red, and so does the PDF report.</p>
 
         <h3>🧪 Demo</h3>
         <p>Tap 🧪 Try the demo (Manual tab, or the card at the top when Wi-Fi Buddy can't scan) to see every screen with sample networks, a sample connection and sample rooms. A yellow strip says DEMO: sample data, not measured, and exports made in the demo say DEMO too.</p>
-        <p>In the demo you can try the Rooms list, CSV and the PDF report for free. Measuring rooms and saving scans use your real Wi-Fi, so they need the demo switched off. Tap Exit demo to go back to your real Wi-Fi.</p>
+        <p>In the demo you can try the Rooms list, 📤 Share, CSV and the PDF report for free. Measuring rooms and saving scans use your real Wi-Fi, so they need the demo switched off. Tap Exit demo to go back to your real Wi-Fi.</p>
         <p>Once you've bought Pro, the Manual tab no longer shows 🧪 Try the demo. It's still on the card at the top when Wi-Fi Buddy can't scan.</p>
 
         <h3>⭐ Pro</h3>
@@ -104,7 +116,7 @@
             <li>Room comparison (Rooms tab)</li>
             <li>⭐ Save a scan and look at it again later with 📂 Saved (a saved scan can be deleted from its banner)</li>
             <li>CSV export of networks and rooms, for a spreadsheet</li>
-            <li>PDF report of your connection, rooms and networks</li>
+            <li>PDF report of your connection, rooms and networks, to save, email or print (📤 Share on Networks, or PDF on Rooms)</li>
         </ul>
         <p>Tap GO PRO at the top. Already bought it, or on a new phone with the same Google account? Tap Restore purchase.</p>
 
@@ -113,13 +125,14 @@
             <li>Scans, saved scans and room readings are stored on this phone only. They are not backed up and the app never sends them anywhere.</li>
             <li>Your location is only shown on the map on this phone. Wi-Fi Buddy never saves or sends it.</li>
             <li>The map pictures come from OpenStreetMap over the internet: like any map, their server sees which map area is downloaded, not your Wi-Fi details.</li>
-            <li>Your scans, rooms and Wi-Fi details only leave your phone if you tap CSV or PDF and share the file yourself.</li>
+            <li>Your scans, rooms and Wi-Fi details only leave your phone if you tap 📤 Share, CSV or PDF and share the file yourself.</li>
             <li>No account, login or password is needed.</li>
         </ul>
 
         <h3>Not seeing networks?</h3>
         <ul>
             <li>Is the card at the top asking for something? Follow it: location permission (precise), Location switched on, Wi-Fi switched on.</li>
+            <li>Airplane mode switches Wi-Fi off. You can turn Wi-Fi back on while airplane mode stays on.</li>
             <li>Just allowed the permission? Tap 🔄 Scan.</li>
             <li>"Next scan in …s": Android's limit of 4 scans every 2 minutes. The list still shows Android's latest results.</li>
             <li>Some networks only appear in some scans, especially weak ones. Scan again a little later.</li>
@@ -135,7 +148,7 @@
         <p>Everything else in Wi-Fi Buddy works without the map.</p>
 
         <h3>About</h3>
-        <p>Wi-Fi Buddy v1.1 (Build 2)</p>
+        <p>Wi-Fi Buddy v1.2 (Build 3)</p>
         <p>Publisher: AppStack Studio</p>
 
         <h3>⚡ WHY WI-FI BUDDY</h3>
