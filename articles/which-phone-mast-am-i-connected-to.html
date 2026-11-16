@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Phone Mast Is My Phone Connected To? How to Find Out on Android — AppStack Studio</title>
+    <meta name="description" content="Your phone talks to one mobile mast at a time. Here is how to see which cell you are on, how far away the mast is and which way your signal gets stronger, from your own phone&#x27;s readings.">
+    <link rel="canonical" href="https://daverimmeruk.github.io/appstack-studio/articles/which-phone-mast-am-i-connected-to.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Which Phone Mast Is My Phone Connected To? How to Find Out on Android">
+    <meta property="og:description" content="Your phone talks to one mobile mast at a time. Here is how to see which cell you are on, how far away the mast is and which way your signal gets stronger, from your own phone&#x27;s readings.">
+    <meta property="og:url" content="https://daverimmeruk.github.io/appstack-studio/articles/which-phone-mast-am-i-connected-to.html">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Which Phone Mast Is My Phone Connected To? How to Find Out on Android",
+  "description": "Your phone talks to one mobile mast at a time. Here is how to see which cell you are on, how far away the mast is and which way your signal gets stronger, from your own phone's readings.",
+  "datePublished": "2026-11-16",
+  "author": {
+    "@type": "Organization",
+    "name": "AppStack Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AppStack Studio"
+  },
+  "mainEntityOfPage": "https://daverimmeruk.github.io/appstack-studio/articles/which-phone-mast-am-i-connected-to.html",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Cell Tower Finder v4.0 & WaveScan Pro",
+    "operatingSystem": "Android",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://play.google.com/store/apps/details?id=com.celltowerfinder.app"
+  }
+}
+    </script>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1F1F1F;
+            --accent-green: #00FF99;
+            --accent-blue: #00A8FF;
+            --text-color: #FFFFFF;
+            --subtext-color: #CCCCCC;
+            --border-color: #333333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background-color: #181818;
+            border-bottom: 2px solid var(--accent-green);
+            padding: 36px 16px;
+            text-align: center;
+        }
+        header h1 { color: var(--accent-green); margin: 0 0 10px 0; font-size: 2rem; }
+        header p { color: var(--subtext-color); margin: 0; font-size: 1.05rem; }
+        nav {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: center;
+        }
+        nav a { color: var(--accent-green); text-decoration: none; margin: 0 14px; font-weight: bold; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 0 auto; padding: 32px 16px; }
+        h2 { color: var(--accent-green); margin-top: 36px; }
+        h3 { color: var(--accent-blue); }
+        p, li { color: var(--subtext-color); font-size: 1.05rem; }
+        strong { color: var(--text-color); }
+        a { color: var(--accent-blue); }
+        .cta {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 36px 0;
+            text-align: center;
+        }
+        .cta p { margin: 0 0 16px 0; }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            color: #888888;
+            font-size: 0.85rem;
+            padding: 24px 16px;
+            border-top: 1px solid var(--border-color);
+        }
+        footer a { color: var(--accent-green); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Which Phone Mast Is My Phone Connected To? How to Find Out on Android</h1>
+        <p>Your phone talks to one mobile mast at a time. Here is how to see which cell you are on, how far away the mast is and which way your signal gets stronger, from your own phone&#x27;s readings.</p>
+    </header>
+    <nav>
+        <a href="../index.html">🏠 Studio Home</a>
+        <a href="../cell-tower-finder/index.html">Cell Tower Finder</a>
+        <a href="https://play.google.com/store/apps/details?id=com.celltowerfinder.app&referrer=utm_source%3Dappstack_website%26utm_medium%3Darticle">▶ Google Play</a>
+    </nav>
+    <div class="container">
+<h2>Your phone uses one cell at a time</h2>
+<p>A phone mast usually carries several cells, each covering one direction on one frequency band. Your phone
+connects to one of them (the serving cell) and keeps listening to the others nearby, ready to switch if one
+becomes stronger. Knowing which cell you are on, and roughly where its mast is, helps you understand why the
+signal is good in one room and poor in another.</p>
+<h2>Step 1: See the cell you are connected to</h2>
+<p>Open <strong>Cell Tower Finder</strong> and tap <strong>🗼 Cell Tower</strong>. Allow location when asked: Android requires precise
+location before any app can read cell details.</p>
+<p>The card on the map shows your <strong>carrier</strong>, the <strong>Cell ID</strong> of the cell you are connected to and its
+<strong>band</strong> (the frequency it uses). The signal line shows the measured strength in dBm next to your phone's own
+signal bars, the same as the icon in your status bar.</p>
+<p><strong>Best Tower</strong> lists every cell your phone can hear right now, with its band and signal, so you can see
+whether a stronger cell is nearby.</p>
+<h2>Step 2: How far away is the mast?</h2>
+<p>While mobile data is in use, the network tells your phone how far away the mast is (a measurement called
+timing advance). Cell Tower Finder shows it as <strong>"Distance: ≈…m (network-measured)"</strong> and draws a dashed ring
+on the map: the mast is somewhere on that ring.</p>
+<h2>Step 3: Walk to find the direction</h2>
+<p>Your phone doesn't know which direction a mast is in; it only knows it is receiving a signal. So the app works
+it out from your own readings. Walk slowly round your home and garden, front and back. Every reading becomes a
+coloured circle on the map (🟢 strong, 🟡 fair, 🔴 weak), and a <strong>⭐ strong spot</strong> marks the best signal
+measured so far.</p>
+<p>Once you have readings from different sides of the house, the small arrow shows which way your signal gets
+stronger. That is usually the side facing the mast, but walls and reflections can mislead it, so treat it as a
+guide. With readings from far enough apart, for example with the app open on a walk down your road, the app
+locates the mast from your readings and draws the line to it.</p>
+<p>GPS indoors is only accurate to about 5–15 m, so the map tells you which side or end of the house is best
+rather than which shelf.</p>
+<h2>Step 4: Read the numbers</h2>
+<p>For 4G and 5G, signal strength (RSRP) is measured in dBm: the closer to zero, the better.</p>
+<ul>
+<li><strong>-80 dBm or better:</strong> excellent</li>
+<li><strong>-80 to -90 dBm:</strong> good</li>
+<li><strong>-90 to -100 dBm:</strong> fair, so try nearer a window</li>
+<li><strong>Below -100 dBm:</strong> poor; an external antenna, a booster or Wi-Fi Calling may help</li>
+</ul>
+<p>Two phones side by side can show different numbers from the same mast, because their modems, antennas and
+software differ. Compare readings on the same phone.</p>
+<h2>Test the mast's speed</h2>
+<p>Tap <strong>⚡ Test Tower Speed</strong> for a real download and upload test (about 30 MB of data at most). Turn Wi-Fi
+off first, otherwise you are testing your broadband, not the mast.</p>
+<h2>Why not use a mast map website?</h2>
+<p>Crowd-sourced mast maps can be approximate or out of date, and they can't tell you which cell your own phone
+is using right now. Cell Tower Finder works only from what your phone measures, and your readings and mast
+positions are stored only on your phone.</p>
+<p>Everything in this guide is in the free version. Pro is one payment for life through Google Play, with no
+subscription.</p>
+        <div class="cta">
+            <p><strong>Cell Tower Finder v4.0 &amp; WaveScan Pro</strong> is on Google Play.</p>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.celltowerfinder.app&referrer=utm_source%3Dappstack_website%26utm_medium%3Darticle">Get it on Google Play</a>
+        </div>
+        <p><a href="../cell-tower-finder/index.html">Read the full Cell Tower Finder field guide</a></p>
+    </div>
+    <footer>
+        AppStack Studio · <a href="../index.html">Studio Home</a> · <a href="../cell-tower-finder/index.html">Cell Tower Finder</a>
+    </footer>
+</body>
+</html>
