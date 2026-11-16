@@ -379,7 +379,7 @@
         <ol>
             <li>Tap '📷 Camera AR' and allow the camera when asked. The Indoor Router AR view opens.</li>
             <li>Point your camera around the room and move slowly from spot to spot. The crosshairs follow your live Wi-Fi signal, rated with the same Coverage score as 📶 Cellular Coverage; the anchor box shows it, e.g. '• From Wi-Fi -59 dBm: score 68%'. Indoors the app uses Wi-Fi only: mobile signal is hard to pinpoint room by room, while Wi-Fi changes clearly from spot to spot. If Wi-Fi is off it shows '⚪ WI-FI NOT CONNECTED'.</li>
-            <li>The score runs from -100 dBm or weaker (low) to -40 dBm or stronger (high), shown between 10% and 98%, so every 1 dB moves it by about 1.7%. The crosshairs FLASH GREEN at 75% or more ('🎯 OPTIMAL ROUTER SPOT!'), turn amber from 50% ('🟡 GOOD AREA - STABLE SIGNAL') and red below 50% ('🔴 AVOID - WEAK SIGNAL HERE'). The phone updates its readings every few seconds, so give each spot a moment.</li>
+            <li>The score runs from -100 dBm or weaker (low) to -40 dBm or stronger (high), shown between 10% and 98%, so every 1 dB moves it by about 1.7%. The crosshairs FLASH GREEN at 75% or more ('🎯 OPTIMAL ROUTER SPOT!'), turn amber from 50% ('🟡 GOOD AREA - STABLE SIGNAL') and red below 50% ('🔴 WEAK SIGNAL HERE' from -71 to -80 dBm, '🔴 AVOID - WEAK SIGNAL HERE' weaker than -80 dBm). The phone updates its readings every few seconds, so give each spot a moment.</li>
             <li>The floating anchor box also shows 1.2m elevation and wall barrier advice. Place your router or gateway where the crosshairs flash green. '💡 Router Spot Guide' at the bottom shows these tips again.</li>
         </ol>
 
@@ -388,7 +388,7 @@
         <ol>
             <li>Tap '📐 Blueprint'. Select Room A, Room B, or Room C at the top (long-press a tab to rename it or add rooms).</li>
             <li>Walk to that room. Touch and drag the Yellow Router Icon (📡) to where you're standing and let go: a real Wi-Fi reading is recorded for that room (Wi-Fi must be connected). Take at least 3 readings per room.</li>
-            <li>The header shows the room's rating with the same Coverage score as 📶 Coverage, from its median Wi-Fi reading: 🟢 Excellent (75% or more), 🟡 Good (50% or more) or 🔴 Avoid (below 50%). With only one room measured there's nothing to compare yet.</li>
+            <li>The header shows the room's rating with the same Coverage score as 📶 Coverage, from its median Wi-Fi reading: 🟢 Excellent (75% or more), 🟡 Good (50% or more), 🔴 Weak (below 50%, -71 to -80 dBm) or 🔴 Avoid (weaker than -80 dBm). With only one room measured there's nothing to compare yet.</li>
             <li>Tap '🏆 Compare All Rooms' to view the leaderboard. Rooms are ranked by their median Wi-Fi reading and its Coverage score; rooms with no readings are listed as not measured. If the top rooms are within 2 dB of each other, it says they are too close to call (readings vary by a couple of dB on their own).</li>
             <li>Physical Motion Warning: if you switch room tabs without walking (&lt; 3m moved, from GPS), a warning reminds you to walk to that room for an accurate reading. It relies on GPS, which indoors can be out by 5-15 m or more, so it may not always appear, and it can appear when you didn't mean to switch rooms.</li>
         </ol>
@@ -400,7 +400,8 @@
                     <li>Green = Strong Signal (75-89% score): '🟢 STRONG SIGNAL (No extension nodes needed)'; the screen shows '🟢 GREEN — STRONG SIGNAL'.</li>
                     <li>Flashing Green = Excellent (90% or more, -46 dBm or better, usually right next to your router): '🔥 EXCELLENT SIGNAL (No extension nodes needed)'; the screen FLASHES green with the background pulsing and shows '🌟 FLASHING GREEN — EXCELLENT SIGNAL!'.</li>
                     <li>Amber: '⚡ GOOD RECEPTION (Move router 30cm closer to window)'.</li>
-                    <li>Red: '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A WI-FI EXTENDER / MESH NODE RECOMMENDED HERE.'</li>
+                    <li>Red, -71 to -80 dBm: '⚠️ WEAK SIGNAL. A WI-FI EXTENDER / MESH NODE MAY HELP HERE.'</li>
+                    <li>Red, weaker than -80 dBm: '⚠️ WEAK SIGNAL DEAD-ZONE! FITMENT OF A WI-FI EXTENDER / MESH NODE RECOMMENDED HERE.'</li>
                 </ul>
             </li>
             <li>'🧪 Test Weak Signal' shows what the dead-zone display looks like (-95 dBm simulation, clearly labelled); switch back to live afterwards.</li>
@@ -466,10 +467,10 @@
             <li>Measurements and calculations are provided for guidance only, without warranty. Your mobile network operator is the authority on its own network and coverage.</li>
         </ul>
 
-        <h3>ℹ️ ABOUT &amp; APP INFO (VERSION 2.6)</h3>
+        <h3>ℹ️ ABOUT &amp; APP INFO (VERSION 2.7)</h3>
         <ul>
             <li>App Name: Cell Tower Finder v4.0 (WaveScan Pro)</li>
-            <li>Version: 2.6 (Build 17)</li>
+            <li>Version: 2.7 (Build 18)</li>
             <li>Target SDK: Android 36 (Edge-to-Edge &amp; Full Debug Symbols)</li>
             <li>Core Modules: Outdoor Cell Tower Azimuth Alignment, Indoor Router AR Camera Overlay, Indoor Blueprint Modeler, Cellular Coverage &amp; Extension Map, Room Heatmap Matrix and 32-Band Acoustic Spectrum Analyzer.</li>
             <li>Maps © OpenStreetMap contributors.</li>
