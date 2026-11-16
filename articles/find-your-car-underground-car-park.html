@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Find Your Car in an Underground Car Park When GPS Stops Working — AppStack Studio</title>
+    <meta name="description" content="GPS often fails in underground and multi-storey car parks. Here is how Car Finder uses Wi-Fi and air pressure to help you get back to your bay.">
+    <link rel="canonical" href="https://daverimmeruk.github.io/appstack-studio/articles/find-your-car-underground-car-park.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Find Your Car in an Underground Car Park When GPS Stops Working">
+    <meta property="og:description" content="GPS often fails in underground and multi-storey car parks. Here is how Car Finder uses Wi-Fi and air pressure to help you get back to your bay.">
+    <meta property="og:url" content="https://daverimmeruk.github.io/appstack-studio/articles/find-your-car-underground-car-park.html">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Find Your Car in an Underground Car Park When GPS Stops Working",
+  "description": "GPS often fails in underground and multi-storey car parks. Here is how Car Finder uses Wi-Fi and air pressure to help you get back to your bay.",
+  "datePublished": "2026-11-15",
+  "author": {
+    "@type": "Organization",
+    "name": "AppStack Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AppStack Studio"
+  },
+  "mainEntityOfPage": "https://daverimmeruk.github.io/appstack-studio/articles/find-your-car-underground-car-park.html",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Car Finder",
+    "operatingSystem": "Android",
+    "applicationCategory": "TravelApplication",
+    "url": "https://play.google.com/store/apps/details?id=com.appstackstudio.carfinder"
+  }
+}
+    </script>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1F1F1F;
+            --accent-green: #00FF99;
+            --accent-blue: #00A8FF;
+            --text-color: #FFFFFF;
+            --subtext-color: #CCCCCC;
+            --border-color: #333333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background-color: #181818;
+            border-bottom: 2px solid var(--accent-green);
+            padding: 36px 16px;
+            text-align: center;
+        }
+        header h1 { color: var(--accent-green); margin: 0 0 10px 0; font-size: 2rem; }
+        header p { color: var(--subtext-color); margin: 0; font-size: 1.05rem; }
+        nav {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: center;
+        }
+        nav a { color: var(--accent-green); text-decoration: none; margin: 0 14px; font-weight: bold; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 0 auto; padding: 32px 16px; }
+        h2 { color: var(--accent-green); margin-top: 36px; }
+        h3 { color: var(--accent-blue); }
+        p, li { color: var(--subtext-color); font-size: 1.05rem; }
+        strong { color: var(--text-color); }
+        a { color: var(--accent-blue); }
+        .cta {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 36px 0;
+            text-align: center;
+        }
+        .cta p { margin: 0 0 16px 0; }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            color: #888888;
+            font-size: 0.85rem;
+            padding: 24px 16px;
+            border-top: 1px solid var(--border-color);
+        }
+        footer a { color: var(--accent-green); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How to Find Your Car in an Underground Car Park When GPS Stops Working</h1>
+        <p>GPS often fails in underground and multi-storey car parks. Here is how Car Finder uses Wi-Fi and air pressure to help you get back to your bay.</p>
+    </header>
+    <nav>
+        <a href="../index.html">🏠 Studio Home</a>
+        <a href="../car-finder/index.html">Car Finder</a>
+        <a href="https://play.google.com/store/apps/details?id=com.appstackstudio.carfinder&referrer=utm_source%3Dappstack_website%26utm_medium%3Darticle">▶ Google Play</a>
+    </nav>
+    <div class="container">
+<h2>Why your phone gets lost in car parks</h2>
+<p>Concrete floors and ceilings block satellite signals, so the blue dot in a normal map app drifts or
+disappears underground. In a multi-storey car park it also can't tell which level you are on.</p>
+<h2>Outside: mark it and follow the arrow (free)</h2>
+<p>When you park, tap <strong>📍 Mark Parked Car Here</strong> and hold your phone steady during the 5-second countdown.
+Once you walk more than 10 metres away, the AR compass wakes up and shows the live distance and which way to
+turn. When the needle and crosshairs turn green, your car is straight ahead.</p>
+<p>Cars, electricity pylons and other metal can throw a phone's compass off. Car Finder warns you when that
+happens, and the arrow corrects itself within a few seconds as you keep walking, using your GPS direction of
+travel.</p>
+<h2>Underground: Wi-Fi and air pressure (Pro)</h2>
+<p>When you park, open the <strong>📡 Underg. Radar</strong> tab (Underground Parking Radar) and tap <strong>📍 Mark Parked Car Here</strong>. You can type your level
+and bay too, for example "Level B2, bay 47". Car Finder saves:</p>
+<ul>
+<li>the Wi-Fi networks your phone can see at the bay</li>
+<li>the air pressure, if your phone has a barometer</li>
+<li>your note, plus a GPS position if one is available</li>
+</ul>
+<p>When you come back, tap <strong>Start Radar Scan</strong>. The app compares fresh readings with the saved ones and tells you
+whether you are higher or lower than your car (in metres and approximate levels) and how closely the Wi-Fi
+matches your bay.</p>
+<h3>How the level check works</h3>
+<p>Air pressure drops by about 0.12 hPa for every metre you go up. Comparing the pressure now with the pressure at
+your bay gives the height difference, and car park levels are roughly 3 m each. Weather slowly changes air
+pressure too, so readings taken many hours apart are approximate.</p>
+<p>If the car park has no Wi-Fi or your phone has no barometer, the app says so rather than guessing.</p>
+<h2>Tips</h2>
+<ul>
+<li>Mark the bay as soon as you park, before you walk off.</li>
+<li>Type the level and bay number: the app shows it back to you.</li>
+<li>Underground, trust the level and Wi-Fi match more than the arrow, because the arrow uses GPS.</li>
+</ul>
+<p>Outside Map &amp; AR is free. The Underground Parking Radar is part of Pro: one payment for life through Google
+Play, with no subscription.</p>
+        <div class="cta">
+            <p><strong>Car Finder</strong> is on Google Play.</p>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.appstackstudio.carfinder&referrer=utm_source%3Dappstack_website%26utm_medium%3Darticle">Get it on Google Play</a>
+        </div>
+        <p><a href="../car-finder/index.html">Read the full Car Finder field guide</a></p>
+    </div>
+    <footer>
+        AppStack Studio · <a href="../index.html">Studio Home</a> · <a href="../car-finder/index.html">Car Finder</a>
+    </footer>
+</body>
+</html>
