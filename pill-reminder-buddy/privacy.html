@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Pill Reminder Buddy | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --card-bg: #112240;
+            --primary-color: #5EEAD4;
+            --secondary-color: #FDE68A;
+            --text-color: #F1F5F9;
+            --text-muted: #94A3B8;
+            --border-color: #233554;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: #020617; border-bottom: 1px solid var(--border-color); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .logo h1 { font-size: 1.4rem; color: var(--primary-color); }
+        nav a { color: var(--text-color); text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border-radius: 8px; background-color: #112240; border: 1px solid var(--border-color); }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 900px; margin: 2.5rem auto; padding: 0 1.5rem; }
+        .policy-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+        h2 { color: var(--primary-color); font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+        h3 { color: var(--secondary-color); margin: 1.5rem 0 0.6rem 0; font-size: 1.25rem; }
+        p, li { color: var(--text-color); margin-bottom: 0.8rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        code { background-color: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary-color); }
+        a { color: var(--secondary-color); }
+        footer { background-color: #020617; border-top: 1px solid var(--border-color); text-align: center; padding: 2rem 1rem; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>🔒 Privacy Policy</h1>
+        </div>
+        <nav>
+            <a href="https://daverimmeruk.github.io/appstack-studio/pill-reminder-buddy/index.html">🏠 Pill Reminder Buddy Home Page</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="policy-card">
+            <h2>Pill Reminder Buddy — Privacy Policy</h2>
+            <p class="meta">
+                <strong>Package Name:</strong> <code>com.appstackstudio.pillreminderbuddy</code> |
+                <strong>Effective Date:</strong> 17 November 2026 |
+                <strong>Developer:</strong> AppStack Studio
+            </p>
+
+            <h3>1. Overview</h3>
+            <p><strong>Pill Reminder Buddy</strong> is an alarm for your medicines. <strong>Your alarms and their history stay on your phone.</strong> We have no servers, and we do not collect, sell or share your data. The app needs no account, and it has no ads and no analytics. (Google Play's billing library sends Google its own diagnostic logs, see section 6.)</p>
+
+            <h3>2. Information Stored on Your Phone Only</h3>
+            <ul>
+                <li><strong>Your alarms:</strong> the times, the days, and what you type in: the medicine's name, and if you add them, the dose, notes, a colour and start or end dates.</li>
+                <li><strong>History:</strong> for each alarm, when it was due, when it rang, when it was stopped, and whether you marked the dose taken or skipped (if you do).</li>
+                <li><strong>Settings:</strong> your choices in ⚙️ Settings (for example the alarm tone, voice, Extra loud and large text), the optional name at the top of the PDF, whether the welcome guide was shown and whether Pro is unlocked.</li>
+            </ul>
+            <p>This information is kept in the app's own storage, which other apps can't read.</p>
+
+            <h3>3. The Voice</h3>
+            <p>If you choose a voice option, the app passes the words "Time to take your" and the medicine's name and dose to your phone's own text-to-speech voice (for example Google's or Samsung's), which says them out loud. Pill Reminder Buddy sends nothing over the internet for this.</p>
+
+            <h3>4. Permissions Used</h3>
+            <ul>
+                <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> to show the alarm with its STOP ALARM button.</li>
+                <li><strong>Alarms &amp; reminders (<code>SCHEDULE_EXACT_ALARM</code>):</strong> so each alarm rings on time.</li>
+                <li><strong>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>):</strong> to set the alarms again after the phone restarts.</li>
+                <li><strong>Keep awake and turn the screen on (<code>WAKE_LOCK</code>, <code>TURN_SCREEN_ON</code>):</strong> to turn the screen on for a few seconds when an alarm rings, so it can be seen.</li>
+                <li><strong>Google Play Billing:</strong> to handle the Pro purchase.</li>
+            </ul>
+            <p>Android also lists internet permissions (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) for the app only because Google Play's billing library, used for the Pro purchase, needs them; Pill Reminder Buddy itself sends nothing over the internet. It does not use your location, contacts, camera, microphone, SMS, call log, photos, files or health data, and uses no overlay, no accessibility service and no VPN.</p>
+
+            <h3>5. Your Backup File (Pro)</h3>
+            <p>⚙️ Settings › Save a backup file saves your alarms and history into one file, in the place you choose (for example your phone's Downloads folder or Google Drive). The file is yours: we never receive it. Restore from a backup file reads a file you pick.</p>
+
+            <h3>6. Third-Party Services</h3>
+            <ul>
+                <li><strong>Google Play Billing:</strong> if you buy Pro (a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. The price is shown by Google Play at checkout. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google Play's billing library also sends Google its own diagnostic logs about how the purchase connection is used (for example whether a request succeeded or failed) and about connection problems, which Google uses to improve the library and help with errors. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+                <li><strong>Google Play rating request:</strong> after you have marked a few doses as taken, the app may ask Google Play to show its review box. Google decides whether it appears; the app never sees your review.</li>
+            </ul>
+
+            <h3>7. PDF, CSV and Manual</h3>
+            <p>Your history only leaves your phone when you tap PDF or CSV in History (Pro), or Share the manual, and share the file. It is then sent only to the app or person you choose on Android's share screen.</p>
+
+            <h3>8. Keeping and Deleting Your Data</h3>
+            <ul>
+                <li>Delete an alarm by tapping it, then Delete. Its past entries stay in the history until you clear the app's storage.</li>
+                <li>Uninstalling the app, or Android Settings › Apps › Pill Reminder Buddy › Storage › Clear storage, deletes everything the app has stored.</li>
+                <li>Pill Reminder Buddy's data is not included in Android backups and is not copied to a new phone (use Save a backup file for that).</li>
+                <li>We never receive your data, so we hold nothing about you to delete.</li>
+            </ul>
+
+            <h3>9. Not Medical Advice</h3>
+            <p>Pill Reminder Buddy is a reminder. It doesn't give medical advice and is not a medical device. Always follow your doctor's or pharmacist's instructions.</p>
+
+            <h3>10. Children</h3>
+            <p>Pill Reminder Buddy collects no personal information from anyone, including children.</p>
+
+            <h3>11. Changes and Contact</h3>
+            <p>If the app changes what it stores or sends, we will update this page and its effective date. Questions: 📧 <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
