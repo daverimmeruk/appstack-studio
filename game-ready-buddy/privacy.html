@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Game Ready Buddy | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --card-bg: #112240;
+            --primary-color: #A78BFA;
+            --secondary-color: #86EFAC;
+            --text-color: #F1F5F9;
+            --text-muted: #94A3B8;
+            --border-color: #233554;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: #020617; border-bottom: 1px solid var(--border-color); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .logo h1 { font-size: 1.4rem; color: var(--primary-color); }
+        nav a { color: var(--text-color); text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border-radius: 8px; background-color: #112240; border: 1px solid var(--border-color); }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 900px; margin: 2.5rem auto; padding: 0 1.5rem; }
+        .policy-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+        h2 { color: var(--primary-color); font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+        h3 { color: var(--secondary-color); margin: 1.5rem 0 0.6rem 0; font-size: 1.25rem; }
+        p, li { color: var(--text-color); margin-bottom: 0.8rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        code { background-color: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary-color); }
+        a { color: var(--secondary-color); }
+        footer { background-color: #020617; border-top: 1px solid var(--border-color); text-align: center; padding: 2rem 1rem; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>🔒 Privacy Policy</h1>
+        </div>
+        <nav>
+            <a href="https://daverimmeruk.github.io/appstack-studio/game-ready-buddy/index.html">🏠 Game Ready Buddy Home Page</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="policy-card">
+            <h2>Game Ready Buddy — Privacy Policy</h2>
+            <p class="meta">
+                <strong>Package Name:</strong> <code>com.appstackstudio.gamereadybuddy</code> |
+                <strong>Effective Date:</strong> 17 November 2026 |
+                <strong>Developer:</strong> AppStack Studio
+            </p>
+
+            <h3>1. Overview</h3>
+            <p><strong>Game Ready Buddy</strong> measures your connection (ping, jitter, packet loss, lag spikes), your touch screen, your screen's frame rate and how much your phone slows down when it gets hot. <strong>Everything the app saves is stored on your phone only.</strong> We have no servers, and we do not collect, sell or share your data. The app needs no account, and it has no ads and no analytics.</p>
+
+            <h3>2. The Connection Test</h3>
+            <ul>
+                <li>The connection test sends small STUN requests (the "what is my address" packets games and video calls use) to the server you pick: Cloudflare (<code>stun.cloudflare.com</code>) or Google (<code>stun.l.google.com</code>). They answer with your internet (IP) address, and Game Ready Buddy times each answer.</li>
+                <li>Like any internet connection, that server sees your internet (IP) address. The packets contain nothing about you or your phone: only a packet number and a random number for that test.</li>
+                <li>The Pro "Wi-Fi vs mobile data" test asks Android to switch mobile data on next to Wi-Fi for the length of the test (about 30 seconds) and sends the same small packets over both. A 30-second test uses about 40 KB of data on each network.</li>
+                <li>See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+            </ul>
+
+            <h3>3. Information Stored on Your Phone Only</h3>
+            <ul>
+                <li><strong>Test results:</strong> the date and time of each test, its grade and its measured numbers (for example ping, jitter and loss; touch samples and fingers; frames per second; speed, battery temperature and heat level), and the kind of network used (Wi-Fi with its signal, band and link speed, or mobile data with its signal). Network names are never read or saved.</li>
+                <li><strong>Settings:</strong> the server you picked, whether the welcome guide was shown, and whether Pro is unlocked.</li>
+            </ul>
+            <p>Game Ready Buddy keeps up to 200 results; when full, the oldest is removed first.</p>
+
+            <h3>4. Permissions and Access Used</h3>
+            <ul>
+                <li><strong>Internet (<code>INTERNET</code>):</strong> to send the connection test packets, and used by Google Play's billing library for the Pro purchase.</li>
+                <li><strong>Network state (<code>ACCESS_NETWORK_STATE</code>, <code>CHANGE_NETWORK_STATE</code>):</strong> to see whether you're on Wi-Fi or mobile data, and (Pro) to ask Android for mobile data next to Wi-Fi during the Wi-Fi vs mobile data test.</li>
+                <li><strong>Wi-Fi state (<code>ACCESS_WIFI_STATE</code>):</strong> to show your Wi-Fi signal, band and link speed. Game Ready Buddy never connects to, disconnects from or changes any network, and doesn't read network names.</li>
+                <li><strong>Google Play Billing:</strong> to handle the Pro purchase.</li>
+            </ul>
+            <p>The app does not use your location, contacts, camera, microphone, SMS, photos, files or the phone permission. It uses no overlay, no VPN and no usage access.</p>
+
+            <h3>5. Third-Party Services</h3>
+            <ul>
+                <li><strong>Cloudflare and Google STUN servers:</strong> see section 2.</li>
+                <li><strong>Google Play Billing:</strong> if you buy Pro (a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. The price is shown by Google Play at checkout. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+                <li><strong>Google Play rating request:</strong> after a few finished tests the app may ask Google Play to show its review box. Google decides whether it appears; the app never sees your review.</li>
+            </ul>
+
+            <h3>6. PDF Report and Manual</h3>
+            <p>Your results only leave your phone when you tap PDF report (Pro) or Share the manual and share the file. They are then sent only to the app or person you choose on Android's share screen.</p>
+
+            <h3>7. Keeping and Deleting Your Data</h3>
+            <ul>
+                <li>Delete one result from its details (tap a card on the Report tab, or a line in History), or all results with History › Clear all.</li>
+                <li>Uninstalling the app, or Android Settings › Apps › Game Ready Buddy › Storage › Clear storage, deletes everything the app has stored.</li>
+                <li>Game Ready Buddy's data is not included in Android backups and is not copied to a new phone, so it stays on this phone only.</li>
+                <li>We never receive your data, so we hold nothing about you to delete.</li>
+            </ul>
+
+            <h3>8. Children</h3>
+            <p>Game Ready Buddy collects no personal information from anyone, including children.</p>
+
+            <h3>9. Changes to This Policy</h3>
+            <p>If the app changes what it stores or shares, we will update this page and its effective date.</p>
+
+            <h3>10. Contact &amp; Data Inquiries</h3>
+            <p>If you have any questions regarding data privacy or permissions, contact us at:</p>
+            <p>📧 <strong>Support Email:</strong> <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Support — Game Ready Buddy | AppStack Studio</title>
+    <style>
+        :root { --bg-color: #0A192F; --card-bg: #112240; --primary-color: #A78BFA; --secondary-color: #86EFAC; --text-color: #F1F5F9; --text-muted: #94A3B8; --border-color: #233554; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: #020617; border-bottom: 1px solid var(--border-color); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .logo h1 { font-size: 1.4rem; color: var(--primary-color); }
+        nav a { color: var(--text-color); text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border-radius: 8px; background-color: #112240; border: 1px solid var(--border-color); }
+        .container { max-width: 900px; margin: 2.5rem auto; padding: 0 1.5rem; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+        h2 { color: var(--primary-color); font-size: 1.6rem; margin-bottom: 1rem; }
+        h3 { color: var(--secondary-color); margin: 1.4rem 0 0.5rem 0; font-size: 1.15rem; }
+        p, li { margin-bottom: 0.7rem; }
+        ul { margin-left: 1.5rem; }
+        a { color: var(--secondary-color); }
+        footer { background-color: #020617; border-top: 1px solid var(--border-color); text-align: center; padding: 2rem 1rem; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>🛡️ App Support</h1></div>
+        <nav><a href="https://daverimmeruk.github.io/appstack-studio/game-ready-buddy/index.html">🏠 Game Ready Buddy Home Page</a></nav>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Game Ready Buddy — Questions &amp; Answers</h2>
+
+            <h3>1. My ping in a game is different from Game Ready Buddy's. Why?</h3>
+            <p>Game Ready Buddy measures the round trip to the test server you pick (Cloudflare or Google), which answers from its nearest site. A game's own server can be in another city or country, so the ping inside a game can be higher. Jitter, packet loss and lag spikes on your own Wi-Fi or mobile connection affect every game, so they are the numbers to watch.</p>
+
+            <h3>2. What is a good result?</h3>
+            <p>The grade limits are in the Manual tab under "Report tab and grades". For example ping up to 60 ms, jitter up to 15 ms and packet loss up to 1% are Good for fast online games.</p>
+
+            <h3>3. My connection is graded Fair or Poor. What can I do?</h3>
+            <ul>
+                <li>Play closer to your router, or move the router somewhere more open.</li>
+                <li>Use 5 GHz Wi-Fi if your router offers it (the card on the Ping tab shows the band).</li>
+                <li>Stop downloads, video and updates on other devices while you play.</li>
+                <li>With Pro, run Wi-Fi vs mobile data to see which is better right now.</li>
+            </ul>
+
+            <h3>4. Wi-Fi vs mobile data says mobile data couldn't be tested.</h3>
+            <ul>
+                <li>Mobile data must be switched on and the phone needs a SIM with a data allowance.</li>
+                <li>If the result says Android wants a sign-in or top-up page, your mobile network is blocking the internet (for example no credit left).</li>
+                <li>Some networks can't reach the test server's IPv4 address at first; Game Ready Buddy then uses IPv6 and says "over IPv6".</li>
+            </ul>
+
+            <h3>5. Why is my touch sample rate lower than my phone's advertised rate?</h3>
+            <p>Some phones only use their fastest touch rate inside games, for example through a game booster or game mode. Game Ready Buddy shows the rate the phone gives to an ordinary app. Keep one finger moving steadily for a few seconds for the best reading.</p>
+
+            <h3>6. The screen test shows 60 frames per second on a 120 Hz phone.</h3>
+            <ul>
+                <li>Check Settings › Display (Motion smoothness or Smooth display) is set to the high or adaptive rate.</li>
+                <li>Power saving often limits the screen to 60 Hz: the card on the Screen tab warns you when it's on.</li>
+            </ul>
+
+            <h3>7. The heat test stopped early.</h3>
+            <p>For your phone's safety it stops by itself if the battery reaches 46 °C or Android reports that the phone is very hot. It also stops if you leave the app. Let the phone cool down, take it out of a thick case, unplug the charger and try again.</p>
+
+            <h3>8. Does Game Ready Buddy make my phone faster?</h3>
+            <p>No. It doesn't change any settings and doesn't run in the background. It measures, so you can see where the problem is and what to change.</p>
+
+            <h3>9. I bought Pro on another phone. How do I get it back?</h3>
+            <p>Use the same Google account, tap GO PRO at the top, then Restore purchase.</p>
+
+            <h3>10. Where are my results kept?</h3>
+            <p>On your phone only. They aren't backed up or sent anywhere. See the <a href="https://daverimmeruk.github.io/appstack-studio/game-ready-buddy/privacy.html">Privacy Policy</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>📧 <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+            <p>Please include your phone model and Android version, and what the result card said.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    </footer>
+</body>
+</html>
