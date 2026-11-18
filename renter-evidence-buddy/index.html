@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — Renter Evidence Buddy: Damp, Mould &amp; Repairs Log</title>
+    <meta name="description" content="Renter Evidence Buddy helps tenants keep a dated record of damp, mould, leaks, heat and other repairs: photos with their dates, temperature and humidity readings with the dew point, a log of every report to the landlord, and one PDF evidence pack. Pro adds move-in and move-out checks with signatures. No ads, everything stays on your phone. One payment, no subscription.">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0A192F; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #67E8F9; }
+        h2 { color: #A5F3FC; margin-top: 30px; }
+        h3 { color: #FDE68A; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #233554; padding-top: 20px; text-align: center; }
+        a { color: #67E8F9; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0A192F; color: #A5F3FC; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #233554; }
+        .btn { display: inline-block; background-color: #112240; color: #67E8F9; border: 1px solid #67E8F9; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #67E8F9; color: #0A192F; }
+    </style>
+</head>
+<body>
+    <h1>🏠 Renter Evidence Buddy — User Manual</h1>
+    <img src="renter-evidence-buddy-feature-banner.png" alt="Renter Evidence Buddy: damp, heat and repairs evidence for renters" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div>
+        <a href="https://daverimmeruk.github.io/appstack-studio/renter-evidence-buddy/privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/renter-evidence-buddy/support.html" class="btn">🛟 App Support</a>
+    </div>
 
+    <div class="section-box">
+        <h2>📖 Renter Evidence Buddy Manual</h2>
+        <p>Everything below is the same text as the Manual in the app (📖 Manual tab).</p>
+
+
+        <h3>👋 What Renter Evidence Buddy does</h3>
+        <p>Renter Evidence Buddy helps tenants keep a record of problems in their home and of every time they reported them. Advisers such as Shelter and Citizens Advice tell tenants to keep this kind of record: dated photos, notes, and when, how and to whom each problem was reported.</p>
+        <p>The app puts it all in one PDF you can send to your landlord, letting agent, council or adviser.</p>
+        <p>No sign-in and no ads. Everything stays on this phone until you share it yourself. The app makes a record; it doesn't give legal advice.</p>
+
+        <h3>🏠 Issues</h3>
+        <p>Tap ＋ New issue for each problem: give it a short title, choose the type (for example damp or mould, a leak, too hot, too cold, no hot water) and the room, and the date you first noticed it.</p>
+        <p>Tap an issue to open it. There you can add photos, readings and notes, log a report, set a photo reminder (Pro), mark it fixed, change it or delete it.</p>
+        <p>The list shows when each issue was first reported and how many days ago, and how long ago the last photo was taken.</p>
+
+        <h3>📷 Photos and times</h3>
+        <p>Tap 📷 Add photo, then:</p>
+        <ul>
+            <li>📷 Take a photo now: the phone's camera app opens and the photo goes straight into Renter Evidence Buddy. Its time is the time the phone took it.</li>
+            <li>🖼️ Choose from your photos: pick up to 10 photos you took earlier. The app uses the date saved inside each photo. If a photo has no date, it uses the time you added it and says so.</li>
+        </ul>
+        <p>Every photo shows where its time came from, in the app and in the PDF. You can add a note to each photo, for example what has changed.</p>
+        <p>Take a new photo of the same place every week or two, from the same spot, so the record shows whether the problem is getting worse. Photos are copied into the app's own storage, so they stay even if you delete them from your gallery.</p>
+
+        <h3>🌡️ Readings and dew point</h3>
+        <p>A phone can't measure room temperature or humidity, so type in the numbers from your own thermometer or humidity meter (a cheap digital one is fine). The app always marks them as your readings.</p>
+        <ul>
+            <li>Air temperature (°C) and humidity (%): the app works out the dew point. Surfaces colder than the dew point get condensation (water) on them.</li>
+            <li>Surface temperature (°C), optional: for example a wall or window, measured with an infrared thermometer. The app says whether it is at or below the dew point.</li>
+        </ul>
+        <p>The dew point uses the Magnus formula: γ = ln(RH/100) + 17.62·T/(243.12 + T), dew point = 243.12·γ/(17.62 − γ).</p>
+        <p>Readings at the same time each day (for example every morning) are easiest to compare.</p>
+
+        <h3>🔥 Too hot</h3>
+        <p>For an issue of the type "Too hot (overheating)", add temperature readings during the day and at night. The issue then shows how many readings were at or above your limit (25°C at first), on how many days, how many were at night (22:00 to 07:00) and on how many nights, and the highest reading.</p>
+        <p>Change the limit in 📄 Report › ⚙️ Settings › 🌡️ Overheating limit (24 to 28°C).</p>
+
+        <h3>📝 Notes</h3>
+        <p>Tap 📝 Add note for anything without a photo, for example "Water dripping from the ceiling light after rain" or "Heating off all day". Choose the date and time it happened.</p>
+
+        <h3>📞 Contacts</h3>
+        <p>Log every time you report a problem or get a reply: tap 📞 Log a report on an issue, or ＋ Log a report or reply on the 📞 Contacts tab. Add:</p>
+        <ul>
+            <li>when, and how (phone call, email, text, letter, online portal, in person, visit to the home)</li>
+            <li>to or from whom</li>
+            <li>which issues it was about</li>
+            <li>what you said or wrote, and their reply</li>
+            <li>any reference number</li>
+            <li>photos, for example of a letter or an email</li>
+        </ul>
+        <p>The first contact about an issue counts as the date it was first reported.</p>
+
+        <h3>⏰ Photo reminders (Pro)</h3>
+        <p>On an issue, tap ⏰ Reminder and choose every 7, 14 or 28 days. When the newest photo is older than that, the phone shows a reminder (about once a day, not at an exact time). The issue is marked "A new photo is due" too. Reminders stop when the issue is marked fixed.</p>
+        <p>Android asks once whether the app may send notifications.</p>
+
+        <h3>📋 Move-in and move-out checks (Pro)</h3>
+        <p>On the 🏠 Issues tab, tap 📋 Move-in / move-out check, then 🔑 Move-in check or 📦 Move-out check. Go room by room: choose the condition (good, fair or poor), write notes, and take photos. Add or remove rooms as you need. Then add meter readings (with a photo of each meter) and the keys you got or returned.</p>
+        <p>At the end, the tenant and the landlord or agent can each type their name and sign on the screen with a finger. Tap 📄 Share PDF to send the check. A move-in check with photos helps when the deposit is returned.</p>
+
+        <h3>📄 The report</h3>
+        <p>The 📄 Report tab makes one PDF with:</p>
+        <ul>
+            <li>your details (optional): your name, the address, your landlord or agent and when the tenancy started</li>
+            <li>a summary of every issue: room, when noticed, when first reported, how many days since, and status</li>
+            <li>each issue's record: photos with their times, your readings with the dew point, and notes</li>
+            <li>the contact log, with any photos of letters or emails</li>
+        </ul>
+        <p>Share all issues, or only the open ones. 🗂️ Share all photos full size (ZIP, Pro) sends the original photos too.</p>
+        <p>The PDF explains where each time came from and that temperatures and humidity were measured by you.</p>
+
+        <h3>⭐ Free and Pro</h3>
+        <p>Free: one issue with unlimited photos, readings and notes, the dew point, the contact log, and the evidence PDF.</p>
+        <p>Pro (one payment, for life, no subscription):</p>
+        <ul>
+            <li>🏠 Unlimited issues</li>
+            <li>📋 Move-in and move-out checks with photos and signatures</li>
+            <li>⏰ Reminders to take a new photo</li>
+            <li>🗂️ All photos full size in one ZIP</li>
+        </ul>
+        <p>Tap GO PRO at the top. Bought Pro before, or on a new phone? Open GO PRO and tap Restore purchase (same Google account).</p>
+
+        <h3>🔒 Privacy and storage</h3>
+        <p>Everything (issues, photos, readings, notes, contacts, checks, signatures and settings) is kept in the app's own storage on this phone. There is no account and nothing is uploaded. Backups are switched off, so the record isn't copied to Google.</p>
+        <p>The app doesn't ask for camera or storage permission: photos come from the phone's camera app or Android's photo picker. It only asks for notifications if you switch on photo reminders.</p>
+        <p>⚙️ Settings shows how much space photos use. 🗑️ Delete everything deletes all of it. Uninstalling the app deletes it too, so share a report first if you need it.</p>
+
+        <h3>❓ Questions</h3>
+        <p>Will the council or a court accept it? That is up to them. Advisers ask tenants to keep dated photos, notes and a record of every report; this app keeps them together and dated.</p>
+        <p>Why can't the app measure humidity? Phones have no humidity sensor, and the phone's own temperature is not the room's. Your own meter's readings are better evidence.</p>
+        <p>Where can I get advice? Shelter, Citizens Advice, your council's private housing team, or a tenants' union where you live.</p>
+
+        <h3>About</h3>
+        <p>Renter Evidence Buddy v1.0 (Build 1)</p>
+        <p>Publisher: AppStack Studio</p>
+
+
+        <h3>⚡ WHY RENTER EVIDENCE BUDDY</h3>
+        <table class="rival-table">
+            <tr><th>Question</th><th>Many property apps</th><th>Renter Evidence Buddy</th></tr>
+            <tr><td>Who is it for?</td><td>Mostly made for landlords and letting agents</td><td><strong>Made for tenants</strong></td></tr>
+            <tr><td>Price</td><td>Often a subscription</td><td><strong>Free to start; Pro is one payment for life (no subscription)</strong></td></tr>
+            <tr><td>Where is the record kept?</td><td>Often in an online account</td><td><strong>Only on your phone, no account, no ads</strong></td></tr>
+        </table>
+        <ul>
+            <li>📷 Every photo shows where its date came from: taken in the app, stored in the photo, or the time it was added.</li>
+            <li>🌡️ Your own thermometer and humidity readings, with the dew point worked out and shown with its formula.</li>
+            <li>📞 A log of every report and reply, so the record shows how long the landlord has known.</li>
+            <li>⭐ Pro: unlimited issues, move-in and move-out checks with signatures, photo reminders, and all photos in one ZIP.</li>
+        </ul>
+        <h3>⚠️ GOOD TO KNOW</h3>
+        <ul>
+            <li>A phone can't measure room temperature or humidity: type in the numbers from your own meter.</li>
+            <li>The app makes a dated record; it doesn't give legal advice. Shelter, Citizens Advice or your council can advise you.</li>
+            <li>Share a report before you uninstall the app or change phones: the record is only on this phone.</li>
+        </ul>
+    </div>
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card"><img src="renter-evidence-buddy-issues.jpg" alt="Issues"><p><strong>1. Issues</strong><br>Each problem with its room, when you noticed it, when you first reported it, and its photos and readings.</p></div>
+        <div class="screenshot-card"><img src="renter-evidence-buddy-record.jpg" alt="The record"><p><strong>2. The record</strong><br>Dated photos with notes, and your readings with the dew point worked out.</p></div>
+        <div class="screenshot-card"><img src="renter-evidence-buddy-dew-point.jpg" alt="Readings"><p><strong>3. Readings</strong><br>Type in your own meter's numbers; the app shows whether a wall or window gets condensation.</p></div>
+        <div class="screenshot-card"><img src="renter-evidence-buddy-contacts.jpg" alt="Contacts"><p><strong>4. Contacts</strong><br>Every report and reply: when, how, who, what was said and the reference number.</p></div>
+        <div class="screenshot-card"><img src="renter-evidence-buddy-report.jpg" alt="Report"><p><strong>5. Report</strong><br>Your details and one PDF with everything, for all issues or only the open ones.</p></div>
+        <div class="screenshot-card"><img src="renter-evidence-buddy-move-in-check.jpg" alt="Move-in check (Pro)"><p><strong>6. Move-in check (Pro)</strong><br>Room by room with photos, meter readings, keys and two signatures.</p></div>
+        <div class="screenshot-card"><img src="renter-evidence-buddy-pdf.jpg" alt="PDF evidence pack"><p><strong>7. PDF evidence pack</strong><br>Photos with their dates, readings and the reports about each issue.</p></div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots: Renter Evidence Buddy 1.0 on a Samsung Galaxy S24, with sample details typed in and a drawn sample photo.</p>
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>
