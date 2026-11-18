@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — Noise Diary Buddy: Noise Log &amp; dB Meter</title>
+    <meta name="description" content="Noise Diary Buddy helps you keep a noise diary for your landlord or council: a sound level meter, a night log that saves every noise with its time, length, level and a short sound clip, your own entries, and a PDF report (UK council and German Lärmprotokoll layouts in Pro). No ads, everything stays on your phone. One payment, no subscription.">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0F0A1F; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #C4B5FD; }
+        h2 { color: #DDD6FE; margin-top: 30px; }
+        h3 { color: #FDE68A; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #1E1338; border: 1px solid #3B2A63; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #1E1338; border: 1px solid #3B2A63; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #3B2A63; padding-top: 20px; text-align: center; }
+        a { color: #C4B5FD; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0F0A1F; color: #DDD6FE; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #3B2A63; }
+        .btn { display: inline-block; background-color: #1E1338; color: #C4B5FD; border: 1px solid #C4B5FD; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #C4B5FD; color: #0F0A1F; }
+    </style>
+</head>
+<body>
+    <h1>📒 Noise Diary Buddy — User Manual</h1>
+    <img src="noise-diary-buddy-feature-banner.png" alt="Noise Diary Buddy: sound level meter, night log and noise diary" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div>
+        <a href="https://daverimmeruk.github.io/appstack-studio/noise-diary-buddy/privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/noise-diary-buddy/support.html" class="btn">🛟 App Support</a>
+    </div>
 
+    <div class="section-box">
+        <h2>📖 Noise Diary Buddy Manual</h2>
+        <p>Everything below is the same text as the Manual in the app (📖 Manual tab).</p>
+
+
+        <h3>👋 What Noise Diary Buddy does</h3>
+        <p>Noise Diary Buddy helps you keep a noise diary: a dated record of noise that disturbs you at home. Landlords, housing associations, councils and courts usually ask for one before they can act.</p>
+        <p>The phone measures the noise for you at night (time, length and level, with short sound clips), and you add what only you know: what the noise was, which room you heard it in, how it affected you and who else heard it. Then you share the diary as a PDF.</p>
+        <p>No sign-in and no ads. Everything stays on this phone until you share it yourself.</p>
+
+        <h3>🎚️ The meter</h3>
+        <p>The Meter tab shows how loud it is now in big numbers, a coloured bar and a graph of the last 60 seconds. The yellow line is your trigger level.</p>
+        <p>The number is in approximate dB. Phone microphones are not calibrated sound level meters, and every phone hears a little differently, so treat the number as a guide. What matters most in a diary is that the same phone measures every night, so nights can be compared.</p>
+        <p>Under the meter it says which microphone setting the phone uses: "unfiltered" (best: low thuds and bass aren't removed), "low filtering" or "standard". The app picks the best one your phone offers.</p>
+        <p>The meter only listens while the Meter tab is open on screen, or while the night log runs.</p>
+
+        <h3>🌙 The night log</h3>
+        <p>Tap 🌙 Start night log at bedtime. The phone keeps listening with the screen off and shows a notification with a ■ Stop button.</p>
+        <p>Every noise at or above your trigger level that lasts at least the set time (1 second at first) is saved as an entry: start and end time, length, the peak (loudest) level and the average level. A noise ends after 5 seconds below the trigger level. Very long noise is saved in parts of 30 minutes.</p>
+        <p>If sound clips are on, each entry also gets a short sound clip that starts 2 seconds before the noise, so you can hear what it was.</p>
+        <p>Tips:</p>
+        <ul>
+            <li>Put the phone where you hear the noise, for example on the bedside table or near the wall next door, with nothing covering the microphone.</li>
+            <li>Keep it on charge: listening all night uses battery.</li>
+            <li>Don't play music or videos on the phone while it listens.</li>
+            <li>Tap ■ Stop in the morning, in the app or in the notification.</li>
+        </ul>
+        <p>The diary also shows when the phone was listening, so a quiet night is part of the record too.</p>
+
+        <h3>🔔 Trigger level</h3>
+        <p>The trigger level decides how loud a noise must be to be saved (⚙️ Settings › 🔔 Trigger level). It starts at 55 dB.</p>
+        <ul>
+            <li>Too many entries (fridge, traffic, your own snoring)? Raise it.</li>
+            <li>Noise you hear isn't saved? Lower it.</li>
+        </ul>
+        <p>To pick a level, look at the Meter on a quiet evening and when the noise happens, and set the trigger between the two.</p>
+        <p>⏱️ "Count noise lasting at least" ignores short clicks and bumps (0.5, 1, 2 or 5 seconds).</p>
+
+        <h3>🎧 Sound clips</h3>
+        <p>Sound clips are short WAV recordings of each noise event (⚙️ Settings › 🎧 Sound clips: off, 5, 10, 15 or 30 seconds; 15 at first). Each clip starts 2 seconds before the noise. Tap ▶ Play clip on an entry in the Diary to listen.</p>
+        <p>Only noise at or above the trigger level is recorded. Nothing is recorded at other times. Clips stay on this phone and are only sent if you share them yourself.</p>
+        <p>Use the night log for noise that reaches your home. Recording other people's conversations may not be allowed where you live; if that is a worry, switch clips off and keep the times and levels only.</p>
+
+        <h3>✏️ Writing an entry yourself</h3>
+        <p>Tap ✏️ Add an entry for any noise, also noise from before you had the app. Choose the day and the times it started and stopped, then:</p>
+        <ul>
+            <li>🔊 the type of noise (music / bass, banging / thuds, footsteps, dog barking, …)</li>
+            <li>the room where you heard it</li>
+            <li>😟 how it affected you (couldn't get to sleep, woke me up, woke my child, …)</li>
+            <li>witnesses: anyone else who heard it</li>
+            <li>notes: what you heard and what you did</li>
+            <li>📷 photos, for example damage or a note from the neighbour (from Android's photo picker)</li>
+        </ul>
+        <p>Tap ✏️ Change on any entry to add these details. On entries found by the phone, the times and levels were measured and can't be changed.</p>
+        <p>Write entries as soon as you can, while you still remember the details.</p>
+
+        <h3>📒 The diary</h3>
+        <p>The Diary tab lists every entry, newest first, by day. At the top it shows how many days your diary covers. Councils often ask for about 2 weeks of entries.</p>
+        <p>🎚️ Found by the phone = the night log measured it. ✏️ Written by you = you entered it.</p>
+        <p>To delete an entry, tap ✏️ Change, then Delete (its sound clip and photos are deleted too).</p>
+        <p>📊 Patterns (Pro) shows which hours and which days of the week the noise happens most.</p>
+
+        <h3>📄 The report</h3>
+        <p>The Report tab makes your diary into a PDF table to email, print or save, and a CSV for spreadsheets.</p>
+        <ul>
+            <li>📋 Layout: Noise diary (any country); UK council noise diary or German Lärmprotokoll (Pro). The UK and German layouts use the columns councils and landlords ask for, and end with a line to sign and date.</li>
+            <li>📅 Period: the last 14, 30 or 90 days, or everything.</li>
+            <li>👤 Your details (optional): your name, the address where you hear the noise, and where it comes from.</li>
+        </ul>
+        <p>Every row says whether the phone measured it or you wrote it, and the PDF lists when the night log was listening. The PDF says that levels are approximate (phone microphone).</p>
+        <p>🎧 Share the sound clips and photos (Pro) puts them in one ZIP file to send with the PDF.</p>
+
+        <h3>🎯 Calibrate</h3>
+        <p>If you can borrow a real sound level meter, put it next to the phone in a steady noise (for example music or a fan), then open ⚙️ Settings › 🎯 Calibrate and tap − 1 dB or + 1 dB until the Meter shows the same number. Tap Save.</p>
+        <p>The correction is added to every new reading (the meter and the night log). Readings already saved don't change.</p>
+
+        <h3>⭐ Free and Pro</h3>
+        <p>Free: the meter, the diary you write yourself, 3 night logs with sound clips, and the noise diary PDF and CSV.</p>
+        <p>Pro (one payment, for life, no subscription):</p>
+        <ul>
+            <li>🌙 Unlimited night logs</li>
+            <li>📋 UK council noise diary and German Lärmprotokoll layouts</li>
+            <li>🎧 Share the sound clips and photos (ZIP)</li>
+            <li>📊 Patterns</li>
+        </ul>
+        <p>Tap GO PRO at the top. Bought Pro before, or on a new phone? Open GO PRO and tap Restore purchase (same Google account).</p>
+
+        <h3>🔒 Privacy and storage</h3>
+        <p>Everything (entries, sound clips, photos and settings) is kept in the app's own storage on this phone. There is no account and nothing is uploaded. Backups are switched off, so the diary isn't copied to Google.</p>
+        <p>Permissions it asks for:</p>
+        <ul>
+            <li>🎙️ Microphone: to measure the noise and record the clips.</li>
+            <li>🔔 Notifications: to show the night log notification with its Stop button.</li>
+        </ul>
+        <p>⚙️ Settings shows how much space clips and photos use. 🗑️ Delete everything deletes all entries, clips, photos and night log times. Uninstalling the app deletes them too, so share a report first if you need it.</p>
+
+        <h3>❓ Questions</h3>
+        <p>Is the dB number exact? No. It is measured with the phone's microphone, which isn't calibrated. Use 🎯 Calibrate if you have a sound level meter.</p>
+        <p>Will a court accept it? That is up to them. A diary with dates, times, lengths, effects and witnesses is what they usually ask for; the levels and sound clips support it. Many councils also lend their own recording equipment.</p>
+        <p>The night log stopped by itself? Some phones close apps to save battery. Keep the phone on charge, and in the phone's Settings › Apps › Noise Diary Buddy › Battery, choose Unrestricted.</p>
+        <p>No live level? Allow the microphone in the phone's Settings › Apps › Noise Diary Buddy › Permissions. Another app using the microphone (a call or a voice recorder) can block it.</p>
+
+        <h3>About</h3>
+        <p>Noise Diary Buddy v1.0 (Build 1)</p>
+        <p>Publisher: AppStack Studio</p>
+
+
+        <h3>⚡ WHY NOISE DIARY BUDDY</h3>
+        <table class="rival-table">
+            <tr><th>Question</th><th>Many noise and decibel apps</th><th>Noise Diary Buddy</th></tr>
+            <tr><td>Ads?</td><td>Many are paid for by ads</td><td><strong>No ads, ever</strong></td></tr>
+            <tr><td>Price</td><td>Often a subscription</td><td><strong>Free to start; Pro is one payment for life (no subscription)</strong></td></tr>
+            <tr><td>Where is the diary kept?</td><td>Some need an account or upload recordings</td><td><strong>Only on your phone, no account</strong></td></tr>
+        </table>
+        <ul>
+            <li>🌙 The night log listens with the screen off and saves only noise above your trigger level, with its time, length, peak and average level and a short sound clip.</li>
+            <li>✏️ Your own entries for what only you know: the type of noise, the room, how it affected you, witnesses and photos.</li>
+            <li>📄 A PDF diary in the columns councils and landlords ask for, showing which rows the phone measured and which you wrote.</li>
+            <li>⭐ Pro: UK council noise diary and German Lärmprotokoll layouts, sound clips and photos in one ZIP, and patterns by hour and day.</li>
+        </ul>
+        <h3>⚠️ GOOD TO KNOW</h3>
+        <ul>
+            <li>Levels are approximate: a phone microphone is not a calibrated sound level meter. Use 🎯 Calibrate if you can borrow one.</li>
+            <li>Keep the phone on charge and don't play music on it while the night log listens.</li>
+            <li>Use the night log for noise that reaches your home. Recording other people's conversations may not be allowed where you live; you can switch sound clips off.</li>
+        </ul>
+    </div>
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card"><img src="noise-diary-buddy-meter.jpg" alt="Meter"><p><strong>1. Meter</strong><br>How loud it is now (approximate dB), with your trigger level and the last 60 seconds.</p></div>
+        <div class="screenshot-card"><img src="noise-diary-buddy-night-log.jpg" alt="Night log"><p><strong>2. Night log</strong><br>Listens with the screen off and saves every noise above the trigger.</p></div>
+        <div class="screenshot-card"><img src="noise-diary-buddy-diary.jpg" alt="Diary"><p><strong>3. Diary</strong><br>Each entry with its time, length and level, plus what you add yourself.</p></div>
+        <div class="screenshot-card"><img src="noise-diary-buddy-entry.jpg" alt="Your details"><p><strong>4. Your details</strong><br>Type of noise, room, how it affected you, witnesses, notes and photos.</p></div>
+        <div class="screenshot-card"><img src="noise-diary-buddy-report.jpg" alt="Report"><p><strong>5. Report</strong><br>Choose the layout and period, add your details, share the PDF or CSV.</p></div>
+        <div class="screenshot-card"><img src="noise-diary-buddy-pdf.jpg" alt="PDF noise diary"><p><strong>6. PDF noise diary</strong><br>Every row says whether the phone measured it or you wrote it.</p></div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots: Noise Diary Buddy 1.0 on a Samsung Galaxy S24, with sample details typed in.</p>
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>

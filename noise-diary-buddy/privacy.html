@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Noise Diary Buddy | AppStack Studio</title>
+    <style>
+        :root {
+            --bg-color: #0F0A1F;
+            --card-bg: #1E1338;
+            --primary-color: #C4B5FD;
+            --secondary-color: #FDE68A;
+            --text-color: #F1F5F9;
+            --text-muted: #94A3B8;
+            --border-color: #3B2A63;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: #07040F; border-bottom: 1px solid var(--border-color); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+        .logo h1 { font-size: 1.4rem; color: var(--primary-color); }
+        nav a { color: var(--text-color); text-decoration: none; font-weight: 600; padding: 0.5rem 1rem; border-radius: 8px; background-color: #1E1338; border: 1px solid var(--border-color); }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 900px; margin: 2.5rem auto; padding: 0 1.5rem; }
+        .policy-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+        h2 { color: var(--primary-color); font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
+        h3 { color: var(--secondary-color); margin: 1.5rem 0 0.6rem 0; font-size: 1.25rem; }
+        p, li { color: var(--text-color); margin-bottom: 0.8rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        code { background-color: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; color: var(--primary-color); }
+        a { color: var(--secondary-color); }
+        footer { background-color: #07040F; border-top: 1px solid var(--border-color); text-align: center; padding: 2rem 1rem; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>🔒 Privacy Policy</h1>
+        </div>
+        <nav>
+            <a href="https://daverimmeruk.github.io/appstack-studio/noise-diary-buddy/index.html">🏠 Noise Diary Buddy Home Page</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="policy-card">
+            <h2>Noise Diary Buddy — Privacy Policy</h2>
+            <p class="meta">
+                <strong>Package Name:</strong> <code>com.appstackstudio.noisediarybuddy</code> |
+                <strong>Effective Date:</strong> 18 November 2026 |
+                <strong>Developer:</strong> AppStack Studio
+            </p>
+
+            <h3>1. Overview</h3>
+            <p><strong>Noise Diary Buddy</strong> helps you keep a noise diary: a sound level meter, a night log that saves noise events, and entries you write yourself. <strong>Your diary, sound clips and photos stay on your phone.</strong> We have no servers, and we do not collect, sell or share your data. The app needs no account, and it has no ads and no analytics. (Google Play's billing library sends Google its own diagnostic logs, see section 5.)</p>
+
+            <h3>2. Information Stored on Your Phone Only</h3>
+            <ul>
+                <li><strong>Noise events from the night log:</strong> the start and end time, the length, and the peak and average level (approximate dB) of each noise at or above your trigger level.</li>
+                <li><strong>Sound clips:</strong> if sound clips are on (⚙️ Settings › 🎧 Sound clips), a short recording (5 to 30 seconds, as you choose) of each noise event, starting 2 seconds before the noise. Nothing is recorded at other times.</li>
+                <li><strong>Your entries:</strong> what you type or choose (date and times, type of noise, room, how it affected you, witnesses, notes) and copies of photos you add from Android's photo picker.</li>
+                <li><strong>Night log times:</strong> when each night log started and stopped, and how many noise events it saved.</li>
+                <li><strong>Settings:</strong> trigger level, minimum length, clip length, calibration, the details you add for the report (name, address, where the noise comes from), the report layout and period, whether the welcome guide was shown, how many free night logs were used and whether Pro is unlocked.</li>
+            </ul>
+            <p>This information is kept in the app's own storage, which other apps can't read.</p>
+
+            <h3>3. Microphone</h3>
+            <p>The app uses the microphone only:</p>
+            <ul>
+                <li>while the 🎚️ Meter tab is open on the screen, to show how loud it is now (this sound is measured and not stored), and</li>
+                <li>while a 🌙 night log runs, which you start yourself. Android then shows a notification with a ■ Stop button the whole time, and the microphone indicator is shown. The night log keeps only the noise events and clips described in section 2; everything else it hears is measured and not stored.</li>
+            </ul>
+            <p>Use the night log for noise that reaches your home. Recording other people's conversations may not be allowed where you live; you can switch sound clips off and keep the times and levels only.</p>
+
+            <h3>4. Permissions Used</h3>
+            <ul>
+                <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> to measure the noise level and record the sound clips.</li>
+                <li><strong>Foreground service for the microphone (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code>):</strong> so the night log keeps listening with the screen off, with its notification showing.</li>
+                <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> to show the night log notification with its Stop button.</li>
+                <li><strong>Keep awake (<code>WAKE_LOCK</code>):</strong> so the phone doesn't pause the night log while it sleeps.</li>
+                <li><strong>Google Play Billing:</strong> to handle the Pro purchase.</li>
+            </ul>
+            <p>Photos are added with Android's photo picker, which needs no permission and only gives the app the photos you pick. Android also lists internet permissions (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) for the app only because Google Play's billing library, used for the Pro purchase, needs them; Noise Diary Buddy itself sends nothing over the internet. It does not use your location, contacts, camera, SMS, call log or files, and uses no overlay, no accessibility service and no VPN.</p>
+
+            <h3>5. Third-Party Services</h3>
+            <ul>
+                <li><strong>Google Play Billing:</strong> if you buy Pro (a one-time lifetime purchase), the payment is handled by Google Play. We do not receive or store your payment details. The price is shown by Google Play at checkout. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google Play's billing library also sends Google its own diagnostic logs about how the purchase connection is used (for example whether a request succeeded or failed) and about connection problems, which Google uses to improve the library and help with errors. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+                <li><strong>Google Play rating request:</strong> after a few useful results (for example a night log that found noise, or a shared report), the app may ask Google Play to show its review box. Google decides whether it appears; the app never sees your review.</li>
+            </ul>
+
+            <h3>6. Reports, Clips and Manual</h3>
+            <p>Your diary only leaves your phone when you tap 📄 Share PDF, 📊 Share CSV, 🎧 Share the sound clips and photos (ZIP, Pro) or 📤 Share the manual, and share the file. It is then sent only to the app or person you choose on Android's share screen.</p>
+
+            <h3>7. Keeping and Deleting Your Data</h3>
+            <ul>
+                <li>Delete an entry with ✏️ Change, then Delete: its sound clip and photos are deleted too.</li>
+                <li>⚙️ Settings › 🗑️ Delete everything deletes all entries, sound clips, photos and night log times.</li>
+                <li>Uninstalling the app, or Android Settings › Apps › Noise Diary Buddy › Storage › Clear storage, deletes everything the app has stored.</li>
+                <li>Noise Diary Buddy's data is not included in Android backups and is not copied to a new phone. Share a report first if you need to keep it.</li>
+                <li>We never receive your data, so we hold nothing about you to delete.</li>
+            </ul>
+
+            <h3>8. Children</h3>
+            <p>Noise Diary Buddy collects no personal information from anyone, including children.</p>
+
+            <h3>9. Changes and Contact</h3>
+            <p>If the app changes what it stores or sends, we will update this page and its effective date. Questions: 📧 <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
