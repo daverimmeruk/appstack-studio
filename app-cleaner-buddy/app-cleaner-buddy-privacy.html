@@ -140,7 +140,7 @@
             <h2>App-Cleaner Buddy — Privacy Policy</h2>
             <p class="meta">
                 <strong>Package Name:</strong> <code>com.appstackstudio.appcleanerbuddy</code> |
-                <strong>Effective Date:</strong> 13 November 2026 |
+                <strong>Effective Date:</strong> 19 November 2026 |
                 <strong>Developer:</strong> AppStack Studio
             </p>
 
@@ -168,7 +168,8 @@
                 <li><strong>Request uninstall (<code>REQUEST_DELETE_PACKAGES</code>):</strong> to open Android's own "Uninstall this app?" screen when you tap Uninstall, and (Android 15+) to ask Android to archive an app when you tap Archive. Android asks you to confirm; App-Cleaner Buddy never removes anything by itself.</li>
                 <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> only for the Pro low-storage alert and weekly summary, if you turn them on.</li>
                 <li><strong>Home-screen widget (Pro):</strong> shows free space and the forecast on your home screen, from the same readings. It sends nothing anywhere.</li>
-                <li><strong>Google Play Billing:</strong> to handle the Pro purchase.</li>
+                <li><strong>Google Play Billing, internet and network state (<code>BILLING</code>, <code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> used by Google Play's billing library to handle the Pro purchase. App-Cleaner Buddy itself never sends your app list or readings over the internet.</li>
+                <li><strong>Daily reading in the background (<code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code>):</strong> added by Android's WorkManager library, which runs the once-a-day storage reading (and the Pro low-storage alert and weekly summary, if you turn them on), also after the phone restarts. The readings stay on this phone.</li>
             </ul>
             <p>The app does not use your location, contacts, camera, microphone, SMS, photos or files. It lists the apps in your app drawer without the "all apps" permission.</p>
 
