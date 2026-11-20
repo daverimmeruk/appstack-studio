@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — Light Meter Buddy: Lux Meter</title>
+    <meta name="description" content="Light Meter Buddy measures light in lux with your phone's light sensor and tells you in plain words if a spot is bright enough: for houseplants, a desk or a photo. No ads, no permissions. Pro adds saved spots, all-day light logs and PDF reports. One payment, no subscription.">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0A192F; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #FBBF24; }
+        h2 { color: #FCD34D; margin-top: 30px; }
+        h3 { color: #FDE68A; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #233554; padding-top: 20px; text-align: center; }
+        a { color: #FBBF24; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0A192F; color: #FCD34D; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #233554; }
+        .btn { display: inline-block; background-color: #112240; color: #FBBF24; border: 1px solid #FBBF24; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #FBBF24; color: #0A192F; }
+    </style>
+</head>
+<body>
+    <h1>💡 Light Meter Buddy — User Manual</h1>
+    <img src="light-meter-buddy-feature-banner.png" alt="Light Meter Buddy: is this spot bright enough? Plants, desk, photos" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div>
+        <a href="https://daverimmeruk.github.io/appstack-studio/light-meter-buddy/privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/light-meter-buddy/support.html" class="btn">🛟 App Support</a>
+    </div>
+
+    <div class="section-box">
+        <h2>📖 Light Meter Buddy Manual</h2>
+        <p>Everything below is the same text as the Manual in the app (📖 Manual tab).</p>
+
+
+        <h3>👋 What Light Meter Buddy does</h3>
+        <p>Light Meter Buddy measures how much light falls on a spot, in lux, with the phone's own light sensor, and tells you in plain words what that means: dim, living room, office, very bright or daylight. It checks whether a plant will be happy in a spot, whether a desk is bright enough to work at, and gives a simple camera exposure.</p>
+        <p>It never asks for permissions and works without internet.</p>
+
+        <h3>📱 How to measure</h3>
+        <p>The light sensor is at the top of the screen, next to the front camera.</p>
+        <ul>
+            <li>Put the phone where you want to know the light, screen facing up, or facing the window or lamp.</li>
+            <li>Keep your hand, head and shadow out of the way.</li>
+            <li>The number is the middle of the last 2 seconds, so it doesn't jump. 🟢 Steady means the light isn't changing; 🟡 Changing means it is (a flickering lamp, clouds, or the phone moving).</li>
+            <li>⏸ Hold freezes the reading so you can take the phone away and read it.</li>
+        </ul>
+        <p>The screen's own brightness doesn't change the reading.</p>
+
+        <h3>🎯 How accurate is it?</h3>
+        <p>Phone light sensors are made for adjusting the screen, not for measuring, so readings are approximate. When we tested two phones side by side under the same lamp, one read 15-30% higher than the other.</p>
+        <ul>
+            <li>The plain-words answers use wide bands, so a difference like that rarely changes the answer.</li>
+            <li>To compare spots (which windowsill is brightest?), measure them all with the same phone: then the comparison is fair.</li>
+            <li>Under 5 lux the sensor can't measure properly: it counts in whole lux and rounds dim light down. The app then shows "under 5 lux" and 🌑 Very dim instead of a number it can't trust.</li>
+        </ul>
+        <p>For work that needs certified readings (for example a lighting survey), use a calibrated light meter.</p>
+
+        <h3>💡 What the numbers mean</h3>
+        <ul>
+            <li>Under 5 lux: very dim (too dim to measure)</li>
+            <li>5-50 lux: dim, like a hallway or a room in the evening</li>
+            <li>50-200 lux: ordinary living-room lighting</li>
+            <li>200-500 lux: kitchen or reading light</li>
+            <li>500-1,000 lux: office lighting or a bright room</li>
+            <li>1,000-10,000 lux: near a window, or cloudy daylight outside</li>
+            <li>Over 10,000 lux: outdoor daylight or direct sun</li>
+        </ul>
+        <p>⚙️ Settings › Units shows foot-candles instead (1 foot-candle = 10.764 lux), as used in American plant and lighting guides.</p>
+
+        <h3>🪴 Plants</h3>
+        <p>Pick how much light your plant needs and hold the phone at leaf height, facing the window:</p>
+        <ul>
+            <li>🌿 Low light (snake plant, ZZ plant, pothos, peace lily): at least 250 lux</li>
+            <li>🪴 Medium light (monstera, philodendron, spider plant, calathea): at least 1,000 lux</li>
+            <li>🌞 Bright light (fiddle-leaf fig, rubber plant, citrus, herbs): at least 2,500 lux</li>
+            <li>🌵 Sun lovers (cacti, succulents, aloe): at least 10,000 lux</li>
+        </ul>
+        <p>These are common indoor-gardening guidelines. Measure during the day, around midday if you can: the light by a window changes a lot through the day and with the seasons. ⭐ Pro's 📈 Light log records a spot all day.</p>
+
+        <h3>💼 Desk check</h3>
+        <p>For reading, writing and screen work, the usual guidance is about 500 lux on the desk (for example the European standard EN 12464-1 for offices). Under 300 lux is dim for paper work; under 100 lux will tire your eyes. Very bright light on a desk (sun or a strong lamp) can cause glare on a screen.</p>
+        <p>Lay the phone flat on the desk where you read or type, screen up.</p>
+
+        <h3>📷 Photo help (Pro)</h3>
+        <p>Gives a shutter speed for the aperture and ISO you pick, like a camera's handheld light meter. Hold the phone where your subject is, screen facing the camera, so it measures the light falling on the subject.</p>
+        <p>It's a starting point: check the first photo and adjust.</p>
+
+        <h3>📍 Spots (Pro)</h3>
+        <p>💾 Save spot saves the light at a place with a name (for example "Kitchen windowsill"), the date and time. The 📍 Spots tab lists them brightest first with a bar for each, so you can see your brightest and darkest spots at a glance. Tap a spot to delete it. 📄 Share PDF and 📊 Share CSV send them all.</p>
+
+        <h3>📈 Light log (Pro)</h3>
+        <p>Records the light at one spot for hours, for example a windowsill through a whole day.</p>
+        <p>1. On 📍 Spots, tap 📈 Start a light log and name it. How often it records is set in ⚙️ Settings (every minute, 5 or 15 minutes; 5 unless you change it).</p>
+        <p>2. Leave the phone at the spot, screen facing the light, with the app open. Plug it in for a long log.</p>
+        <p>3. The screen goes dark to save the battery (the reading isn't affected), but the app keeps measuring. Tap the screen to see it.</p>
+        <p>4. Tap ⏹ Stop when you're done.</p>
+        <p>Each entry has the lowest, middle and highest light in that period. The summary shows the brightest time and how many hours were bright enough for your plant. If you leave the app or lock the phone, the log pauses, and that time isn't counted.</p>
+
+        <h3>⭐ Free and Pro</h3>
+        <p>Free: the live light meter in lux or foot-candles, the plain-words answer, Hold, the plant check and the desk check. No ads.</p>
+        <p>Pro (one payment, no subscription): saved spots compared brightest first, 📈 light logs, 📷 photo help, and PDF and CSV reports.</p>
+        <p>Tap GO PRO at the top. Restore purchase gets Pro back on a new phone with the same Google account.</p>
+
+        <h3>🔒 Privacy</h3>
+        <p>No account, no sign-in, and it never asks for permissions. Your settings, spots and light logs are kept only in the app's own storage on this phone. Light Meter Buddy has no servers. A PDF or CSV only leaves the phone when you share it yourself.</p>
+        <p>Google Play handles the Pro purchase.</p>
+
+        <h3>About</h3>
+        <p>Light Meter Buddy v1.0 (Build 1)</p>
+        <p>Publisher: AppStack Studio</p>
+
+
+        <h3>⚡ WHY LIGHT METER BUDDY</h3>
+        <table class="rival-table">
+            <tr><th>Question</th><th>Many light meter apps</th><th>Light Meter Buddy</th></tr>
+            <tr><td>Ads?</td><td>Many are paid for by ads</td><td><strong>No ads, ever</strong></td></tr>
+            <tr><td>Price</td><td>Free with ads, or a subscription for plant features</td><td><strong>Free meter, plant check and desk check with no ads; Pro is one payment for life (no subscription)</strong></td></tr>
+            <tr><td>Very dim light</td><td>Often shows 0 or a number the sensor can't really measure</td><td><strong>Shows "under 5 lux" and 🌑 Very dim instead of a number it can't trust</strong></td></tr>
+        </table>
+        <ul>
+            <li>💬 Plain-words answers: dim, living room, office, very bright or daylight, not just a number.</li>
+            <li>🪴 A plant check for low-light, medium-light, bright-light plants and sun lovers.</li>
+            <li>💼 A desk check against the usual guidance for reading and screen work (about 500 lux).</li>
+            <li>⭐ Pro: saved spots compared brightest first, 📈 all-day light logs, 📷 photo help, and PDF and CSV reports.</li>
+        </ul>
+        <h3>⚠️ GOOD TO KNOW</h3>
+        <ul>
+            <li>Phone light sensors are approximate. In our test, two phones under the same lamp differed by 15-30%. Compare spots measured with the same phone.</li>
+            <li>The sensor is at the top of the screen, next to the front camera: keep your hand and shadow off it.</li>
+            <li>For certified readings (for example a lighting survey), use a calibrated light meter.</li>
+        </ul>
+    </div>
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card"><img src="light-meter-buddy-light.jpg" alt="Live light reading in lux with a plain-words answer"><p><strong>1. Light</strong><br>The light in lux, in plain words, and the desk check.</p></div>
+        <div class="screenshot-card"><img src="light-meter-buddy-plants.jpg" alt="Plant check: is this spot bright enough for the plant"><p><strong>2. Plants</strong><br>Pick how much light your plant needs and see if the spot suits it.</p></div>
+        <div class="screenshot-card"><img src="light-meter-buddy-spots.jpg" alt="Saved spots, brightest first"><p><strong>3. Spots (Pro)</strong><br>Your spots side by side, brightest first, with a PDF or CSV.</p></div>
+        <div class="screenshot-card"><img src="light-meter-buddy-log.jpg" alt="Light log summary"><p><strong>4. Light log (Pro)</strong><br>A spot's light for hours: brightest time and hours bright enough for your plant.</p></div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots: Light Meter Buddy 1.0 on a Samsung Galaxy S20 and S24.</p>
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>
