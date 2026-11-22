@@ -112,7 +112,7 @@
 
 <div class="container">
     <div class="card">
-        <p><strong>Effective Date:</strong> 15 November 2026</p>
+        <p><strong>Effective Date:</strong> 22 November 2026</p>
         <p><strong>Developer:</strong> AppStack Studio</p>
 
         <h2>1. Overview</h2>
@@ -132,6 +132,8 @@
             <li><strong>Map pictures:</strong> apps with a map download map pictures (tiles) from OpenStreetMap. Like any website, OpenStreetMap's servers receive your IP address and which map area is loaded.</li>
             <li><strong>Cell Tower Finder's speed test:</strong> only when you run it, test data is downloaded from and uploaded to Cloudflare's public speed-test service (speed.cloudflare.com).</li>
             <li><strong>Phone Check Buddy's check codes:</strong> only when you make or answer a check code, the phone's report is locked (AES-256) with a key made from the code and passed through Google Cloud Firestore (Google Firebase, London). We can't read it, it is deleted as soon as the code is used, and it can't be opened after 7 days.</li>
+            <li><strong>Game Ready Buddy's connection test:</strong> only when you run it, small STUN requests (the "what is my address" packets games and video calls use) go to the server you pick, Cloudflare (stun.cloudflare.com) or Google (stun.l.google.com). That server sees your internet (IP) address; the packets contain nothing about you or your phone.</li>
+            <li><strong>Scam Check Buddy's online link check:</strong> only when you tap it, the domain name of each web address (never the rest of the address or your message) is sent to the official domain register for that ending, and a short link is sent to the short-link service it belongs to. The website itself is never contacted.</li>
             <li><strong>Purchases:</strong> Pro and credits are bought through Google Play.</li>
         </ul>
 
@@ -150,6 +152,22 @@
             <li><a href="https://daverimmeruk.github.io/appstack-studio/wifi-buddy/wifi-buddy-privacy.html">Wi-Fi Buddy</a></li>
             <li><a href="https://daverimmeruk.github.io/appstack-studio/app-cleaner-buddy/app-cleaner-buddy-privacy.html">App-Cleaner Buddy</a></li>
             <li><a href="https://daverimmeruk.github.io/appstack-studio/phone-check-buddy/privacy.html">Phone Check Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/game-ready-buddy/privacy.html">Game Ready Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/charger-check-buddy/privacy.html">Charger Check Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/scam-check-buddy/privacy.html">Scam Check Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/level-tilt-buddy/privacy.html">Level &amp; Tilt Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/noise-diary-buddy/privacy.html">Noise Diary Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/renter-evidence-buddy/privacy.html">Renter Evidence Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/light-meter-buddy/privacy.html">Light Meter Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/home-inventory-buddy/privacy.html">Home Inventory Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/fridge-temp-log-buddy/privacy.html">Fridge Temp Log Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/meter-reading-buddy/privacy.html">Meter Reading Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/moving-box-buddy/privacy.html">Moving Box Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/plant-care-buddy/privacy.html">Plant Care Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/car-care-buddy/privacy.html">Car Care Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/returns-buddy/privacy.html">Returns Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/stud-metal-finder-buddy/privacy.html">Stud &amp; Metal Finder Buddy</a></li>
+            <li><a href="https://daverimmeruk.github.io/appstack-studio/speed-gps-buddy/privacy.html">Speed &amp; GPS Buddy</a></li>
         </ul>
 
         <h2>7. Changes to this policy</h2>
