@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSRP, RSRQ and SINR Explained: What Your 4G/5G Signal Numbers Mean — AppStack Studio</title>
+    <meta name="description" content="Signal bars only tell part of the story. Here is what RSRP, RSRQ and SINR mean, which numbers are good, and how to use them to find the best spot for a 4G or 5G router.">
+    <link rel="canonical" href="https://daverimmeruk.github.io/appstack-studio/articles/rsrp-rsrq-sinr-explained.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="RSRP, RSRQ and SINR Explained: What Your 4G/5G Signal Numbers Mean">
+    <meta property="og:description" content="Signal bars only tell part of the story. Here is what RSRP, RSRQ and SINR mean, which numbers are good, and how to use them to find the best spot for a 4G or 5G router.">
+    <meta property="og:url" content="https://daverimmeruk.github.io/appstack-studio/articles/rsrp-rsrq-sinr-explained.html">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "RSRP, RSRQ and SINR Explained: What Your 4G/5G Signal Numbers Mean",
+  "description": "Signal bars only tell part of the story. Here is what RSRP, RSRQ and SINR mean, which numbers are good, and how to use them to find the best spot for a 4G or 5G router.",
+  "datePublished": "2026-11-23",
+  "author": {
+    "@type": "Organization",
+    "name": "AppStack Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AppStack Studio"
+  },
+  "mainEntityOfPage": "https://daverimmeruk.github.io/appstack-studio/articles/rsrp-rsrq-sinr-explained.html",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "Cell Tower Finder",
+    "operatingSystem": "Android",
+    "applicationCategory": "UtilitiesApplication",
+    "url": "https://play.google.com/store/apps/details?id=com.celltowerfinder.app"
+  }
+}
+    </script>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1F1F1F;
+            --accent-green: #00FF99;
+            --accent-blue: #00A8FF;
+            --text-color: #FFFFFF;
+            --subtext-color: #CCCCCC;
+            --border-color: #333333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background-color: #181818;
+            border-bottom: 2px solid var(--accent-green);
+            padding: 36px 16px;
+            text-align: center;
+        }
+        header h1 { color: var(--accent-green); margin: 0 0 10px 0; font-size: 2rem; }
+        header p { color: var(--subtext-color); margin: 0; font-size: 1.05rem; }
+        nav {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: center;
+        }
+        nav a { color: var(--accent-green); text-decoration: none; margin: 0 14px; font-weight: bold; font-size: 0.95rem; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 0 auto; padding: 32px 16px; }
+        h2 { color: var(--accent-green); margin-top: 36px; }
+        h3 { color: var(--accent-blue); }
+        p, li { color: var(--subtext-color); font-size: 1.05rem; }
+        strong { color: var(--text-color); }
+        a { color: var(--accent-blue); }
+        .cta {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-green);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 36px 0;
+            text-align: center;
+        }
+        .cta p { margin: 0 0 16px 0; }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            color: #888888;
+            font-size: 0.85rem;
+            padding: 24px 16px;
+            border-top: 1px solid var(--border-color);
+        }
+        footer a { color: var(--accent-green); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RSRP, RSRQ and SINR Explained: What Your 4G/5G Signal Numbers Mean</h1>
+        <p>Signal bars only tell part of the story. Here is what RSRP, RSRQ and SINR mean, which numbers are good, and how to use them to find the best spot for a 4G or 5G router.</p>
+    </header>
+    <nav>
+        <a href="../index.html">🏠 Studio Home</a>
+        <a href="../cell-tower-finder/index.html">Cell Tower Finder</a>
+        <a href="https://play.google.com/store/apps/details?id=com.celltowerfinder.app&referrer=utm_source%3Dappstack_website%26utm_medium%3Darticle">▶ Google Play</a>
+    </nav>
+    <div class="container">
+<h2>Why bars aren't enough</h2>
+<p>Your phone's signal bars are a rough summary, and every maker draws them differently. Engineers look at three
+numbers instead: <strong>RSRP</strong> (how strong the signal is), <strong>RSRQ</strong> (how clean it is) and
+<strong>SINR</strong> (how far it stands out above the noise). Together they explain why one spot gives fast,
+steady 4G or 5G and another doesn't, even with the same number of bars.</p>
+<h2>RSRP: signal strength</h2>
+<p>RSRP (Reference Signal Received Power) is the power of the signal from the mast, in dBm. The numbers are
+negative: <strong>the closer to zero, the stronger</strong>. As a rule of thumb for 4G and 5G:</p>
+<ul>
+<li><strong>-80 dBm or better:</strong> excellent</li>
+<li><strong>-80 to -90 dBm:</strong> good</li>
+<li><strong>-90 to -100 dBm:</strong> fair, so try nearer a window</li>
+<li><strong>Below -100 dBm:</strong> poor</li>
+</ul>
+<p>For fast home broadband from a 4G or 5G router, aim for better than about -85 dBm.</p>
+<h2>RSRQ: signal quality</h2>
+<p>RSRQ (Reference Signal Received Quality) compares the useful signal with everything else your phone receives on
+that channel, including other cells and busy traffic. It is in dB and also negative. <strong>Better than -10 dB</strong>
+is a good target. A strong RSRP with a poor RSRQ often means interference from other cells or a busy mast.</p>
+<h2>SINR: signal against noise</h2>
+<p>SINR (Signal to Interference plus Noise Ratio) shows how far the signal stands above the noise, in dB, and here
+<strong>higher is better</strong>. It has the biggest effect on speed: <strong>above about 15 dB</strong> is a good target, and
+a high SINR usually means faster downloads and uploads.</p>
+<h2>See your own numbers</h2>
+<p>Open <strong>Cell Tower Finder</strong> and tap <strong>🗼 Cell Tower</strong> (allow location when asked; Android needs it
+before any app can read cell details). The card shows your network, the cell you are connected to, its band and
+the signal power in dBm next to your phone's own signal bars.</p>
+<p>Tap <strong>Best Tower</strong> for the full reading of the cell your phone is using: the mast's eNB number and
+sector, the band, and <strong>RSRP, RSRQ and SINR</strong> together. It also lists any other cells your phone can hear,
+so you can see whether a stronger one is nearby.</p>
+<h2>Use them to place your router</h2>
+<p>Walk slowly round your home with the app open: every reading becomes a coloured circle on the map, and a
+<strong>⭐ strong spot</strong> marks the best signal so far. The <strong>💡 Tower Window Guide</strong> then suggests putting
+your gateway at the window where the signal reads highest, about 1.2 m above the floor and away from dense
+concrete or foil insulation.</p>
+<p>Two phones side by side can show different numbers from the same mast, because their modems, antennas and
+software differ. Compare readings taken on the same phone.</p>
+<p>Everything in this guide is in the free version. Pro is one payment for life through Google Play, with no
+subscription.</p>
+        <div class="cta">
+            <p><strong>Cell Tower Finder</strong> is on Google Play.</p>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.celltowerfinder.app&referrer=utm_source%3Dappstack_website%26utm_medium%3Darticle">Get it on Google Play</a>
+        </div>
+        <p><a href="../cell-tower-finder/index.html">Read the full Cell Tower Finder field guide</a></p>
+    </div>
+    <footer>
+        AppStack Studio · <a href="../index.html">Studio Home</a> · <a href="../cell-tower-finder/index.html">Cell Tower Finder</a>
+    </footer>
+</body>
+</html>
