@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual &amp; Screenshots — Barometer &amp; Altitude Buddy</title>
+    <meta name="description" content="Barometer &amp; Altitude Buddy reads the air pressure with your phone's own sensor, shows whether it is rising or falling over the last 3 hours, the sea-level pressure from your height, and how far up or down you have gone (metres or feet, floors). Works in any country: hPa, mbar, inHg, mmHg or kPa. No ads, no account. One payment for Pro, no subscription.">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; background: #0A192F; color: #E2E8F0; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #38BDF8; }
+        h2 { color: #BAE6FD; margin-top: 30px; }
+        h3 { color: #FDE68A; }
+        p, li { color: #CBD5E1; }
+        .section-box { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+        .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .screenshot-card { background: #112240; border: 1px solid #233554; border-radius: 10px; padding: 12px; text-align: center; }
+        .screenshot-card img { width: 100%; border-radius: 8px; border: 1px solid #475569; }
+        .footer { margin-top: 50px; font-size: 13px; color: #94A3B8; border-top: 1px solid #233554; padding-top: 20px; text-align: center; }
+        a { color: #38BDF8; text-decoration: none; }
+        .rival-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .rival-table th, .rival-table td { border: 1px solid #475569; padding: 10px; text-align: left; }
+        .rival-table th { background: #0A192F; color: #BAE6FD; }
+        .banner-img { width: 100%; height: auto; border-radius: 8px; margin: 20px 0; border: 1px solid #233554; }
+        .btn { display: inline-block; background-color: #112240; color: #38BDF8; border: 1px solid #38BDF8; padding: 8px 14px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; margin: 4px; }
+        .btn:hover { background-color: #38BDF8; color: #0A192F; }
+    </style>
+</head>
+<body>
+    <h1>🌡️ Barometer &amp; Altitude Buddy — User Manual</h1>
+    <p class="intl" style="font-weight:bold; margin:6px 0 10px;">🌍 International version</p>
+    <img src="barometer-altitude-buddy-feature-banner.png" alt="Barometer &amp; Altitude Buddy: air pressure, trend and height" class="banner-img">
+    <p><a href="https://daverimmeruk.github.io/appstack-studio/index.html">&larr; Back to AppStack Studio Hub</a></p>
+    <div>
+        <a href="https://daverimmeruk.github.io/appstack-studio/barometer-altitude-buddy/privacy.html" class="btn">🔒 Privacy Policy</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/barometer-altitude-buddy/support.html" class="btn">🛟 App Support</a>
+        <a href="https://daverimmeruk.github.io/appstack-studio/terms.html" class="btn">📄 Terms of Service</a>
+    </div>
+
+    <div class="section-box">
+        <h2>📖 Barometer &amp; Altitude Buddy Manual</h2>
+        <p>Everything below is the same text as the Manual in the app (📖 Manual tab).</p>
+        <h3>👋 What Barometer &amp; Altitude Buddy does</h3>
+        <p>It reads the air pressure with your phone's own pressure sensor (barometer), shows how the pressure has changed over the last 3 hours and days, and works out how far up or down you've gone from where you set zero.</p>
+        <p>Every pressure in the app is one the phone measured. Sea-level pressure and height are worked out from those measurements and are labelled as such. Phones without a pressure sensor can't measure: the app says so.</p>
+
+        <h3>🌡️ Now</h3>
+        <p>The app opens without measuring. Tap ▶️ Start and the pressure appears, the average of the last 20 readings so the last digit stays steady. The screen stays on while it measures. Tap ⏹ Stop when you're done; leaving the app stops it too.</p>
+        <p>The last 3 hours shows the change, for example -1.2 hPa · Falling slowly. It needs 3 hours of readings saved while measuring (see 📈 Trend). The words are the Met Office's: steady (under 0.1 hPa), slowly (0.1 to 1.5 hPa), rising or falling (1.6 to 3.5 hPa), quickly (3.6 to 6 hPa) and very rapidly (over 6 hPa).</p>
+
+        <h3>🌊 Sea-level pressure</h3>
+        <p>Weather reports give the pressure at sea level, so they're higher than what you measure on a hill. Tap ⛰️ Set your height and type your height above sea level from a map or a GPS app. The app then works out the sea-level pressure from what it measures (standard atmosphere), so you can compare it with your weather report.</p>
+
+        <h3>🌦️ What the pressure tells you</h3>
+        <p>Rising pressure often comes before settled weather, falling pressure before unsettled weather. A fall of 3 hPa or more in 3 hours often means wind and rain are on the way. It's a guide, not a forecast.</p>
+
+        <h3>📈 Trend and the pressure log</h3>
+        <p>While the app is measuring it saves a reading every 5 minutes into the pressure log. It only measures while it's open on the screen (the screen stays on), never in the background, so to follow the pressure for hours or days leave it measuring, for example on its charger as a desk barometer. Where it wasn't measuring, the graph leaves a gap. The last 31 days are kept on your phone.</p>
+        <p>The graph shows the last 24 hours, with the latest, highest and lowest readings. Pro adds 7 and 30 days. 🗑 Clear the log deletes all readings.</p>
+
+        <h3>🏢 Height</h3>
+        <p>Stand where you want zero, for example the ground floor or your car's level, and tap 📍 Set zero here (hold the phone still for a moment). Then the app shows how far up or down you are, in metres or feet, and about how many floors. Change the height of one floor under Settings (3 m to start with).</p>
+        <p>Air pressure falls about 0.12 hPa for every metre near sea level, and the weather changes it too, slowly. So set zero again just before you use it: it's good over a few minutes (stairs, lifts, car parks), not for hours.</p>
+
+        <h3>🌍 Units</h3>
+        <p>Pressure starts in the usual unit where your phone is set: inches of mercury in the USA, kilopascals in Canada, millimetres of mercury in Russia, Belarus and Kazakhstan, and hectopascals elsewhere (hPa, the same as millibars). Heights start in feet in the USA, Liberia and Myanmar and in metres elsewhere. Change both on 📈 Trend › Units. Numbers are written with your phone's decimal mark.</p>
+
+        <h3>⭐ Pro</h3>
+        <p>Free: the live pressure, the 3-hour change, the 24-hour graph, sea-level pressure and height change. No ads.</p>
+        <p>Pro, one payment for life (no subscription): the 7-day and 30-day graphs, the pressure report (PDF) and the spreadsheet (CSV). Tap GO PRO on the banner. Already bought it on this Google account? Tap Restore purchase in the same pop-up.</p>
+
+        <h3>📄 Reports (Pro)</h3>
+        <p>📄 Pressure report: the last 7 days as a PDF, with the graph, the latest, highest and lowest readings, the 3-hour change and a reading for about every 3 hours (the saved reading nearest each 3-hour mark).</p>
+        <p>📊 Spreadsheet (CSV): every reading in the log, with the date and time and the pressure in hPa and in your unit.</p>
+
+        <h3>🔒 Privacy</h3>
+        <p>No account and no sign-in. The readings stay on this phone: Barometer &amp; Altitude Buddy has no servers and sends nothing anywhere. The PDFs and the spreadsheet only leave the phone when you share them. The pressure sensor needs no permission, and the app asks for none. Uninstalling the app deletes everything in it.</p>
+        <h3>About</h3>
+        <p>Barometer &amp; Altitude Buddy v1.0 (Build 1)</p>
+        <p>Publisher: AppStack Studio</p>
+
+        <h3>🌡️ WHY BAROMETER &amp; ALTITUDE BUDDY</h3>
+        <table class="rival-table">
+            <tr><th>Question</th><th>Many barometer apps</th><th>Barometer &amp; Altitude Buddy</th></tr>
+            <tr><td>Where the numbers come from</td><td>Often weather-service figures mixed in</td><td><strong>Only what your phone's own sensor measures; worked-out values are labelled</strong></td></tr>
+            <tr><td>Rising or falling?</td><td>An arrow with no rule</td><td><strong>The 3-hour change in the Met Office's own words, from steady to very rapidly</strong></td></tr>
+            <tr><td>Battery and permissions</td><td>Location and background tracking</td><td><strong>No permissions; it measures only while you use it (▶️ Start to ⏹ Stop)</strong></td></tr>
+            <tr><td>Ads and account</td><td>Often ads or a sign-in</td><td><strong>No ads, no account: everything stays on your phone</strong></td></tr>
+            <tr><td>Price</td><td>Subscriptions or paid extras</td><td><strong>Free to use; Pro is one payment for life (no subscription)</strong></td></tr>
+        </table>
+        <ul>
+            <li>🌡️ The air pressure now, steady to the last digit (the average of 20 readings).</li>
+            <li>🌊 Sea-level pressure from your height, to compare with your weather report.</li>
+            <li>🏢 Height change from where you set zero, in metres or feet, and floors.</li>
+            <li>📈 7-day and 30-day graphs, a PDF report and a spreadsheet (Pro).</li>
+            <li>🌍 hPa, mbar, inHg, mmHg or kPa, and numbers written the way your phone writes them.</li>
+        </ul>
+
+        <h3>⚠️ GOOD TO KNOW</h3>
+        <ul>
+            <li>The app needs a phone with a pressure sensor (barometer). Without one it can't measure, and it says so.</li>
+            <li>It measures only while it's open on the screen: to follow the pressure for hours, leave it measuring on its charger.</li>
+            <li>Rising or falling pressure is a guide to the weather, not a forecast. Height from pressure drifts as the weather changes, so set zero just before you use it.</li>
+        </ul>
+    </div>
+
+    <h2>App Screenshots Gallery</h2>
+    <div class="screenshot-grid">
+        <div class="screenshot-card"><img src="barometer-altitude-buddy-now.jpg" alt="The air pressure now"><p><strong>1. The air pressure now</strong><br>Measured by the phone's sensor, in your unit.</p></div>
+        <div class="screenshot-card"><img src="barometer-altitude-buddy-trend.jpg" alt="The pressure graph"><p><strong>2. Rising or falling</strong><br>The graph of the readings saved while measuring.</p></div>
+        <div class="screenshot-card"><img src="barometer-altitude-buddy-height.jpg" alt="Height change from zero"><p><strong>3. Height change</strong><br>How far up or down from where you set zero, and floors.</p></div>
+        <div class="screenshot-card"><img src="barometer-altitude-buddy-manual.jpg" alt="The manual"><p><strong>4. The manual</strong><br>Everything explained, in the app and as a PDF.</p></div>
+    </div>
+    <p style="font-size: 13px; color: #94A3B8;">Screenshots: Barometer &amp; Altitude Buddy 1.0 on Samsung Galaxy phones, with readings their own sensors measured.</p>
+
+    <div class="footer">
+        &copy; 2026 AppStack Studio. All rights reserved. | Support: <a href="mailto:appstack1966@gmail.com">appstack1966@gmail.com</a>
+    </div>
+</body>
+</html>
